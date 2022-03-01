@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['umls_0',['UMLs',['../d1/dd4/a00267.html',1,'']]]
+  ['umls_0',['UMLs',['../d3/dcc/a00264.html',1,'']]]
 ];
