@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['value_0',['Value',['../db/d44/a00162.html#a500d70a4b080e3c7e75906b66bc8f82e',1,'SherlocksGambit.Utils.Bonuses.TranspositionTable.Entry.Value()'],['../d7/d6e/a00190.html#af282b523b987d05c7d7640c97e14d8cc',1,'SherlocksGambit.Utils.Runners.DotTree.DotNode.Value()']]]
+  ['seed_0',['Seed',['../de/d53/a00169.html#a99cbac46f7e12b8c79b47e5bc0ac6564',1,'SherlocksGambit::Utils::Bonuses::ZobristHashing']]],
+  ['sourcefile_1',['SourceFile',['../de/d53/a00169.html#a7158f0ad876463f50f8ed2f001229f38',1,'SherlocksGambit::Utils::Bonuses::ZobristHashing']]]
 ];

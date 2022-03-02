@@ -1,13 +1,13 @@
 var searchData=
 [
-  ['elapsedtime_0',['ElapsedTime',['../d7/d70/a00106.html#a7f8e3fcef5485f5d0a4e9953ec3bc9f8',1,'SherlocksGambit::AI::AiBase']]],
-  ['encrypt_1',['Encrypt',['../d5/dcb/a00170.html#a4332c194e4f43bd266a62412895cbf3e',1,'SherlocksGambit.Utils.Encryption.FenEncryption.Encrypt()'],['../d8/df1/a00174.html#a5556d77385490a245f3d97feee2178de',1,'SherlocksGambit.Utils.Encryption.MoveEncryption.Encrypt()']]],
-  ['enemies_2',['Enemies',['../d7/d12/a00126.html#afaef8906b0ee79526f81f895dbaa0ef8',1,'SherlocksGambit::Game::PathObject']]],
-  ['enemy_3',['Enemy',['../df/dc8/a00122.html#a535259f57a1fe0636a4915056c5076d2a8c6d21187fb58b7a079d70030686b33e',1,'SherlocksGambit::Game::Cell']]],
-  ['entries_4',['Entries',['../d6/db8/a00158.html#ae81e9972f24285280ae2138dc0bf0050',1,'SherlocksGambit::Utils::Bonuses::TranspositionTable']]],
-  ['entry_5',['Entry',['../db/d44/a00162.html#ae438cac7f0e5fab2aee5325586309cc4',1,'SherlocksGambit.Utils.Bonuses.TranspositionTable.Entry.Entry()'],['../db/d44/a00162.html',1,'SherlocksGambit.Utils.Bonuses.TranspositionTable.Entry']]],
-  ['eogexception_6',['EoGException',['../db/d53/a00202.html#a08cc12d291d1da0ee75b45771a1afb18',1,'SherlocksGambit.Utils.Runners.Runner.EoGException.EoGException()'],['../db/d53/a00202.html',1,'SherlocksGambit.Utils.Runners.Runner.EoGException']]],
-  ['equals_7',['Equals',['../d7/d12/a00126.html#ab699b44774d590838d9cdc5fbfa13bcf',1,'SherlocksGambit::Game::PathObject']]],
-  ['exactvalue_8',['ExactValue',['../d6/db8/a00158.html#a0e43cc6b6bc3985baf6af46e86c01edaa03d512636adb178d5de93bc1f63642f5',1,'SherlocksGambit::Utils::Bonuses::TranspositionTable']]],
-  ['exploredpaths_9',['ExploredPaths',['../d7/d70/a00106.html#a1d244fcd31f01d857a1d57d9bac774c6',1,'SherlocksGambit::AI::AiBase']]]
+  ['decrypt_0',['Decrypt',['../d7/d3f/a00173.html#ae8e5f76394eb3f5f81cea15eb87ec3cf',1,'SherlocksGambit.Utils.Encryption.FenEncryption.Decrypt()'],['../dd/d4c/a00177.html#aa08cfd5505bdb3b79f85bd578f8f0472',1,'SherlocksGambit.Utils.Encryption.MoveEncryption.Decrypt()']]],
+  ['demotepiece_1',['DemotePiece',['../da/ddb/a00145.html#a84ab249f32b49b19be458262ce9585e5',1,'SherlocksGambit::Game::Pieces::PieceManager']]],
+  ['depth_2',['Depth',['../d0/d48/a00165.html#a454a7ef557776ab9c60b92f96baea0b2',1,'SherlocksGambit::Utils::Bonuses::TranspositionTable::Entry']]],
+  ['direction_3',['Direction',['../d9/df8/a00096.html#af9726f396cd4597aa46806a77109cd5d',1,'SherlocksGambit.Utils.Helpers.Direction()'],['../d5/d16/a00029.html#a8ab3f3e464d604c2f93435209719438a',1,'Direction():&#160;MoveOrdering.cs']]],
+  ['directionhelper_4',['DirectionHelper',['../de/df3/a00185.html',1,'SherlocksGambit::Utils::Helpers']]],
+  ['directionhelper_2ecs_5',['DirectionHelper.cs',['../dd/d32/a00041.html',1,'']]],
+  ['dotnode_6',['DotNode',['../da/deb/a00189.html#a07a86fa5aeda76d7cc71ae366ccdc52d',1,'SherlocksGambit.Utils.Runners.DotTree.DotNode.DotNode()'],['../da/deb/a00189.html',1,'SherlocksGambit.Utils.Runners.DotTree.DotNode']]],
+  ['dotnode_2ecs_7',['DotNode.cs',['../d6/d5b/a00026.html',1,'']]],
+  ['dotrunner_8',['DotRunner',['../dd/df4/a00193.html#af0b3bacce75edef03a72a819de51656e',1,'SherlocksGambit.Utils.Runners.DotTree.DotRunner.DotRunner()'],['../dd/df4/a00193.html',1,'SherlocksGambit.Utils.Runners.DotTree.DotRunner']]],
+  ['dotrunner_2ecs_9',['DotRunner.cs',['../d3/d52/a00023.html',1,'']]]
 ];

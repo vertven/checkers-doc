@@ -1,19 +1,5 @@
 var searchData=
 [
-  ['path_0',['Path',['../d7/d12/a00126.html#a55529116d02961375ab56c19d24d33db',1,'SherlocksGambit::Game::PathObject']]],
-  ['pathobj_1',['PathObj',['../db/d44/a00162.html#a0a0c53a1278fa52d52483c54acbfde4b',1,'SherlocksGambit::Utils::Bonuses::TranspositionTable::Entry']]],
-  ['pathobject_2',['PathObject',['../d7/d12/a00126.html#a7028e03df29ea63ab45ba7b8ce8e715d',1,'SherlocksGambit.Game.PathObject.PathObject()'],['../d7/d12/a00126.html',1,'SherlocksGambit.Game.PathObject']]],
-  ['pathobject_2ecs_3',['PathObject.cs',['../d6/d2d/a00047.html',1,'']]],
-  ['piecemanager_4',['PieceManager',['../d8/d87/a00118.html#a1bcb3fce7e89c71d6ca1de9477e18d34',1,'SherlocksGambit.Game.Board.PieceManager()'],['../d2/d82/a00142.html#a6342ea9cb4b79239a2e9656411c0df3c',1,'SherlocksGambit.Game.Pieces.PieceManager.PieceManager()'],['../d2/d82/a00142.html',1,'SherlocksGambit.Game.Pieces.PieceManager']]],
-  ['piecemanager_2ecs_5',['PieceManager.cs',['../d5/de0/a00050.html',1,'']]],
-  ['piecesdictionary_6',['PiecesDictionary',['../d2/d82/a00142.html#aa39a2f1b204354233ac5b23fa8553ff9',1,'SherlocksGambit::Game::Pieces::PieceManager']]],
-  ['place_7',['Place',['../d6/db3/a00130.html#afbf7265bf3ce554ef602d23d12a21ed4',1,'SherlocksGambit::Game::Pieces::BasePiece']]],
-  ['playercolor_8',['PlayerColor',['../d4/d7d/a00093.html#ad3875305e47f14266c1e80da9b33304b',1,'SherlocksGambit::Utils::Helpers']]],
-  ['players_9',['Players',['../d7/da0/a00198.html#a37aedadcf9b616eb0ac80999d1d2dddd',1,'SherlocksGambit::Utils::Runners::Runner']]],
-  ['positions_10',['Positions',['../d8/d87/a00118.html#a0b48e4c83f750807df609617e45a8806',1,'SherlocksGambit::Game::Board']]],
-  ['positionweightedheuristics_11',['PositionWeightedHeuristics',['../d4/d81/a00110.html#a7b8baa81195c2466129817d8a50d8348',1,'SherlocksGambit::AI::Heuristic']]],
-  ['print_12',['Print',['../d7/da0/a00198.html#a745491752819c3d5e3dca939f36b8580',1,'SherlocksGambit.Utils.Runners.Runner.Print()'],['../d8/d87/a00118.html#a1d31da60557efeb7337004a6714ee1c0',1,'SherlocksGambit.Game.Board.Print()']]],
-  ['program_13',['Program',['../d9/db6/a00146.html',1,'SherlocksGambit']]],
-  ['program_2ecs_14',['Program.cs',['../db/db6/a00074.html',1,'']]],
-  ['promotepiece_15',['PromotePiece',['../d2/d82/a00142.html#a24cab030dbdf7d79dcdd065ab653e644',1,'SherlocksGambit::Game::Pieces::PieceManager']]]
+  ['ordermoves_0',['OrderMoves',['../d1/db7/a00157.html#ac5671d32f079af534110a5c07d0a795c',1,'SherlocksGambit::Utils::Bonuses::MoveOrdering']]],
+  ['outofbounds_1',['OutOfBounds',['../dc/dfe/a00125.html#a535259f57a1fe0636a4915056c5076d2a46dc1018ac1d8fca7c2752a61ce2fd0f',1,'SherlocksGambit::Game::Cell']]]
 ];

@@ -1,4 +1,4 @@
-A little reminder never killed nobody
+A little reminder never killed nobody<br>
 Here are the UMLs given in the subject! How convinient no?
 
-![](test.png)
+![](UML-members-transparent.png)

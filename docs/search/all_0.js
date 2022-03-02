@@ -1,10 +1,11 @@
 var searchData=
 [
-  ['addchild_0',['AddChild',['../d7/d6e/a00190.html#a65bc1fc873eebd15f80425d2255aac70',1,'SherlocksGambit::Utils::Runners::DotTree::DotNode']]],
-  ['addpiece_1',['AddPiece',['../d2/d82/a00142.html#a271bdb254a3be14d5a3be1f30c999412',1,'SherlocksGambit::Game::Pieces::PieceManager']]],
-  ['aibase_2',['AiBase',['../d7/d70/a00106.html#a918b394c2a0e6a53dfe92c6f75607560',1,'SherlocksGambit.AI.AiBase.AiBase()'],['../d7/d70/a00106.html',1,'SherlocksGambit.AI.AiBase']]],
-  ['aibase_2ecs_3',['AiBase.cs',['../d0/d89/a00071.html',1,'']]],
-  ['aiproperties_4',['AiProperties',['../d7/d70/a00106.html#a62ee592916ef0a4a5dfad125fa084039',1,'SherlocksGambit.AI.AiBase.AiProperties()'],['../d9/d7d/a00150.html#ad6bd582c02428ed12fc53ede71938d82',1,'SherlocksGambit.Utils.AiProperties.AiProperties()'],['../d9/d7d/a00150.html',1,'SherlocksGambit.Utils.AiProperties']]],
-  ['aiproperties_2ecs_5',['AiProperties.cs',['../da/d45/a00011.html',1,'']]],
-  ['alphabetapruning_6',['AlphaBetaPruning',['../d9/d7d/a00150.html#a85add9d7ce8e78e97be112066d2aa8cd',1,'SherlocksGambit::Utils::AiProperties']]]
+  ['_5fchildren_0',['_children',['../da/deb/a00189.html#ac08681dbd079761806b1adf068fd07d5',1,'SherlocksGambit::Utils::Runners::DotTree::DotNode']]],
+  ['_5fcolor_1',['_color',['../da/deb/a00189.html#ae18f2a8532609f6e87e8f779f819eedd',1,'SherlocksGambit::Utils::Runners::DotTree::DotNode']]],
+  ['_5fhistory_2',['_history',['../d8/dfa/a00121.html#a209073fab37bf9b194e29d057ac2724f',1,'SherlocksGambit::Game::Board']]],
+  ['_5fhistoryindex_3',['_historyIndex',['../d8/dfa/a00121.html#af6309cdeb8180ca0b9f9304b5ab840f4',1,'SherlocksGambit::Game::Board']]],
+  ['_5fmovescores_4',['_moveScores',['../d1/db7/a00157.html#a6030515638ce305b244af50bfea90d67',1,'SherlocksGambit::Utils::Bonuses::MoveOrdering']]],
+  ['_5foutputfolder_5',['_outputFolder',['../dd/df4/a00193.html#ad5abfbed5bf797ad6cdc97c4882b8b1a',1,'SherlocksGambit::Utils::Runners::DotTree::DotRunner']]],
+  ['_5fplayercolor_6',['_playerColor',['../da/deb/a00189.html#a29e8b6614f065fe1aba2e8240855e227',1,'SherlocksGambit::Utils::Runners::DotTree::DotNode']]],
+  ['_5ftranspositiontable_7',['_transpositionTable',['../d1/db7/a00157.html#a426249e7c992d43ae375034937b826a6',1,'SherlocksGambit::Utils::Bonuses::MoveOrdering']]]
 ];

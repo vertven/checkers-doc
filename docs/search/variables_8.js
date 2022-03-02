@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['lastmove_0',['LastMove',['../d7/da0/a00198.html#a545dd7cd00d1036c2c9fb5f8e19489c6',1,'SherlocksGambit::Utils::Runners::Runner']]]
+  ['key_0',['Key',['../d0/d48/a00165.html#a715322d0227ad792ec6957aaa3651906',1,'SherlocksGambit::Utils::Bonuses::TranspositionTable::Entry']]]
 ];

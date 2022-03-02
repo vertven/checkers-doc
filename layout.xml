@@ -51,45 +51,45 @@
       <interfaces title=""/>
       <publicslots title=""/>
       <signals title=""/>
-      <publicmethods title=""/>
-      <publicstaticmethods title=""/>
-      <publicattributes title=""/>
       <publicstaticattributes title=""/>
+      <publicattributes title=""/>
+      <protectedstaticattributes title=""/>
+      <protectedattributes title=""/>
+      <privatestaticattributes title=""/>
+      <privateattributes title=""/>
+      <properties title=""/>
       <protectedtypes title=""/>
       <protectedslots title=""/>
-      <protectedmethods title=""/>
+      <privatetypes title=""/>
+      <privateslots title=""/>
+      <publicstaticmethods title=""/>
+      <publicmethods title=""/>
       <protectedstaticmethods title=""/>
-      <protectedattributes title=""/>
-      <protectedstaticattributes title=""/>
+      <protectedmethods title=""/>
+      <privatestaticmethods title=""/>
+      <privatemethods title=""/>
       <packagetypes title=""/>
       <packagemethods title=""/>
       <packagestaticmethods title=""/>
       <packageattributes title=""/>
       <packagestaticattributes title=""/>
-      <properties title=""/>
       <events title=""/>
-      <privatetypes title=""/>
-      <privateslots title=""/>
-      <privatemethods title=""/>
-      <privatestaticmethods title=""/>
-      <privateattributes title=""/>
-      <privatestaticattributes title=""/>
       <friends title=""/>
       <related title="" subtitle=""/>
       <membergroups visible="yes"/>
     </memberdecl>
-    <detaileddescription title=""/>
+    <detaileddescription visible="no" title=""/>
     <memberdef>
       <inlineclasses title=""/>
       <typedefs title=""/>
       <enums title=""/>
       <services title=""/>
       <interfaces title=""/>
+      <variables title=""/>
+      <properties title=""/>
       <constructors title=""/>
       <functions title=""/>
       <related title=""/>
-      <variables title=""/>
-      <properties title=""/>
       <events title=""/>
     </memberdef>
     <allmemberslink visible="yes"/>

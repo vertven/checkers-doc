@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['king_0',['King',['../de/d76/a00134.html',1,'SherlocksGambit::Game::Pieces']]]
+  ['king_0',['King',['../d2/df5/a00137.html',1,'SherlocksGambit::Game::Pieces']]]
 ];

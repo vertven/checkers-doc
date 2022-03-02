@@ -1,7 +1,10 @@
 var searchData=
 [
-  ['id_0',['Id',['../db/d44/a00162.html#adad341bf834b13dc74be17ce8e9d2055',1,'SherlocksGambit.Utils.Bonuses.TranspositionTable.Entry.Id()'],['../d7/d6e/a00190.html#aec97002d29a33aaf76f158bc71454618',1,'SherlocksGambit.Utils.Runners.DotTree.DotNode.Id()']]],
-  ['index_1',['Index',['../d6/db8/a00158.html#affd6bbb3aeb228f15b63b9f2fc151222',1,'SherlocksGambit::Utils::Bonuses::TranspositionTable']]],
-  ['iseog_2',['IsEoG',['../d7/d70/a00106.html#aeaf175c3b17c1c51eb382ee01521e9ea',1,'SherlocksGambit::AI::AiBase']]],
-  ['isonkingsrow_3',['IsOnKingsRow',['../d7/d25/a00182.html#a9517b26ac0a0a34784b3afef17b25431',1,'SherlocksGambit::Utils::Helpers::DirectionHelper']]]
+  ['haslost_0',['HasLost',['../d8/dfa/a00121.html#afaa82e943a3292807a9cb478aaab283b',1,'SherlocksGambit::Game::Board']]],
+  ['hasmove_1',['HasMove',['../d0/de8/a00133.html#aeabd278448a15caf6d42150dc6924e63',1,'SherlocksGambit::Game::Pieces::BasePiece']]],
+  ['haswon_2',['HasWon',['../d8/dfa/a00121.html#a01233c4a571e4974a8f279f0158dc54e',1,'SherlocksGambit::Game::Board']]],
+  ['heuristic_3',['Heuristic',['../d3/d00/a00113.html',1,'SherlocksGambit::AI']]],
+  ['heuristic_2ecs_4',['Heuristic.cs',['../d0/d89/a00071.html',1,'']]],
+  ['heuristicfunction_5',['HeuristicFunction',['../dd/d42/a00109.html#a3b53173e6a8384404794b6ead87e7fae',1,'SherlocksGambit.AI.AiBase.HeuristicFunction()'],['../da/d01/a00153.html#a4e0032b234beeec2d91e91de673a04bd',1,'SherlocksGambit.Utils.AiProperties.HeuristicFunction()']]],
+  ['historylength_6',['HistoryLength',['../d8/dfa/a00121.html#a3313eee68b1496c8cc0d59dda643d224',1,'SherlocksGambit::Game::Board']]]
 ];

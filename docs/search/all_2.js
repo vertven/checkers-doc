@@ -1,15 +1,11 @@
 var searchData=
 [
-  ['calculatezobristkey_0',['CalculateZobristKey',['../d9/d38/a00166.html#a8ed0b86aa2d9a72e568d5d13999ecb33',1,'SherlocksGambit::Utils::Bonuses::ZobristHashing']]],
-  ['cell_1',['Cell',['../df/dc8/a00122.html#afe96d3bf7070bc4f2afd04ce7efcbfeb',1,'SherlocksGambit.Game.Cell.Cell()'],['../df/dc8/a00122.html',1,'SherlocksGambit.Game.Cell']]],
-  ['cell_2ecs_2',['Cell.cs',['../dd/d32/a00041.html',1,'']]],
-  ['cellstate_3',['CellState',['../df/dc8/a00122.html#a535259f57a1fe0636a4915056c5076d2',1,'SherlocksGambit::Game::Cell']]],
-  ['checkpathing_4',['CheckPathing',['../d6/db3/a00130.html#a2ce2fa2d129b5047beb3bb16be1ee233',1,'SherlocksGambit::Game::Pieces::BasePiece']]],
-  ['color_5',['Color',['../d7/d70/a00106.html#a8d885fd293d2b41f96a11442558e1318',1,'SherlocksGambit.AI.AiBase.Color()'],['../d6/db3/a00130.html#aa1d5968fa10b2432f4b0cecc63490277',1,'SherlocksGambit.Game.Pieces.BasePiece.Color()'],['../d9/d7d/a00150.html#a11eaa4b0402d02143f46c86e85e192cb',1,'SherlocksGambit.Utils.AiProperties.Color()']]],
-  ['colorhelper_6',['ColorHelper',['../d9/d90/a00178.html',1,'SherlocksGambit::Utils::Helpers']]],
-  ['colorhelper_2ecs_7',['ColorHelper.cs',['../d4/d8c/a00035.html',1,'']]],
-  ['computeheuristic_8',['ComputeHeuristic',['../d4/d81/a00110.html#a66b9213ff906dca02f68333de9ce6200',1,'SherlocksGambit::AI::Heuristic']]],
-  ['copy_9',['Copy',['../d8/d87/a00118.html#ad6da321cc1dfacd2ac3bfbbe3b7af939',1,'SherlocksGambit.Game.Board.Copy()'],['../d6/db3/a00130.html#a0e81d92f1a2077104eba27df26492298',1,'SherlocksGambit.Game.Pieces.BasePiece.Copy()'],['../de/d76/a00134.html#acd10b810473caba133a201289c77ab5f',1,'SherlocksGambit.Game.Pieces.King.Copy()'],['../d4/ddd/a00138.html#a4734843b6a073bd083cb478cbcfae33c',1,'SherlocksGambit.Game.Pieces.Man.Copy()']]],
-  ['currentcell_10',['CurrentCell',['../d6/db3/a00130.html#a4794d925c84d4a584b52c12f90ecc012',1,'SherlocksGambit::Game::Pieces::BasePiece']]],
-  ['currentpiece_11',['CurrentPiece',['../df/dc8/a00122.html#ad53e986eec0fa7d30e47aae72ce30bff',1,'SherlocksGambit::Game::Cell']]]
+  ['basepiece_0',['BasePiece',['../d0/de8/a00133.html#ab02b123d0ec73a909ae3a9781ef889bb',1,'SherlocksGambit.Game.Pieces.BasePiece.BasePiece()'],['../d0/de8/a00133.html',1,'SherlocksGambit.Game.Pieces.BasePiece']]],
+  ['basepiece_2ecs_1',['BasePiece.cs',['../d3/d8b/a00059.html',1,'']]],
+  ['black_2',['Black',['../d9/df8/a00096.html#ad3875305e47f14266c1e80da9b33304bae90dfb84e30edf611e326eeb04d680de',1,'SherlocksGambit::Utils::Helpers']]],
+  ['board_3',['Board',['../dd/d42/a00109.html#a3cfce12448499838728b08a400c6043f',1,'SherlocksGambit.AI.AiBase.Board()'],['../dc/dfe/a00125.html#a994d8bf12a32ffe4b0bcc605c3f21b1f',1,'SherlocksGambit.Game.Cell.Board()'],['../d0/de8/a00133.html#a339c4aba32c64e9b1e82cc014f0e5b07',1,'SherlocksGambit.Game.Pieces.BasePiece.Board()'],['../da/d01/a00153.html#ac6b6142627f87945ec96ee65e1f58599',1,'SherlocksGambit.Utils.AiProperties.Board()'],['../da/deb/a00189.html#a7146fa103caadcabbe6c903fbc6913ec',1,'SherlocksGambit.Utils.Runners.DotTree.DotNode.Board()'],['../d8/dfa/a00121.html#ae359d454acfc79cb73a4cc1b65cc58f2',1,'SherlocksGambit.Game.Board.Board(uint[] history, int historyIndex)'],['../d8/dfa/a00121.html#ae9d63ad8b07b84a58102e70c60b385ec',1,'SherlocksGambit.Game.Board.Board(string fenCode=&quot;&quot;)'],['../d8/dfa/a00121.html',1,'SherlocksGambit.Game.Board']]],
+  ['board_28bonus_29_2ecs_4',['Board(Bonus).cs',['../de/de1/a00065.html',1,'']]],
+  ['board_2ecs_5',['Board.cs',['../d6/d2d/a00047.html',1,'']]],
+  ['boardposition_6',['BoardPosition',['../dc/dfe/a00125.html#a066708f955a4a84593db2359b8357851',1,'SherlocksGambit::Game::Cell']]],
+  ['boardsize_7',['BoardSize',['../d8/dfa/a00121.html#ae0d7830d4f603085b293071b77ed0c6e',1,'SherlocksGambit::Game::Board']]]
 ];

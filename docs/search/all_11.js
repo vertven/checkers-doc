@@ -1,16 +1,14 @@
 var searchData=
 [
-  ['ai_0',['AI',['../d1/d1e/a00087.html',1,'SherlocksGambit']]],
-  ['bonuses_1',['Bonuses',['../da/d82/a00091.html',1,'SherlocksGambit::Utils']]],
-  ['dottree_2',['DotTree',['../d9/d77/a00095.html',1,'SherlocksGambit::Utils::Runners']]],
-  ['encryption_3',['Encryption',['../d1/dc1/a00092.html',1,'SherlocksGambit::Utils']]],
-  ['game_4',['Game',['../db/ddf/a00088.html',1,'SherlocksGambit']]],
-  ['helpers_5',['Helpers',['../d4/d7d/a00093.html',1,'SherlocksGambit::Utils']]],
-  ['pieces_6',['Pieces',['../db/dab/a00089.html',1,'SherlocksGambit::Game']]],
-  ['runners_7',['Runners',['../dc/d54/a00094.html',1,'SherlocksGambit::Utils']]],
-  ['sherlocksgambit_8',['SherlocksGambit',['../da/d2a/a00086.html',1,'']]],
-  ['simpleheuristic_9',['SimpleHeuristic',['../d4/d81/a00110.html#a7ceeaf2977f032aa5f7db91834e7378c',1,'SherlocksGambit::AI::Heuristic']]],
-  ['status_10',['Status',['../d6/db8/a00158.html#a0e43cc6b6bc3985baf6af46e86c01eda',1,'SherlocksGambit::Utils::Bonuses::TranspositionTable']]],
-  ['storeevaluation_11',['StoreEvaluation',['../d6/db8/a00158.html#a9c2d81d1b8d011aa4f406fb3383a9039',1,'SherlocksGambit::Utils::Bonuses::TranspositionTable']]],
-  ['utils_12',['Utils',['../d9/dec/a00090.html',1,'SherlocksGambit']]]
+  ['randomheuristic_0',['RandomHeuristic',['../d3/d00/a00113.html#a8166930efc8f8a9fb3b0c1c3401fa894',1,'SherlocksGambit::AI::Heuristic']]],
+  ['randuint32bitnum_1',['RandUInt32BitNum',['../de/d53/a00169.html#a1af2d2647e146d24eee4c4e8b69f416b',1,'SherlocksGambit::Utils::Bonuses::ZobristHashing']]],
+  ['readrandnum_2',['ReadRandNum',['../de/d53/a00169.html#ad1946a1cc719cd6f3872cb5bfb55415a',1,'SherlocksGambit::Utils::Bonuses::ZobristHashing']]],
+  ['recreatepath_3',['RecreatePath',['../d0/de8/a00133.html#a873075872f5c2a478d8ebc9ce72a9cf2',1,'SherlocksGambit::Game::Pieces::BasePiece']]],
+  ['registermove_4',['RegisterMove',['../d8/dfa/a00121.html#a50400f633ba8b134fe74e3dd4818dea8',1,'SherlocksGambit::Game::Board']]],
+  ['removepiece_5',['RemovePiece',['../da/ddb/a00145.html#a594315ec210e8f16b557551daaa421a5',1,'SherlocksGambit::Game::Pieces::PieceManager']]],
+  ['revertmove_6',['RevertMove',['../da/d01/a00153.html#abacdfea68aaea351798c195964f0be91',1,'SherlocksGambit.Utils.AiProperties.RevertMove()'],['../d0/de8/a00133.html#a2b96e021209cc59434a3d7bbc47ed678',1,'SherlocksGambit.Game.Pieces.BasePiece.RevertMove()'],['../d2/df5/a00137.html#a253887fa0d50c80cc782b445378095ef',1,'SherlocksGambit.Game.Pieces.King.RevertMove()']]],
+  ['rowlength_7',['RowLength',['../d8/dfa/a00121.html#a1acf71476236148fc1dfd369a2e7a261',1,'SherlocksGambit::Game::Board']]],
+  ['run_8',['Run',['../dd/df4/a00193.html#a859be21ad6cee14b486fb601b36f94ae',1,'SherlocksGambit.Utils.Runners.DotTree.DotRunner.Run()'],['../de/db1/a00197.html#af2d0bd453e94d969f159736abfe9dabf',1,'SherlocksGambit.Utils.Runners.Runner.Run()']]],
+  ['runner_9',['Runner',['../de/db1/a00197.html#a706be16d73c709477df23e238743640e',1,'SherlocksGambit.Utils.Runners.Runner.Runner()'],['../de/db1/a00197.html',1,'SherlocksGambit.Utils.Runners.Runner']]],
+  ['runner_2ecs_10',['Runner.cs',['../db/db2/a00020.html',1,'']]]
 ];

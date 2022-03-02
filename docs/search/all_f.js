@@ -1,6 +1,21 @@
 var searchData=
 [
-  ['q_26a_0',['Q&amp;A',['../df/da9/a00263.html',1,'']]],
-  ['q_26a_2emd_1',['Q&amp;A.md',['../d1/d09/a00077.html',1,'']]],
-  ['quiescencesearch_2',['QuiescenceSearch',['../d9/d7d/a00150.html#a495961e6e013515a823f73558a9f994a',1,'SherlocksGambit::Utils::AiProperties']]]
+  ['path_0',['Path',['../d9/d47/a00129.html#a55529116d02961375ab56c19d24d33db',1,'SherlocksGambit::Game::PathObject']]],
+  ['pathobj_1',['PathObj',['../d0/d48/a00165.html#a0a0c53a1278fa52d52483c54acbfde4b',1,'SherlocksGambit::Utils::Bonuses::TranspositionTable::Entry']]],
+  ['pathobject_2',['PathObject',['../d9/d47/a00129.html#a7028e03df29ea63ab45ba7b8ce8e715d',1,'SherlocksGambit.Game.PathObject.PathObject()'],['../d9/d47/a00129.html',1,'SherlocksGambit.Game.PathObject']]],
+  ['pathobject_2ecs_3',['PathObject.cs',['../d5/de0/a00050.html',1,'']]],
+  ['piecemanager_4',['PieceManager',['../d8/dfa/a00121.html#a1bcb3fce7e89c71d6ca1de9477e18d34',1,'SherlocksGambit.Game.Board.PieceManager()'],['../da/ddb/a00145.html#a6342ea9cb4b79239a2e9656411c0df3c',1,'SherlocksGambit.Game.Pieces.PieceManager.PieceManager()'],['../da/ddb/a00145.html',1,'SherlocksGambit.Game.Pieces.PieceManager']]],
+  ['piecemanager_2ecs_5',['PieceManager.cs',['../dc/dee/a00053.html',1,'']]],
+  ['piecesarray_6',['PiecesArray',['../de/d53/a00169.html#abce5f292ef6ee9b5f2f6748ff5de16cb',1,'SherlocksGambit::Utils::Bonuses::ZobristHashing']]],
+  ['piecesdictionary_7',['PiecesDictionary',['../da/ddb/a00145.html#aa39a2f1b204354233ac5b23fa8553ff9',1,'SherlocksGambit::Game::Pieces::PieceManager']]],
+  ['place_8',['Place',['../d0/de8/a00133.html#afbf7265bf3ce554ef602d23d12a21ed4',1,'SherlocksGambit::Game::Pieces::BasePiece']]],
+  ['playercolor_9',['PlayerColor',['../d9/df8/a00096.html#ad3875305e47f14266c1e80da9b33304b',1,'SherlocksGambit::Utils::Helpers']]],
+  ['players_10',['Players',['../de/db1/a00197.html#a37aedadcf9b616eb0ac80999d1d2dddd',1,'SherlocksGambit::Utils::Runners::Runner']]],
+  ['positions_11',['Positions',['../d8/dfa/a00121.html#a0b48e4c83f750807df609617e45a8806',1,'SherlocksGambit::Game::Board']]],
+  ['positionweightedheuristics_12',['PositionWeightedHeuristics',['../d3/d00/a00113.html#a7b8baa81195c2466129817d8a50d8348',1,'SherlocksGambit::AI::Heuristic']]],
+  ['print_13',['Print',['../de/db1/a00197.html#a745491752819c3d5e3dca939f36b8580',1,'SherlocksGambit.Utils.Runners.Runner.Print()'],['../d8/dfa/a00121.html#a1d31da60557efeb7337004a6714ee1c0',1,'SherlocksGambit.Game.Board.Print()']]],
+  ['prng_14',['Prng',['../de/d53/a00169.html#a6f59199e869ed4e404b7c323a81ce14c',1,'SherlocksGambit::Utils::Bonuses::ZobristHashing']]],
+  ['program_15',['Program',['../da/d1e/a00149.html',1,'SherlocksGambit']]],
+  ['program_2ecs_16',['Program.cs',['../d1/d09/a00077.html',1,'']]],
+  ['promotepiece_17',['PromotePiece',['../da/ddb/a00145.html#a24cab030dbdf7d79dcdd065ab653e644',1,'SherlocksGambit::Game::Pieces::PieceManager']]]
 ];

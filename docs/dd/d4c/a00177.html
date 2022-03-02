@@ -83,10 +83,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aa08cfd5505bdb3b79f85bd578f8f0472"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d4c/a00177.html#aa08cfd5505bdb3b79f85bd578f8f0472">Decrypt</a> (<a class="el" href="../../d8/dfa/a00121.html">Board</a> board, string input)</td></tr>
 <tr class="separator:aa08cfd5505bdb3b79f85bd578f8f0472"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../d4/dee/a00008_source.html#l00009">9</a> of file <a class="el" href="../../d4/dee/a00008_source.html">MoveEncryption.cs</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="aa08cfd5505bdb3b79f85bd578f8f0472" name="aa08cfd5505bdb3b79f85bd578f8f0472"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa08cfd5505bdb3b79f85bd578f8f0472">&#9670;&nbsp;</a></span>Decrypt()</h2>
 
@@ -121,7 +118,18 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dee/a00008_source.html#l00019">19</a> of file <a class="el" href="../../d4/dee/a00008_source.html">MoveEncryption.cs</a>.</p>
+<p>Parses a given move and executes it on a given Board </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">board</td><td>Board on which to perform the move </td></tr>
+    <tr><td class="paramname">input</td><td>Encoded move to decrypt </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A boolean indicating if the move was successful or not </dd></dl>
+<p >We assume that <code>input</code> is correct (meaning not null nor empty, with correct coordinates and format) </p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d45/a00011_source.html#l00036">36</a> of file <a class="el" href="../../da/d45/a00011_source.html">MoveEncryption.cs</a>.</p>
 
 </div>
 </div>
@@ -159,7 +167,18 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dee/a00008_source.html#l00012">12</a> of file <a class="el" href="../../d4/dee/a00008_source.html">MoveEncryption.cs</a>.</p>
+<p>Encrypts a move given a PlayerColor and a PathObject </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">playerColor</td><td>Color of the player making the move </td></tr>
+    <tr><td class="paramname">path</td><td>Object containing the path and enemies encountered </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A string representing the move </dd></dl>
+<p >White's simple move: "22-17" Black's capture move: "(10x19)" </p>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d45/a00011_source.html#l00021">21</a> of file <a class="el" href="../../da/d45/a00011_source.html">MoveEncryption.cs</a>.</p>
 
 </div>
 </div>

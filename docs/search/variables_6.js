@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['id_0',['Id',['../db/d44/a00162.html#adad341bf834b13dc74be17ce8e9d2055',1,'SherlocksGambit.Utils.Bonuses.TranspositionTable.Entry.Id()'],['../d7/d6e/a00190.html#aec97002d29a33aaf76f158bc71454618',1,'SherlocksGambit.Utils.Runners.DotTree.DotNode.Id()']]]
+  ['heuristicfunction_0',['HeuristicFunction',['../dd/d42/a00109.html#a3b53173e6a8384404794b6ead87e7fae',1,'SherlocksGambit.AI.AiBase.HeuristicFunction()'],['../da/d01/a00153.html#a4e0032b234beeec2d91e91de673a04bd',1,'SherlocksGambit.Utils.AiProperties.HeuristicFunction()']]],
+  ['historylength_1',['HistoryLength',['../d8/dfa/a00121.html#a3313eee68b1496c8cc0d59dda643d224',1,'SherlocksGambit::Game::Board']]]
 ];

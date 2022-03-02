@@ -81,13 +81,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a4332c194e4f43bd266a62412895cbf3e"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3f/a00173.html#a4332c194e4f43bd266a62412895cbf3e">Encrypt</a> (<a class="el" href="../../d8/dfa/a00121.html">Board</a> board)</td></tr>
 <tr class="separator:a4332c194e4f43bd266a62412895cbf3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8e5f76394eb3f5f81cea15eb87ec3cf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3f/a00173.html#ae8e5f76394eb3f5f81cea15eb87ec3cf">Decrypt</a> (<a class="el" href="../../da/ddb/a00145.html">PieceManager</a> pieceManager, <a class="el" href="../../d8/dfa/a00121.html">Board</a> board, string fenCode)</td></tr>
-<tr class="memdesc:ae8e5f76394eb3f5f81cea15eb87ec3cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decodes a FEN-encoded board and places the pieces on the board and in <code>PiecesDictionary</code>  <a href="../../d7/d3f/a00173.html#ae8e5f76394eb3f5f81cea15eb87ec3cf">More...</a><br /></td></tr>
 <tr class="separator:ae8e5f76394eb3f5f81cea15eb87ec3cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../da/d45/a00011_source.html#l00010">10</a> of file <a class="el" href="../../da/d45/a00011_source.html">FenEncryption.cs</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae8e5f76394eb3f5f81cea15eb87ec3cf" name="ae8e5f76394eb3f5f81cea15eb87ec3cf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae8e5f76394eb3f5f81cea15eb87ec3cf">&#9670;&nbsp;</a></span>Decrypt()</h2>
 
@@ -138,9 +134,18 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <p >This is a valid FEN code: mmmm/mmmm/4/4/4/4/MMMM/MMMM </p>
+<p >Your code should throw exceptions if the code cannot be decrypted </p><dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentException</td><td>"Invalid board size" </td></tr>
+    <tr><td class="paramname">ArgumentException</td><td>"Wrong number of pieces in a single row" </td></tr>
+    <tr><td class="paramname">ArgumentException</td><td>"Invalid empty space amount" </td></tr>
+    <tr><td class="paramname">ArgumentException</td><td>"Invalid character" </td></tr>
+  </table>
+  </dd>
+</dl>
 <p >The FEN notation and our array notation are inversed. It's up to you to find a way to coincide both notations Indeed FEN starts at the lower left, left to right, bottom up While <code>Cells</code> starts at the upper left, left to right, top down </p>
 
-<p class="definition">Definition at line <a class="el" href="../../da/d45/a00011_source.html#l00030">30</a> of file <a class="el" href="../../da/d45/a00011_source.html">FenEncryption.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/de7/a00014_source.html#l00043">43</a> of file <a class="el" href="../../d2/de7/a00014_source.html">FenEncryption.cs</a>.</p>
 
 </div>
 </div>
@@ -168,7 +173,16 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d45/a00011_source.html#l00013">13</a> of file <a class="el" href="../../da/d45/a00011_source.html">FenEncryption.cs</a>.</p>
+<p>Encodes a board in its FEN notation </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">board</td><td>Board on which to place the newly created pieces </td></tr>
+  </table>
+  </dd>
+</dl>
+<p >The FEN notation and our array notation are inversed. It's up to you to find a way to coincide both notations Indeed FEN starts at the lower left, left to right, bottom up While <code>Cells</code> starts at the upper left, left to right, top down </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/de7/a00014_source.html#l00021">21</a> of file <a class="el" href="../../d2/de7/a00014_source.html">FenEncryption.cs</a>.</p>
 
 </div>
 </div>

@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['key_0',['Key',['../db/d44/a00162.html#a715322d0227ad792ec6957aaa3651906',1,'SherlocksGambit::Utils::Bonuses::TranspositionTable::Entry']]],
-  ['kill_1',['Kill',['../d6/db3/a00130.html#adb5b222c40806dc86e78c37f62f7c9f2',1,'SherlocksGambit::Game::Pieces::BasePiece']]],
-  ['king_2',['King',['../de/d76/a00134.html#a4fcdeda661652320eba87ff34d4b1a43',1,'SherlocksGambit.Game.Pieces.King.King()'],['../de/d76/a00134.html',1,'SherlocksGambit.Game.Pieces.King']]],
-  ['king_2ecs_3',['King.cs',['../d3/d8b/a00059.html',1,'']]]
+  ['id_0',['Id',['../d0/d48/a00165.html#adad341bf834b13dc74be17ce8e9d2055',1,'SherlocksGambit.Utils.Bonuses.TranspositionTable.Entry.Id()'],['../da/deb/a00189.html#aec97002d29a33aaf76f158bc71454618',1,'SherlocksGambit.Utils.Runners.DotTree.DotNode.Id()']]],
+  ['index_1',['Index',['../d6/d7d/a00161.html#affd6bbb3aeb228f15b63b9f2fc151222',1,'SherlocksGambit::Utils::Bonuses::TranspositionTable']]],
+  ['iseog_2',['IsEoG',['../dd/d42/a00109.html#aeaf175c3b17c1c51eb382ee01521e9ea',1,'SherlocksGambit::AI::AiBase']]],
+  ['isonkingsrow_3',['IsOnKingsRow',['../de/df3/a00185.html#a9517b26ac0a0a34784b3afef17b25431',1,'SherlocksGambit::Utils::Helpers::DirectionHelper']]]
 ];
