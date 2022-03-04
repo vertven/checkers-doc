@@ -147,7 +147,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d24/a00068_source.html#l00016">16</a> of file <a class="el" href="../../da/d24/a00068_source.html">MiniMax.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/d24/a00068_source.html#l00015">15</a> of file <a class="el" href="../../da/d24/a00068_source.html">MiniMax.cs</a>.</p>
 
 </div>
 </div>
@@ -216,9 +216,25 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Generates a move </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">currBoard</td><td>Current Board on which to perform the search </td></tr>
+    <tr><td class="paramname">currDepth</td><td>Current depth of the search </td></tr>
+    <tr><td class="paramname">minimize</td><td>Indicate whether you are trying to minimize or maximize the heuristic </td></tr>
+    <tr><td class="paramname">alpha</td><td>[Optional, default = Min] Current Alpha of the search </td></tr>
+    <tr><td class="paramname">beta</td><td>[Optional, default = Maz] Current Beta of the search </td></tr>
+    <tr><td class="paramname">root</td><td>[Optional, default = null] Used for dot printing, current node of the tree </td></tr>
+    <tr><td class="paramname">quietMode</td><td>[Optional, default = false] Indicate if you are in a Quiescence search </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A tuple with the as key the heuristic returned from the search and as value the PathObject which yields this heuristic </dd></dl>
+<p >You are alternating the search's PlayerColor depending on <code>minimize</code>. Consider using <code>GetOpponentColor()</code> Start by implementing the version without Alpha-Beta pruning. Adding this optimisation will be easier on code that already works! To call the heuristic function use Func.Invoke(). This should only be called when max depth has been reach! As a reminder, max depth 0 should not return any move We are showing you how to implement the DotVisualizer. Refer to the subject to add this tool to this function Friendly reminder to no confuse board notation with array notation! Do not forget to copy the Board (if you are not doing the RevertMove bonus) because such Boards would be passed as reference (which would, this node's children, change the current Board) You should update the <a class="el" href="../../d9/dec/a00090.html">AI</a>'s <code>ExploredPath</code> stat in here The <a class="el" href="../../d9/d4b/a00117.html">MiniMax</a> algorithm is by definition recursive! [BONUS] It is in this function that you are expected to implement the Quiescence Search, TranspositionTable, MoveOrdering, MoveHistory and RevertMove </p>
+
 <p>Implements <a class="el" href="../../dd/d42/a00109.html#a2170682cc320de1ef6d8eef4b98eb7cc">SherlocksGambit.AI.AiBase</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../da/d24/a00068_source.html#l00021">21</a> of file <a class="el" href="../../da/d24/a00068_source.html">MiniMax.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/d24/a00068_source.html#l00050">50</a> of file <a class="el" href="../../da/d24/a00068_source.html">MiniMax.cs</a>.</p>
 
 </div>
 </div>

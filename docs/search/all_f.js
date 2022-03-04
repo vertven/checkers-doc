@@ -12,10 +12,11 @@ var searchData=
   ['playercolor_9',['PlayerColor',['../d9/df8/a00096.html#ad3875305e47f14266c1e80da9b33304b',1,'SherlocksGambit::Utils::Helpers']]],
   ['players_10',['Players',['../de/db1/a00197.html#a37aedadcf9b616eb0ac80999d1d2dddd',1,'SherlocksGambit::Utils::Runners::Runner']]],
   ['positions_11',['Positions',['../d8/dfa/a00121.html#a0b48e4c83f750807df609617e45a8806',1,'SherlocksGambit::Game::Board']]],
-  ['positionweightedheuristics_12',['PositionWeightedHeuristics',['../d3/d00/a00113.html#a7b8baa81195c2466129817d8a50d8348',1,'SherlocksGambit::AI::Heuristic']]],
-  ['print_13',['Print',['../de/db1/a00197.html#a745491752819c3d5e3dca939f36b8580',1,'SherlocksGambit.Utils.Runners.Runner.Print()'],['../d8/dfa/a00121.html#a1d31da60557efeb7337004a6714ee1c0',1,'SherlocksGambit.Game.Board.Print()']]],
-  ['prng_14',['Prng',['../de/d53/a00169.html#a6f59199e869ed4e404b7c323a81ce14c',1,'SherlocksGambit::Utils::Bonuses::ZobristHashing']]],
-  ['program_15',['Program',['../da/d1e/a00149.html',1,'SherlocksGambit']]],
-  ['program_2ecs_16',['Program.cs',['../d1/d09/a00077.html',1,'']]],
-  ['promotepiece_17',['PromotePiece',['../da/ddb/a00145.html#a24cab030dbdf7d79dcdd065ab653e644',1,'SherlocksGambit::Game::Pieces::PieceManager']]]
+  ['positionsweights_12',['PositionsWeights',['../d3/d00/a00113.html#af99c096aa075d8fe42601043a26323a8',1,'SherlocksGambit::AI::Heuristic']]],
+  ['positionweightedheuristics_13',['PositionWeightedHeuristics',['../d3/d00/a00113.html#a7b8baa81195c2466129817d8a50d8348',1,'SherlocksGambit::AI::Heuristic']]],
+  ['print_14',['Print',['../de/db1/a00197.html#a745491752819c3d5e3dca939f36b8580',1,'SherlocksGambit.Utils.Runners.Runner.Print()'],['../d8/dfa/a00121.html#a1d31da60557efeb7337004a6714ee1c0',1,'SherlocksGambit.Game.Board.Print()']]],
+  ['prng_15',['Prng',['../de/d53/a00169.html#a6f59199e869ed4e404b7c323a81ce14c',1,'SherlocksGambit::Utils::Bonuses::ZobristHashing']]],
+  ['program_16',['Program',['../da/d1e/a00149.html',1,'SherlocksGambit']]],
+  ['program_2ecs_17',['Program.cs',['../d1/d09/a00077.html',1,'']]],
+  ['promotepiece_18',['PromotePiece',['../da/ddb/a00145.html#a24cab030dbdf7d79dcdd065ab653e644',1,'SherlocksGambit::Game::Pieces::PieceManager']]]
 ];

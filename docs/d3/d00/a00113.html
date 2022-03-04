@@ -70,12 +70,18 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="../../d4/d81/a00110.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">SherlocksGambit.AI.Heuristic Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:af99c096aa075d8fe42601043a26323a8"><td class="memItemLeft" align="right" valign="top">static readonly double[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d00/a00113.html#af99c096aa075d8fe42601043a26323a8">PositionsWeights</a></td></tr>
+<tr class="separator:af99c096aa075d8fe42601043a26323a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a7ceeaf2977f032aa5f7db91834e7378c"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d00/a00113.html#a7ceeaf2977f032aa5f7db91834e7378c">SimpleHeuristic</a> (<a class="el" href="../../d8/dfa/a00121.html">Board</a> board, <a class="el" href="../../d9/df8/a00096.html#ad3875305e47f14266c1e80da9b33304b">PlayerColor</a> currPlayer)</td></tr>
@@ -87,6 +93,44 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a7b8baa81195c2466129817d8a50d8348"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d00/a00113.html#a7b8baa81195c2466129817d8a50d8348">PositionWeightedHeuristics</a> (<a class="el" href="../../d8/dfa/a00121.html">Board</a> board, <a class="el" href="../../d9/df8/a00096.html#ad3875305e47f14266c1e80da9b33304b">PlayerColor</a> currPlayer)</td></tr>
 <tr class="separator:a7b8baa81195c2466129817d8a50d8348"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="af99c096aa075d8fe42601043a26323a8" name="af99c096aa075d8fe42601043a26323a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af99c096aa075d8fe42601043a26323a8">&#9670;&nbsp;</a></span>PositionsWeights</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly double [] SherlocksGambit.AI.Heuristic.PositionsWeights</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">            2, 2, 2, 2,</div>
+<div class="line">            1, 1, 1, 1.5,</div>
+<div class="line">            1.5, 1, 1, 1,</div>
+<div class="line">            1, 1.25, 1.25, 1.5,</div>
+<div class="line">            1.5, 1.25, 1.25, 1,</div>
+<div class="line">            1, 1, 1, 1.5,</div>
+<div class="line">            1.5, 1, 1, 1,</div>
+<div class="line">            2, 2, 2, 2,</div>
+<div class="line">        }</div>
+</div><!-- fragment -->
+<p>This defines how advantageous a position is over the others </p>
+<p >You are allowed to tweak it its values as you deem fit </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d89/a00071_source.html#l00015">15</a> of file <a class="el" href="../../d0/d89/a00071_source.html">Heuristic.cs</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a66b9213ff906dca02f68333de9ce6200" name="a66b9213ff906dca02f68333de9ce6200"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a66b9213ff906dca02f68333de9ce6200">&#9670;&nbsp;</a></span>ComputeHeuristic()</h2>
@@ -122,7 +166,18 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d89/a00071_source.html#l00018">18</a> of file <a class="el" href="../../d0/d89/a00071_source.html">Heuristic.cs</a>.</p>
+<p><a class="el" href="../../d3/d00/a00113.html">Heuristic</a> where Kings are valued twice as much as Men </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">board</td><td>Board on which to calculate the heuristic </td></tr>
+    <tr><td class="paramname">currPlayer</td><td>Player for which the heuristic is calculated </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The sum of all the pieces on the board </dd></dl>
+<p >In order to calculate the heuristic in regards to one player, such player should have its pieces' value be positive while the opponent should have theirs be negative The rule "Kings are valued twice as Men" stands for both parties, whether the final value is negative or positive </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d89/a00071_source.html#l00053">53</a> of file <a class="el" href="../../d0/d89/a00071_source.html">Heuristic.cs</a>.</p>
 
 </div>
 </div>
@@ -160,7 +215,18 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d89/a00071_source.html#l00030">30</a> of file <a class="el" href="../../d0/d89/a00071_source.html">Heuristic.cs</a>.</p>
+<p><a class="el" href="../../d3/d00/a00113.html">Heuristic</a> where kings are valued twice as much as men and where their positions on the board matter </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">board</td><td>Board on which to calculate the heuristic </td></tr>
+    <tr><td class="paramname">currPlayer</td><td>Player for which the heuristic is calculated </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The sum of all the pieces on the board </dd></dl>
+<p >In order to calculate the heuristic in regards to one player, such player should have its pieces' value be positive while the opponent should have theirs be negative The rule "Kings are valued twice as Men" stands for both parties, whether the final value is negative or positive When using the provided double array, do not forget to convert positions in board notation to positions in array notation! Indeed, the position of the piece is directly linked to the weight of that position's index </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d89/a00071_source.html#l00088">88</a> of file <a class="el" href="../../d0/d89/a00071_source.html">Heuristic.cs</a>.</p>
 
 </div>
 </div>
@@ -198,7 +264,18 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d89/a00071_source.html#l00024">24</a> of file <a class="el" href="../../d0/d89/a00071_source.html">Heuristic.cs</a>.</p>
+<p><a class="el" href="../../d3/d00/a00113.html">Heuristic</a> which returns a random evaluation of the board </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">board</td><td>Board on which to calculate the heuristic </td></tr>
+    <tr><td class="paramname">currPlayer</td><td>Player for which the heuristic is calculated </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A random double between -1 and 1 </dd></dl>
+<p >You are allowed to widen the range of the randomness HOWEVER it must be centered on 0. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d89/a00071_source.html#l00067">67</a> of file <a class="el" href="../../d0/d89/a00071_source.html">Heuristic.cs</a>.</p>
 
 </div>
 </div>
@@ -236,7 +313,18 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d89/a00071_source.html#l00012">12</a> of file <a class="el" href="../../d0/d89/a00071_source.html">Heuristic.cs</a>.</p>
+<p><a class="el" href="../../d3/d00/a00113.html">Heuristic</a> where Kings are as valuable as Men </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">board</td><td>Board on which to calculate the heuristic </td></tr>
+    <tr><td class="paramname">currPlayer</td><td>Player for which the heuristic is calculated </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The sum of all the pieces on the board </dd></dl>
+<p >In order to calculate the heuristic in regards to one player, such player should have its pieces' value be positive while the opponent should have theirs be negative </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d89/a00071_source.html#l00036">36</a> of file <a class="el" href="../../d0/d89/a00071_source.html">Heuristic.cs</a>.</p>
 
 </div>
 </div>

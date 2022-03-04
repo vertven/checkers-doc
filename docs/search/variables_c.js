@@ -6,6 +6,7 @@ var searchData=
   ['piecesarray_3',['PiecesArray',['../de/d53/a00169.html#abce5f292ef6ee9b5f2f6748ff5de16cb',1,'SherlocksGambit::Utils::Bonuses::ZobristHashing']]],
   ['piecesdictionary_4',['PiecesDictionary',['../da/ddb/a00145.html#aa39a2f1b204354233ac5b23fa8553ff9',1,'SherlocksGambit::Game::Pieces::PieceManager']]],
   ['players_5',['Players',['../de/db1/a00197.html#a37aedadcf9b616eb0ac80999d1d2dddd',1,'SherlocksGambit::Utils::Runners::Runner']]],
-  ['print_6',['Print',['../de/db1/a00197.html#a745491752819c3d5e3dca939f36b8580',1,'SherlocksGambit::Utils::Runners::Runner']]],
-  ['prng_7',['Prng',['../de/d53/a00169.html#a6f59199e869ed4e404b7c323a81ce14c',1,'SherlocksGambit::Utils::Bonuses::ZobristHashing']]]
+  ['positionsweights_6',['PositionsWeights',['../d3/d00/a00113.html#af99c096aa075d8fe42601043a26323a8',1,'SherlocksGambit::AI::Heuristic']]],
+  ['print_7',['Print',['../de/db1/a00197.html#a745491752819c3d5e3dca939f36b8580',1,'SherlocksGambit::Utils::Runners::Runner']]],
+  ['prng_8',['Prng',['../de/d53/a00169.html#a6f59199e869ed4e404b7c323a81ce14c',1,'SherlocksGambit::Utils::Bonuses::ZobristHashing']]]
 ];
