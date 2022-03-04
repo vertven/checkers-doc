@@ -1,19 +1,19 @@
 var searchData=
 [
-  ['calculatezobristkey_0',['CalculateZobristKey',['../de/d53/a00169.html#a8ed0b86aa2d9a72e568d5d13999ecb33',1,'SherlocksGambit::Utils::Bonuses::ZobristHashing']]],
-  ['capturemultiplier_1',['CaptureMultiplier',['../d1/db7/a00157.html#a01e456b5aeee6f54634cb6432dd481b2',1,'SherlocksGambit::Utils::Bonuses::MoveOrdering']]],
-  ['cell_2',['Cell',['../dc/dfe/a00125.html#afe96d3bf7070bc4f2afd04ce7efcbfeb',1,'SherlocksGambit.Game.Cell.Cell()'],['../dc/dfe/a00125.html',1,'SherlocksGambit.Game.Cell']]],
+  ['calculatezobristkey_0',['CalculateZobristKey',['../de/d38/a00160.html#a8ed0b86aa2d9a72e568d5d13999ecb33',1,'SherlocksGambit::Utils::Bonuses::ZobristHashing']]],
+  ['capturemultiplier_1',['CaptureMultiplier',['../db/d48/a00148.html#a01e456b5aeee6f54634cb6432dd481b2',1,'SherlocksGambit::Utils::Bonuses::MoveOrdering']]],
+  ['cell_2',['Cell',['../d4/d3e/a00116.html#afe96d3bf7070bc4f2afd04ce7efcbfeb',1,'SherlocksGambit.Game.Cell.Cell()'],['../d4/d3e/a00116.html',1,'SherlocksGambit.Game.Cell']]],
   ['cell_2ecs_3',['Cell.cs',['../d5/df9/a00044.html',1,'']]],
-  ['cellstate_4',['CellState',['../dc/dfe/a00125.html#a535259f57a1fe0636a4915056c5076d2',1,'SherlocksGambit::Game::Cell']]],
-  ['checkcouldhavecaptured_5',['CheckCouldHaveCaptured',['../d0/de8/a00133.html#a094878e4798beb653731208cb61d0d07',1,'SherlocksGambit::Game::Pieces::BasePiece']]],
-  ['checkpathing_6',['CheckPathing',['../d0/de8/a00133.html#a2ce2fa2d129b5047beb3bb16be1ee233',1,'SherlocksGambit::Game::Pieces::BasePiece']]],
-  ['color_7',['Color',['../dd/d42/a00109.html#a8d885fd293d2b41f96a11442558e1318',1,'SherlocksGambit.AI.AiBase.Color()'],['../d0/de8/a00133.html#aa1d5968fa10b2432f4b0cecc63490277',1,'SherlocksGambit.Game.Pieces.BasePiece.Color()'],['../da/d01/a00153.html#a11eaa4b0402d02143f46c86e85e192cb',1,'SherlocksGambit.Utils.AiProperties.Color()']]],
-  ['colorhelper_8',['ColorHelper',['../d8/d64/a00181.html',1,'SherlocksGambit::Utils::Helpers']]],
+  ['cellstate_4',['CellState',['../d4/d3e/a00116.html#a535259f57a1fe0636a4915056c5076d2',1,'SherlocksGambit::Game::Cell']]],
+  ['checkcouldhavecaptured_5',['CheckCouldHaveCaptured',['../da/d72/a00124.html#a094878e4798beb653731208cb61d0d07',1,'SherlocksGambit::Game::Pieces::BasePiece']]],
+  ['checkpathing_6',['CheckPathing',['../da/d72/a00124.html#a2ce2fa2d129b5047beb3bb16be1ee233',1,'SherlocksGambit::Game::Pieces::BasePiece']]],
+  ['color_7',['Color',['../d0/d61/a00100.html#a8d885fd293d2b41f96a11442558e1318',1,'SherlocksGambit.AI.AiBase.Color()'],['../da/d72/a00124.html#aa1d5968fa10b2432f4b0cecc63490277',1,'SherlocksGambit.Game.Pieces.BasePiece.Color()'],['../d5/da7/a00144.html#a11eaa4b0402d02143f46c86e85e192cb',1,'SherlocksGambit.Utils.AiProperties.Color()']]],
+  ['colorhelper_8',['ColorHelper',['../d6/dfb/a00172.html',1,'SherlocksGambit::Utils::Helpers']]],
   ['colorhelper_2ecs_9',['ColorHelper.cs',['../d8/d41/a00038.html',1,'']]],
-  ['computeheuristic_10',['ComputeHeuristic',['../d3/d00/a00113.html#a66b9213ff906dca02f68333de9ce6200',1,'SherlocksGambit::AI::Heuristic']]],
-  ['constructwithhistory_11',['ConstructWithHistory',['../d8/dfa/a00121.html#a61fb2c5b6805315a788bbf65e0da88eb',1,'SherlocksGambit::Game::Board']]],
-  ['copy_12',['Copy',['../d8/dfa/a00121.html#ad6da321cc1dfacd2ac3bfbbe3b7af939',1,'SherlocksGambit.Game.Board.Copy()'],['../d0/de8/a00133.html#a0e81d92f1a2077104eba27df26492298',1,'SherlocksGambit.Game.Pieces.BasePiece.Copy()'],['../d2/df5/a00137.html#acd10b810473caba133a201289c77ab5f',1,'SherlocksGambit.Game.Pieces.King.Copy()'],['../d5/d4e/a00141.html#a4734843b6a073bd083cb478cbcfae33c',1,'SherlocksGambit.Game.Pieces.Man.Copy()']]],
-  ['createcellpath_13',['CreateCellPath',['../d0/de8/a00133.html#a44b75eb2d9896776776f77785b296df2',1,'SherlocksGambit::Game::Pieces::BasePiece']]],
-  ['currentcell_14',['CurrentCell',['../d0/de8/a00133.html#a4794d925c84d4a584b52c12f90ecc012',1,'SherlocksGambit::Game::Pieces::BasePiece']]],
-  ['currentpiece_15',['CurrentPiece',['../dc/dfe/a00125.html#ad53e986eec0fa7d30e47aae72ce30bff',1,'SherlocksGambit::Game::Cell']]]
+  ['computeheuristic_10',['ComputeHeuristic',['../d0/dc2/a00104.html#a66b9213ff906dca02f68333de9ce6200',1,'SherlocksGambit::AI::Heuristic']]],
+  ['constructwithhistory_11',['ConstructWithHistory',['../db/d57/a00112.html#a61fb2c5b6805315a788bbf65e0da88eb',1,'SherlocksGambit::Game::Board']]],
+  ['copy_12',['Copy',['../db/d57/a00112.html#ad6da321cc1dfacd2ac3bfbbe3b7af939',1,'SherlocksGambit.Game.Board.Copy()'],['../da/d72/a00124.html#a0e81d92f1a2077104eba27df26492298',1,'SherlocksGambit.Game.Pieces.BasePiece.Copy()'],['../d1/d88/a00128.html#acd10b810473caba133a201289c77ab5f',1,'SherlocksGambit.Game.Pieces.King.Copy()'],['../d5/deb/a00132.html#a4734843b6a073bd083cb478cbcfae33c',1,'SherlocksGambit.Game.Pieces.Man.Copy()']]],
+  ['createcellpath_13',['CreateCellPath',['../da/d72/a00124.html#a44b75eb2d9896776776f77785b296df2',1,'SherlocksGambit::Game::Pieces::BasePiece']]],
+  ['currentcell_14',['CurrentCell',['../da/d72/a00124.html#a4794d925c84d4a584b52c12f90ecc012',1,'SherlocksGambit::Game::Pieces::BasePiece']]],
+  ['currentpiece_15',['CurrentPiece',['../d4/d3e/a00116.html#ad53e986eec0fa7d30e47aae72ce30bff',1,'SherlocksGambit::Game::Cell']]]
 ];

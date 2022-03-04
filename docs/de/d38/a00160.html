@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Sherlock&#39;s Gambit: Member List</title>
+<title>Sherlock&#39;s Gambit: SherlocksGambit.Utils.Bonuses.ZobristHashing Class Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -65,19 +65,282 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="../../d9/d77/a00095.html">SherlocksGambit</a></li><li class="navelem"><a class="el" href="../../da/d74/a00099.html">Utils</a></li><li class="navelem"><a class="el" href="../../d0/d61/a00100.html">Bonuses</a></li><li class="navelem"><a class="el" href="../../dd/dae/a00163.html">MoveOrdering</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../da/dec/a00080.html">SherlocksGambit</a></li><li class="navelem"><a class="el" href="../../df/d5d/a00084.html">Utils</a></li><li class="navelem"><a class="el" href="../../df/d13/a00085.html">Bonuses</a></li><li class="navelem"><a class="el" href="../../de/d38/a00160.html">ZobristHashing</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
-  <div class="headertitle"><div class="title">SherlocksGambit.Utils.Bonuses.MoveOrdering Member List</div></div>
+  <div class="summary">
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="../../d1/db7/a00157.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">SherlocksGambit.Utils.Bonuses.ZobristHashing Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a99cbac46f7e12b8c79b47e5bc0ac6564"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d38/a00160.html#a99cbac46f7e12b8c79b47e5bc0ac6564">Seed</a> = 14102001</td></tr>
+<tr class="separator:a99cbac46f7e12b8c79b47e5bc0ac6564"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f59199e869ed4e404b7c323a81ce14c"><td class="memItemLeft" align="right" valign="top">static readonly Random&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d38/a00160.html#a6f59199e869ed4e404b7c323a81ce14c">Prng</a> = new(<a class="el" href="../../de/d38/a00160.html#a99cbac46f7e12b8c79b47e5bc0ac6564">Seed</a>)</td></tr>
+<tr class="separator:a6f59199e869ed4e404b7c323a81ce14c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7158f0ad876463f50f8ed2f001229f38"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d38/a00160.html#a7158f0ad876463f50f8ed2f001229f38">SourceFile</a> = &quot;randNum.txt&quot;</td></tr>
+<tr class="separator:a7158f0ad876463f50f8ed2f001229f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abce5f292ef6ee9b5f2f6748ff5de16cb"><td class="memItemLeft" align="right" valign="top">static readonly uint[,,]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d38/a00160.html#abce5f292ef6ee9b5f2f6748ff5de16cb">PiecesArray</a> = new uint[2, 2, Board.NbPositions]</td></tr>
+<tr class="separator:abce5f292ef6ee9b5f2f6748ff5de16cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a8ed0b86aa2d9a72e568d5d13999ecb33"><td class="memItemLeft" align="right" valign="top">static uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d38/a00160.html#a8ed0b86aa2d9a72e568d5d13999ecb33">CalculateZobristKey</a> (<a class="el" href="../../db/d57/a00112.html">Board</a> board)</td></tr>
+<tr class="separator:a8ed0b86aa2d9a72e568d5d13999ecb33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a9aed8fda889cbf74d2dc85830758494b"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d38/a00160.html#a9aed8fda889cbf74d2dc85830758494b">ZobristHashing</a> ()</td></tr>
+<tr class="separator:a9aed8fda889cbf74d2dc85830758494b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8abe1db98a58601796adf59b217e3bd5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d38/a00160.html#a8abe1db98a58601796adf59b217e3bd5">WriteRandNum</a> ()</td></tr>
+<tr class="separator:a8abe1db98a58601796adf59b217e3bd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1af2d2647e146d24eee4c4e8b69f416b"><td class="memItemLeft" align="right" valign="top">static uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d38/a00160.html#a1af2d2647e146d24eee4c4e8b69f416b">RandUInt32BitNum</a> ()</td></tr>
+<tr class="separator:a1af2d2647e146d24eee4c4e8b69f416b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1946a1cc719cd6f3872cb5bfb55415a"><td class="memItemLeft" align="right" valign="top">static Queue&lt; uint &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d38/a00160.html#ad1946a1cc719cd6f3872cb5bfb55415a">ReadRandNum</a> ()</td></tr>
+<tr class="separator:ad1946a1cc719cd6f3872cb5bfb55415a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="abce5f292ef6ee9b5f2f6748ff5de16cb" name="abce5f292ef6ee9b5f2f6748ff5de16cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abce5f292ef6ee9b5f2f6748ff5de16cb">&#9670;&nbsp;</a></span>PiecesArray</h2>
 
-<p>This is the complete list of members for <a class="el" href="../../dd/dae/a00163.html">SherlocksGambit.Utils.Bonuses.MoveOrdering</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="../../dd/dae/a00163.html#ae979424dd081d7b88a906b3237a4bc22">MoveOrdering</a>(TranspositionTable transpositionTable)</td><td class="entry"><a class="el" href="../../dd/dae/a00163.html">SherlocksGambit.Utils.Bonuses.MoveOrdering</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="../../dd/dae/a00163.html#ac5671d32f079af534110a5c07d0a795c">OrderMoves</a>(Board board, List&lt; PathObject &gt; moves, bool useTransposition)</td><td class="entry"><a class="el" href="../../dd/dae/a00163.html">SherlocksGambit.Utils.Bonuses.MoveOrdering</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly uint [,,] SherlocksGambit.Utils.Bonuses.ZobristHashing.PiecesArray = new uint[2, 2, Board.NbPositions]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d87/a00032_source.html#l00021">21</a> of file <a class="el" href="../../dc/d87/a00032_source.html">ZobristHashing.cs</a>.</p>
+
+</div>
+</div>
+<a id="a6f59199e869ed4e404b7c323a81ce14c" name="a6f59199e869ed4e404b7c323a81ce14c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f59199e869ed4e404b7c323a81ce14c">&#9670;&nbsp;</a></span>Prng</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly Random SherlocksGambit.Utils.Bonuses.ZobristHashing.Prng = new(<a class="el" href="../../de/d38/a00160.html#a99cbac46f7e12b8c79b47e5bc0ac6564">Seed</a>)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d87/a00032_source.html#l00014">14</a> of file <a class="el" href="../../dc/d87/a00032_source.html">ZobristHashing.cs</a>.</p>
+
+</div>
+</div>
+<a id="a99cbac46f7e12b8c79b47e5bc0ac6564" name="a99cbac46f7e12b8c79b47e5bc0ac6564"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99cbac46f7e12b8c79b47e5bc0ac6564">&#9670;&nbsp;</a></span>Seed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int SherlocksGambit.Utils.Bonuses.ZobristHashing.Seed = 14102001</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d87/a00032_source.html#l00013">13</a> of file <a class="el" href="../../dc/d87/a00032_source.html">ZobristHashing.cs</a>.</p>
+
+</div>
+</div>
+<a id="a7158f0ad876463f50f8ed2f001229f38" name="a7158f0ad876463f50f8ed2f001229f38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7158f0ad876463f50f8ed2f001229f38">&#9670;&nbsp;</a></span>SourceFile</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string SherlocksGambit.Utils.Bonuses.ZobristHashing.SourceFile = &quot;randNum.txt&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d87/a00032_source.html#l00018">18</a> of file <a class="el" href="../../dc/d87/a00032_source.html">ZobristHashing.cs</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a9aed8fda889cbf74d2dc85830758494b" name="a9aed8fda889cbf74d2dc85830758494b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9aed8fda889cbf74d2dc85830758494b">&#9670;&nbsp;</a></span>ZobristHashing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static SherlocksGambit.Utils.Bonuses.ZobristHashing.ZobristHashing </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d87/a00032_source.html#l00024">24</a> of file <a class="el" href="../../dc/d87/a00032_source.html">ZobristHashing.cs</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a8ed0b86aa2d9a72e568d5d13999ecb33" name="a8ed0b86aa2d9a72e568d5d13999ecb33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ed0b86aa2d9a72e568d5d13999ecb33">&#9670;&nbsp;</a></span>CalculateZobristKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint SherlocksGambit.Utils.Bonuses.ZobristHashing.CalculateZobristKey </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d57/a00112.html">Board</a>&#160;</td>
+          <td class="paramname"><em>board</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d87/a00032_source.html#l00030">30</a> of file <a class="el" href="../../dc/d87/a00032_source.html">ZobristHashing.cs</a>.</p>
+
+</div>
+</div>
+<a id="a1af2d2647e146d24eee4c4e8b69f416b" name="a1af2d2647e146d24eee4c4e8b69f416b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1af2d2647e146d24eee4c4e8b69f416b">&#9670;&nbsp;</a></span>RandUInt32BitNum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint SherlocksGambit.Utils.Bonuses.ZobristHashing.RandUInt32BitNum </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d87/a00032_source.html#l00044">44</a> of file <a class="el" href="../../dc/d87/a00032_source.html">ZobristHashing.cs</a>.</p>
+
+</div>
+</div>
+<a id="ad1946a1cc719cd6f3872cb5bfb55415a" name="ad1946a1cc719cd6f3872cb5bfb55415a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1946a1cc719cd6f3872cb5bfb55415a">&#9670;&nbsp;</a></span>ReadRandNum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Queue&lt; uint &gt; SherlocksGambit.Utils.Bonuses.ZobristHashing.ReadRandNum </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d87/a00032_source.html#l00051">51</a> of file <a class="el" href="../../dc/d87/a00032_source.html">ZobristHashing.cs</a>.</p>
+
+</div>
+</div>
+<a id="a8abe1db98a58601796adf59b217e3bd5" name="a8abe1db98a58601796adf59b217e3bd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8abe1db98a58601796adf59b217e3bd5">&#9670;&nbsp;</a></span>WriteRandNum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void SherlocksGambit.Utils.Bonuses.ZobristHashing.WriteRandNum </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d87/a00032_source.html#l00036">36</a> of file <a class="el" href="../../dc/d87/a00032_source.html">ZobristHashing.cs</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
