@@ -7,6 +7,5 @@ var searchData=
   ['move_4',['Move',['../dd/da2/a00192.html#aa5f5cb40d86812425963ae4fd76880a8',1,'SherlocksGambit::Utils::Runners::DotTree::DotNode']]],
   ['movecheckerboard_5',['MoveCheckerBoard',['../d1/d72/a00204.html#a32b81455083502af0d6dd08392cf237e',1,'SherlocksGambit::Utils::Runners::Runner']]],
   ['movehistory_6',['MoveHistory',['../da/d72/a00124.html#af08d0f34d1c0fe46dc432c24613b5c13',1,'SherlocksGambit.Game.Board.MoveHistory()'],['../d2/d34/a00156.html#ae1479013a17fc39947c588a5f62a77d4',1,'SherlocksGambit.Utils.AiProperties.MoveHistory()']]],
-  ['movement_7',['Movement',['../d0/d5e/a00136.html#ae37d589bfeff81903b380fea2b34118a',1,'SherlocksGambit::Game::Pieces::BasePiece']]],
-  ['moveordering_8',['MoveOrdering',['../db/d57/a00112.html#ae7fa8c416856911a7894df55fea492f5',1,'SherlocksGambit.AI.AiBase.MoveOrdering()'],['../d2/d34/a00156.html#a3ce098138f0cacfadfc8e5f139b92611',1,'SherlocksGambit.Utils.AiProperties.MoveOrdering()']]]
+  ['moveordering_7',['MoveOrdering',['../db/d57/a00112.html#ae7fa8c416856911a7894df55fea492f5',1,'SherlocksGambit.AI.AiBase.MoveOrdering()'],['../d2/d34/a00156.html#a3ce098138f0cacfadfc8e5f139b92611',1,'SherlocksGambit.Utils.AiProperties.MoveOrdering()']]]
 ];

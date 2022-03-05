@@ -16,7 +16,6 @@ var searchData=
   ['moveencryption_13',['MoveEncryption',['../d0/d81/a00180.html',1,'SherlocksGambit::Utils::Encryption']]],
   ['moveencryption_2ecs_14',['MoveEncryption.cs',['../da/d45/a00011.html',1,'']]],
   ['movehistory_15',['MoveHistory',['../da/d72/a00124.html#af08d0f34d1c0fe46dc432c24613b5c13',1,'SherlocksGambit.Game.Board.MoveHistory()'],['../d2/d34/a00156.html#ae1479013a17fc39947c588a5f62a77d4',1,'SherlocksGambit.Utils.AiProperties.MoveHistory()']]],
-  ['movement_16',['Movement',['../d0/d5e/a00136.html#ae37d589bfeff81903b380fea2b34118a',1,'SherlocksGambit::Game::Pieces::BasePiece']]],
-  ['moveordering_17',['MoveOrdering',['../db/d57/a00112.html#ae7fa8c416856911a7894df55fea492f5',1,'SherlocksGambit.AI.AiBase.MoveOrdering()'],['../d2/d34/a00156.html#a3ce098138f0cacfadfc8e5f139b92611',1,'SherlocksGambit.Utils.AiProperties.MoveOrdering()'],['../de/d38/a00160.html#ae979424dd081d7b88a906b3237a4bc22',1,'SherlocksGambit.Utils.Bonuses.MoveOrdering.MoveOrdering()'],['../de/d38/a00160.html',1,'SherlocksGambit.Utils.Bonuses.MoveOrdering']]],
-  ['moveordering_2ecs_18',['MoveOrdering.cs',['../dc/d87/a00032.html',1,'']]]
+  ['moveordering_16',['MoveOrdering',['../db/d57/a00112.html#ae7fa8c416856911a7894df55fea492f5',1,'SherlocksGambit.AI.AiBase.MoveOrdering()'],['../d2/d34/a00156.html#a3ce098138f0cacfadfc8e5f139b92611',1,'SherlocksGambit.Utils.AiProperties.MoveOrdering()'],['../de/d38/a00160.html#ae979424dd081d7b88a906b3237a4bc22',1,'SherlocksGambit.Utils.Bonuses.MoveOrdering.MoveOrdering()'],['../de/d38/a00160.html',1,'SherlocksGambit.Utils.Bonuses.MoveOrdering']]],
+  ['moveordering_2ecs_17',['MoveOrdering.cs',['../dc/d87/a00032.html',1,'']]]
 ];
