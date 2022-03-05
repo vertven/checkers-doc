@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Sherlock&#39;s Gambit: SherlocksGambit.Game.Board Class Reference</title>
+<title>Sherlock&#39;s Gambit: SherlocksGambit.AI.AiBase Class Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -65,89 +65,77 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="../../da/dec/a00080.html">SherlocksGambit</a></li><li class="navelem"><a class="el" href="../../d4/d63/a00082.html">Game</a></li><li class="navelem"><a class="el" href="../../db/d57/a00112.html">Board</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../d1/dc1/a00092.html">SherlocksGambit</a></li><li class="navelem"><a class="el" href="../../d4/d7d/a00093.html">AI</a></li><li class="navelem"><a class="el" href="../../db/d57/a00112.html">AiBase</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
-<a href="#properties">Properties</a> &#124;
+<a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="../../dd/d42/a00109.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">SherlocksGambit.Game.Board Class Reference</div></div>
+  <div class="headertitle"><div class="title">SherlocksGambit.AI.AiBase Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:ae0d7830d4f603085b293071b77ed0c6e"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d57/a00112.html#ae0d7830d4f603085b293071b77ed0c6e">BoardSize</a> = 8</td></tr>
-<tr class="separator:ae0d7830d4f603085b293071b77ed0c6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22b2783d03cc0be880e07b27e63918f2"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d57/a00112.html#a22b2783d03cc0be880e07b27e63918f2">NbPositions</a> = <a class="el" href="../../db/d57/a00112.html#ae0d7830d4f603085b293071b77ed0c6e">BoardSize</a> * <a class="el" href="../../db/d57/a00112.html#ae0d7830d4f603085b293071b77ed0c6e">BoardSize</a> / 2</td></tr>
-<tr class="separator:a22b2783d03cc0be880e07b27e63918f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1acf71476236148fc1dfd369a2e7a261"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d57/a00112.html#a1acf71476236148fc1dfd369a2e7a261">RowLength</a> = <a class="el" href="../../db/d57/a00112.html#a22b2783d03cc0be880e07b27e63918f2">NbPositions</a> / <a class="el" href="../../db/d57/a00112.html#ae0d7830d4f603085b293071b77ed0c6e">BoardSize</a></td></tr>
-<tr class="separator:a1acf71476236148fc1dfd369a2e7a261"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:af08d0f34d1c0fe46dc432c24613b5c13"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d57/a00112.html#af08d0f34d1c0fe46dc432c24613b5c13">MoveHistory</a> = false</td></tr>
-<tr class="separator:af08d0f34d1c0fe46dc432c24613b5c13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1bcb3fce7e89c71d6ca1de9477e18d34"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="../../d0/d5e/a00136.html">PieceManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d57/a00112.html#a1bcb3fce7e89c71d6ca1de9477e18d34">PieceManager</a></td></tr>
-<tr class="separator:a1bcb3fce7e89c71d6ca1de9477e18d34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cfce12448499838728b08a400c6043f"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="../../da/d72/a00124.html">Board</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d57/a00112.html#a3cfce12448499838728b08a400c6043f">Board</a></td></tr>
+<tr class="separator:a3cfce12448499838728b08a400c6043f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f8e3fcef5485f5d0a4e9953ec3bc9f8"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d57/a00112.html#a7f8e3fcef5485f5d0a4e9953ec3bc9f8">ElapsedTime</a></td></tr>
+<tr class="separator:a7f8e3fcef5485f5d0a4e9953ec3bc9f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac748b7185f026c6e1f67233e63d0990c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d57/a00112.html#ac748b7185f026c6e1f67233e63d0990c">WithHeuristic</a></td></tr>
+<tr class="separator:ac748b7185f026c6e1f67233e63d0990c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d244fcd31f01d857a1d57d9bac774c6"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d57/a00112.html#a1d244fcd31f01d857a1d57d9bac774c6">ExploredPaths</a></td></tr>
+<tr class="separator:a1d244fcd31f01d857a1d57d9bac774c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
-Static Private Attributes</h2></td></tr>
-<tr class="memitem:a3313eee68b1496c8cc0d59dda643d224"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d57/a00112.html#a3313eee68b1496c8cc0d59dda643d224">HistoryLength</a> = 5</td></tr>
-<tr class="separator:a3313eee68b1496c8cc0d59dda643d224"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
+Static Protected Attributes</h2></td></tr>
+<tr class="memitem:acffada0b43901499cc35265d946dc118"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d57/a00112.html#acffada0b43901499cc35265d946dc118">Min</a> = double.NegativeInfinity</td></tr>
+<tr class="separator:acffada0b43901499cc35265d946dc118"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a957533127c351fec843376ae9e8478a5"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d57/a00112.html#a957533127c351fec843376ae9e8478a5">Max</a> = double.PositiveInfinity</td></tr>
+<tr class="separator:a957533127c351fec843376ae9e8478a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a209073fab37bf9b194e29d057ac2724f"><td class="memItemLeft" align="right" valign="top">readonly uint[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d57/a00112.html#a209073fab37bf9b194e29d057ac2724f">_history</a> = new uint[<a class="el" href="../../db/d57/a00112.html#a3313eee68b1496c8cc0d59dda643d224">HistoryLength</a>]</td></tr>
-<tr class="separator:a209073fab37bf9b194e29d057ac2724f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6309cdeb8180ca0b9f9304b5ab840f4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d57/a00112.html#af6309cdeb8180ca0b9f9304b5ab840f4">_historyIndex</a></td></tr>
-<tr class="separator:af6309cdeb8180ca0b9f9304b5ab840f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
-Properties</h2></td></tr>
-<tr class="memitem:a0b48e4c83f750807df609617e45a8806"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d3e/a00116.html">Cell</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d57/a00112.html#a0b48e4c83f750807df609617e45a8806">Positions</a> = new <a class="el" href="../../d4/d3e/a00116.html">Cell</a>[<a class="el" href="../../db/d57/a00112.html#a22b2783d03cc0be880e07b27e63918f2">NbPositions</a>]<code> [get]</code></td></tr>
-<tr class="separator:a0b48e4c83f750807df609617e45a8806"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a62ee592916ef0a4a5dfad125fa084039"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="../../d2/d34/a00156.html">AiProperties</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d57/a00112.html#a62ee592916ef0a4a5dfad125fa084039">AiProperties</a></td></tr>
+<tr class="separator:a62ee592916ef0a4a5dfad125fa084039"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d885fd293d2b41f96a11442558e1318"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="../../da/d74/a00099.html#ad3875305e47f14266c1e80da9b33304b">PlayerColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d57/a00112.html#a8d885fd293d2b41f96a11442558e1318">Color</a></td></tr>
+<tr class="separator:a8d885fd293d2b41f96a11442558e1318"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53214ca6745eb5b8aa56631dfa6bf39f"><td class="memItemLeft" align="right" valign="top">readonly int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d57/a00112.html#a53214ca6745eb5b8aa56631dfa6bf39f">MaxDepth</a></td></tr>
+<tr class="separator:a53214ca6745eb5b8aa56631dfa6bf39f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b53173e6a8384404794b6ead87e7fae"><td class="memItemLeft" align="right" valign="top">readonly Func&lt; <a class="el" href="../../da/d72/a00124.html">Board</a>, <a class="el" href="../../da/d74/a00099.html#ad3875305e47f14266c1e80da9b33304b">PlayerColor</a>, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d57/a00112.html#a3b53173e6a8384404794b6ead87e7fae">HeuristicFunction</a></td></tr>
+<tr class="separator:a3b53173e6a8384404794b6ead87e7fae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a131437162e0b9be4a799d0b38ad774b0"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="../../db/ddf/a00164.html">TranspositionTable</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d57/a00112.html#a131437162e0b9be4a799d0b38ad774b0">TranspositionTable</a></td></tr>
+<tr class="separator:a131437162e0b9be4a799d0b38ad774b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7fa8c416856911a7894df55fea492f5"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="../../de/d38/a00160.html">MoveOrdering</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d57/a00112.html#ae7fa8c416856911a7894df55fea492f5">MoveOrdering</a></td></tr>
+<tr class="separator:ae7fa8c416856911a7894df55fea492f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a50400f633ba8b134fe74e3dd4818dea8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d57/a00112.html#a50400f633ba8b134fe74e3dd4818dea8">RegisterMove</a> ()</td></tr>
-<tr class="separator:a50400f633ba8b134fe74e3dd4818dea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9d63ad8b07b84a58102e70c60b385ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d57/a00112.html#ae9d63ad8b07b84a58102e70c60b385ec">Board</a> (string fenCode=&quot;&quot;)</td></tr>
-<tr class="separator:ae9d63ad8b07b84a58102e70c60b385ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add31a862fcc2c4b7d30a0109010e7d14"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d3e/a00116.html#a535259f57a1fe0636a4915056c5076d2">Cell.CellState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d57/a00112.html#add31a862fcc2c4b7d30a0109010e7d14">GetCellState</a> (int targetPosition, <a class="el" href="../../d1/d1e/a00087.html#ad3875305e47f14266c1e80da9b33304b">PlayerColor</a> color)</td></tr>
-<tr class="separator:add31a862fcc2c4b7d30a0109010e7d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6da321cc1dfacd2ac3bfbbe3b7af939"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d57/a00112.html">Board</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d57/a00112.html#ad6da321cc1dfacd2ac3bfbbe3b7af939">Copy</a> ()</td></tr>
-<tr class="separator:ad6da321cc1dfacd2ac3bfbbe3b7af939"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01233c4a571e4974a8f279f0158dc54e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d57/a00112.html#a01233c4a571e4974a8f279f0158dc54e">HasWon</a> (<a class="el" href="../../d1/d1e/a00087.html#ad3875305e47f14266c1e80da9b33304b">PlayerColor</a> playerColor)</td></tr>
-<tr class="separator:a01233c4a571e4974a8f279f0158dc54e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afaa82e943a3292807a9cb478aaab283b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d57/a00112.html#afaa82e943a3292807a9cb478aaab283b">HasLost</a> (<a class="el" href="../../d1/d1e/a00087.html#ad3875305e47f14266c1e80da9b33304b">PlayerColor</a> playerColor)</td></tr>
-<tr class="separator:afaa82e943a3292807a9cb478aaab283b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d31da60557efeb7337004a6714ee1c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d57/a00112.html#a1d31da60557efeb7337004a6714ee1c0">Print</a> ()</td></tr>
-<tr class="separator:a1d31da60557efeb7337004a6714ee1c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeadb31c30f08364f476924b53f4deeda"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d57/a00112.html#aeadb31c30f08364f476924b53f4deeda">GetThenCreate</a> (string move, <a class="el" href="../../dd/da2/a00192.html">DotNode</a> root=null)</td></tr>
+<tr class="separator:aeadb31c30f08364f476924b53f4deeda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
-Static Private Member Functions</h2></td></tr>
-<tr class="memitem:aad62bb2173dcd16d0d23b432979c7923"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d57/a00112.html#aad62bb2173dcd16d0d23b432979c7923">GenerateStartingFen</a> ()</td></tr>
-<tr class="separator:aad62bb2173dcd16d0d23b432979c7923"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
+Static Protected Member Functions</h2></td></tr>
+<tr class="memitem:a63d55b755735564b8a7f91871f708d79"><td class="memItemLeft" align="right" valign="top">static List&lt; <a class="el" href="../../d5/deb/a00132.html">PathObject</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d57/a00112.html#a63d55b755735564b8a7f91871f708d79">GeneratePaths</a> (<a class="el" href="../../da/d72/a00124.html">Board</a> currBoard, <a class="el" href="../../da/d74/a00099.html#ad3875305e47f14266c1e80da9b33304b">PlayerColor</a> currPlayer, bool enemyFlag=false)</td></tr>
+<tr class="separator:a63d55b755735564b8a7f91871f708d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:ae359d454acfc79cb73a4cc1b65cc58f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d57/a00112.html#ae359d454acfc79cb73a4cc1b65cc58f2">Board</a> (uint[] history, int historyIndex)</td></tr>
-<tr class="separator:ae359d454acfc79cb73a4cc1b65cc58f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61fb2c5b6805315a788bbf65e0da88eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d57/a00112.html">Board</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d57/a00112.html#a61fb2c5b6805315a788bbf65e0da88eb">ConstructWithHistory</a> ()</td></tr>
-<tr class="separator:a61fb2c5b6805315a788bbf65e0da88eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a918b394c2a0e6a53dfe92c6f75607560"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d57/a00112.html#a918b394c2a0e6a53dfe92c6f75607560">AiBase</a> (<a class="el" href="../../d2/d34/a00156.html">AiProperties</a> properties)</td></tr>
+<tr class="separator:a918b394c2a0e6a53dfe92c6f75607560"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaf175c3b17c1c51eb382ee01521e9ea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d57/a00112.html#aeaf175c3b17c1c51eb382ee01521e9ea">IsEoG</a> (<a class="el" href="../../da/d72/a00124.html">Board</a> board)</td></tr>
+<tr class="separator:aeaf175c3b17c1c51eb382ee01521e9ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2170682cc320de1ef6d8eef4b98eb7cc"><td class="memItemLeft" align="right" valign="top">abstract Tuple&lt; double, <a class="el" href="../../d5/deb/a00132.html">PathObject</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d57/a00112.html#a2170682cc320de1ef6d8eef4b98eb7cc">GenerateMove</a> (<a class="el" href="../../da/d72/a00124.html">Board</a> currBoard, int currDepth, bool minimize=false, double alpha=<a class="el" href="../../db/d57/a00112.html#acffada0b43901499cc35265d946dc118">Min</a>, double beta=<a class="el" href="../../db/d57/a00112.html#a957533127c351fec843376ae9e8478a5">Max</a>, <a class="el" href="../../dd/da2/a00192.html">DotNode</a> root=null, bool quietMode=false)</td></tr>
+<tr class="separator:a2170682cc320de1ef6d8eef4b98eb7cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a209073fab37bf9b194e29d057ac2724f" name="a209073fab37bf9b194e29d057ac2724f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a209073fab37bf9b194e29d057ac2724f">&#9670;&nbsp;</a></span>_history</h2>
+<a id="a62ee592916ef0a4a5dfad125fa084039" name="a62ee592916ef0a4a5dfad125fa084039"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62ee592916ef0a4a5dfad125fa084039">&#9670;&nbsp;</a></span>AiProperties</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -156,24 +144,42 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">readonly uint [] SherlocksGambit.Game.Board._history = new uint[<a class="el" href="../../db/d57/a00112.html#a3313eee68b1496c8cc0d59dda643d224">HistoryLength</a>]</td>
+          <td class="memname">readonly <a class="el" href="../../d2/d34/a00156.html">AiProperties</a> SherlocksGambit.AI.AiBase.AiProperties</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p><code>_history</code> hold Zobrist's board notations </p>
+<p><a class="el" href="../../d4/d7d/a00093.html">AI</a>'s properties. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/de1/a00065_source.html#l00018">18</a> of file <a class="el" href="../../de/de1/a00065_source.html">Board(Bonus).cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d09/a00077_source.html#l00024">24</a> of file <a class="el" href="../../d1/d09/a00077_source.html">AiBase.cs</a>.</p>
 
 </div>
 </div>
-<a id="af6309cdeb8180ca0b9f9304b5ab840f4" name="af6309cdeb8180ca0b9f9304b5ab840f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af6309cdeb8180ca0b9f9304b5ab840f4">&#9670;&nbsp;</a></span>_historyIndex</h2>
+<a id="a3cfce12448499838728b08a400c6043f" name="a3cfce12448499838728b08a400c6043f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cfce12448499838728b08a400c6043f">&#9670;&nbsp;</a></span>Board</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly <a class="el" href="../../da/d72/a00124.html">Board</a> SherlocksGambit.AI.AiBase.Board</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reference to the current Board. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d09/a00077_source.html#l00027">27</a> of file <a class="el" href="../../d1/d09/a00077_source.html">AiBase.cs</a>.</p>
+
+</div>
+</div>
+<a id="a8d885fd293d2b41f96a11442558e1318" name="a8d885fd293d2b41f96a11442558e1318"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d885fd293d2b41f96a11442558e1318">&#9670;&nbsp;</a></span>Color</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -182,24 +188,60 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int SherlocksGambit.Game.Board._historyIndex</td>
+          <td class="memname">readonly <a class="el" href="../../da/d74/a00099.html#ad3875305e47f14266c1e80da9b33304b">PlayerColor</a> SherlocksGambit.AI.AiBase.Color</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p><code>_historyIndex</code> is where in <code>_history</code> the board is currently at </p>
+<p>Color of the <a class="el" href="../../d4/d7d/a00093.html">AI</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/de1/a00065_source.html#l00021">21</a> of file <a class="el" href="../../de/de1/a00065_source.html">Board(Bonus).cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d09/a00077_source.html#l00030">30</a> of file <a class="el" href="../../d1/d09/a00077_source.html">AiBase.cs</a>.</p>
 
 </div>
 </div>
-<a id="ae0d7830d4f603085b293071b77ed0c6e" name="ae0d7830d4f603085b293071b77ed0c6e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0d7830d4f603085b293071b77ed0c6e">&#9670;&nbsp;</a></span>BoardSize</h2>
+<a id="a7f8e3fcef5485f5d0a4e9953ec3bc9f8" name="a7f8e3fcef5485f5d0a4e9953ec3bc9f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f8e3fcef5485f5d0a4e9953ec3bc9f8">&#9670;&nbsp;</a></span>ElapsedTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long SherlocksGambit.AI.AiBase.ElapsedTime</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../d4/d7d/a00093.html">AI</a>'s stat for how long it took to generate a move. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d09/a00077_source.html#l00039">39</a> of file <a class="el" href="../../d1/d09/a00077_source.html">AiBase.cs</a>.</p>
+
+</div>
+</div>
+<a id="a1d244fcd31f01d857a1d57d9bac774c6" name="a1d244fcd31f01d857a1d57d9bac774c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d244fcd31f01d857a1d57d9bac774c6">&#9670;&nbsp;</a></span>ExploredPaths</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long SherlocksGambit.AI.AiBase.ExploredPaths</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../d4/d7d/a00093.html">AI</a>'s stat to register how many paths were explored while generating the move. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d09/a00077_source.html#l00045">45</a> of file <a class="el" href="../../d1/d09/a00077_source.html">AiBase.cs</a>.</p>
+
+</div>
+</div>
+<a id="a3b53173e6a8384404794b6ead87e7fae" name="a3b53173e6a8384404794b6ead87e7fae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b53173e6a8384404794b6ead87e7fae">&#9670;&nbsp;</a></span>HeuristicFunction</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -208,24 +250,24 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const int SherlocksGambit.Game.Board.BoardSize = 8</td>
+          <td class="memname">readonly Func&lt;<a class="el" href="../../da/d72/a00124.html">Board</a>, <a class="el" href="../../da/d74/a00099.html#ad3875305e47f14266c1e80da9b33304b">PlayerColor</a>, double&gt; SherlocksGambit.AI.AiBase.HeuristicFunction</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Constant for the size of the square <a class="el" href="../../db/d57/a00112.html">Board</a> (it must be even and greater than 6) </p>
+<p><a class="el" href="../../d4/d3e/a00116.html">Heuristic</a> function to calculate how good a Board is. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d2d/a00047_source.html#l00011">11</a> of file <a class="el" href="../../d6/d2d/a00047_source.html">Board.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d09/a00077_source.html#l00036">36</a> of file <a class="el" href="../../d1/d09/a00077_source.html">AiBase.cs</a>.</p>
 
 </div>
 </div>
-<a id="a3313eee68b1496c8cc0d59dda643d224" name="a3313eee68b1496c8cc0d59dda643d224"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3313eee68b1496c8cc0d59dda643d224">&#9670;&nbsp;</a></span>HistoryLength</h2>
+<a id="a957533127c351fec843376ae9e8478a5" name="a957533127c351fec843376ae9e8478a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a957533127c351fec843376ae9e8478a5">&#9670;&nbsp;</a></span>Max</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -234,42 +276,24 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const int SherlocksGambit.Game.Board.HistoryLength = 5</td>
+          <td class="memname">const double SherlocksGambit.AI.AiBase.Max = double.PositiveInfinity</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p><code>HistoryLength</code> is how many move you want to store in <code>_history</code> </p>
+<p>Constant to indicate a divine Board. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/de1/a00065_source.html#l00015">15</a> of file <a class="el" href="../../de/de1/a00065_source.html">Board(Bonus).cs</a>.</p>
-
-</div>
-</div>
-<a id="af08d0f34d1c0fe46dc432c24613b5c13" name="af08d0f34d1c0fe46dc432c24613b5c13"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af08d0f34d1c0fe46dc432c24613b5c13">&#9670;&nbsp;</a></span>MoveHistory</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool SherlocksGambit.Game.Board.MoveHistory = false</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Boolean indicating whether history is enabled on this board. </p>
-
-<p class="definition">Definition at line <a class="el" href="../../de/de1/a00065_source.html#l00012">12</a> of file <a class="el" href="../../de/de1/a00065_source.html">Board(Bonus).cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d09/a00077_source.html#l00021">21</a> of file <a class="el" href="../../d1/d09/a00077_source.html">AiBase.cs</a>.</p>
 
 </div>
 </div>
-<a id="a22b2783d03cc0be880e07b27e63918f2" name="a22b2783d03cc0be880e07b27e63918f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a22b2783d03cc0be880e07b27e63918f2">&#9670;&nbsp;</a></span>NbPositions</h2>
+<a id="a53214ca6745eb5b8aa56631dfa6bf39f" name="a53214ca6745eb5b8aa56631dfa6bf39f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53214ca6745eb5b8aa56631dfa6bf39f">&#9670;&nbsp;</a></span>MaxDepth</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -278,42 +302,24 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const int SherlocksGambit.Game.Board.NbPositions = <a class="el" href="../../db/d57/a00112.html#ae0d7830d4f603085b293071b77ed0c6e">BoardSize</a> * <a class="el" href="../../db/d57/a00112.html#ae0d7830d4f603085b293071b77ed0c6e">BoardSize</a> / 2</td>
+          <td class="memname">readonly int SherlocksGambit.AI.AiBase.MaxDepth</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Constant for the number of reachable Cells on the <a class="el" href="../../db/d57/a00112.html">Board</a>. </p>
+<p>The <a class="el" href="../../d4/d7d/a00093.html">AI</a>'s maximum depth of search. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d2d/a00047_source.html#l00014">14</a> of file <a class="el" href="../../d6/d2d/a00047_source.html">Board.cs</a>.</p>
-
-</div>
-</div>
-<a id="a1bcb3fce7e89c71d6ca1de9477e18d34" name="a1bcb3fce7e89c71d6ca1de9477e18d34"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1bcb3fce7e89c71d6ca1de9477e18d34">&#9670;&nbsp;</a></span>PieceManager</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">readonly <a class="el" href="../../d0/d5e/a00136.html">PieceManager</a> SherlocksGambit.Game.Board.PieceManager</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Reference to this board's PieceManager. </p>
-
-<p class="definition">Definition at line <a class="el" href="../../d6/d2d/a00047_source.html#l00020">20</a> of file <a class="el" href="../../d6/d2d/a00047_source.html">Board.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d09/a00077_source.html#l00033">33</a> of file <a class="el" href="../../d1/d09/a00077_source.html">AiBase.cs</a>.</p>
 
 </div>
 </div>
-<a id="a1acf71476236148fc1dfd369a2e7a261" name="a1acf71476236148fc1dfd369a2e7a261"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1acf71476236148fc1dfd369a2e7a261">&#9670;&nbsp;</a></span>RowLength</h2>
+<a id="acffada0b43901499cc35265d946dc118" name="acffada0b43901499cc35265d946dc118"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acffada0b43901499cc35265d946dc118">&#9670;&nbsp;</a></span>Min</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -322,25 +328,24 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const int SherlocksGambit.Game.Board.RowLength = <a class="el" href="../../db/d57/a00112.html#a22b2783d03cc0be880e07b27e63918f2">NbPositions</a> / <a class="el" href="../../db/d57/a00112.html#ae0d7830d4f603085b293071b77ed0c6e">BoardSize</a></td>
+          <td class="memname">const double SherlocksGambit.AI.AiBase.Min = double.NegativeInfinity</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Constant for the number of reachable Cells per row. </p>
+<p>Constant to indicate a terrible Board. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d2d/a00047_source.html#l00017">17</a> of file <a class="el" href="../../d6/d2d/a00047_source.html">Board.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d09/a00077_source.html#l00018">18</a> of file <a class="el" href="../../d1/d09/a00077_source.html">AiBase.cs</a>.</p>
 
 </div>
 </div>
-<h2 class="groupheader">Property Documentation</h2>
-<a id="a0b48e4c83f750807df609617e45a8806" name="a0b48e4c83f750807df609617e45a8806"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b48e4c83f750807df609617e45a8806">&#9670;&nbsp;</a></span>Positions</h2>
+<a id="ae7fa8c416856911a7894df55fea492f5" name="ae7fa8c416856911a7894df55fea492f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7fa8c416856911a7894df55fea492f5">&#9670;&nbsp;</a></span>MoveOrdering</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -349,25 +354,69 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d4/d3e/a00116.html">Cell</a> [] SherlocksGambit.Game.Board.Positions = new <a class="el" href="../../d4/d3e/a00116.html">Cell</a>[<a class="el" href="../../db/d57/a00112.html#a22b2783d03cc0be880e07b27e63918f2">NbPositions</a>]</td>
+          <td class="memname">readonly <a class="el" href="../../de/d38/a00160.html">MoveOrdering</a> SherlocksGambit.AI.AiBase.MoveOrdering</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p><code>Positions</code> gathers all the reachable cells and creates a getter </p>
+<p>[BONUS] Reference to the <a class="el" href="../../d4/d7d/a00093.html">AI</a>'s MoveOrdering </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d2d/a00047_source.html#l00023">23</a> of file <a class="el" href="../../d6/d2d/a00047_source.html">Board.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d09/a00077_source.html#l00051">51</a> of file <a class="el" href="../../d1/d09/a00077_source.html">AiBase.cs</a>.</p>
+
+</div>
+</div>
+<a id="a131437162e0b9be4a799d0b38ad774b0" name="a131437162e0b9be4a799d0b38ad774b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a131437162e0b9be4a799d0b38ad774b0">&#9670;&nbsp;</a></span>TranspositionTable</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly <a class="el" href="../../db/ddf/a00164.html">TranspositionTable</a> SherlocksGambit.AI.AiBase.TranspositionTable</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>[BONUS] Reference to the <a class="el" href="../../d4/d7d/a00093.html">AI</a>'s TranspositionTable </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d09/a00077_source.html#l00048">48</a> of file <a class="el" href="../../d1/d09/a00077_source.html">AiBase.cs</a>.</p>
+
+</div>
+</div>
+<a id="ac748b7185f026c6e1f67233e63d0990c" name="ac748b7185f026c6e1f67233e63d0990c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac748b7185f026c6e1f67233e63d0990c">&#9670;&nbsp;</a></span>WithHeuristic</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double SherlocksGambit.AI.AiBase.WithHeuristic</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../d4/d7d/a00093.html">AI</a>'s stat to indicate how good the move generated was for the <a class="el" href="../../d4/d7d/a00093.html">AI</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d09/a00077_source.html#l00042">42</a> of file <a class="el" href="../../d1/d09/a00077_source.html">AiBase.cs</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ae359d454acfc79cb73a4cc1b65cc58f2" name="ae359d454acfc79cb73a4cc1b65cc58f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae359d454acfc79cb73a4cc1b65cc58f2">&#9670;&nbsp;</a></span>Board() <span class="overload">[1/2]</span></h2>
+<a id="a918b394c2a0e6a53dfe92c6f75607560" name="a918b394c2a0e6a53dfe92c6f75607560"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a918b394c2a0e6a53dfe92c6f75607560">&#9670;&nbsp;</a></span>AiBase()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -376,78 +425,37 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">SherlocksGambit.Game.Board.Board </td>
+          <td class="memname">SherlocksGambit.AI.AiBase.AiBase </td>
           <td>(</td>
-          <td class="paramtype">uint[]&#160;</td>
-          <td class="paramname"><em>history</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="../../d2/d34/a00156.html">AiProperties</a>&#160;</td>
+          <td class="paramname"><em>properties</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>historyIndex</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>[BONUS] Overload fot the <a class="el" href="../../db/d57/a00112.html">Board</a> constructor </p>
+<p>Basic constructor for <a class="el" href="../../db/d57/a00112.html">AiBase</a> </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">history</td><td>Copy of an history ready to assign </td></tr>
-    <tr><td class="paramname">historyIndex</td><td>Where in <code>history</code> the previous board was </td></tr>
+    <tr><td class="paramname">properties</td><td><a class="el" href="../../d4/d7d/a00093.html">AI</a>'s properties containing ready to assign attributes </td></tr>
   </table>
   </dd>
 </dl>
 <p>Initialize all attributes on this class </p>
-<p >Do not forget to initialize the other attributes of the Board! A partial class has access to its attributes across all its files We also do not wish to create to initialize pieces on this <a class="el" href="../../db/d57/a00112.html">Board</a> since this constructor will be called for copy only (the pieces will get placed on the <a class="el" href="../../db/d57/a00112.html">Board</a> with the previously implemented <code>Copy</code> function </p>
+<p >[BONUS] You have to construct the <a class="el" href="../../d4/d7d/a00093.html">AI</a>'s TranspositionTable and MoveOrdering here! </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/de1/a00065_source.html#l00035">35</a> of file <a class="el" href="../../de/de1/a00065_source.html">Board(Bonus).cs</a>.</p>
-
-</div>
-</div>
-<a id="ae9d63ad8b07b84a58102e70c60b385ec" name="ae9d63ad8b07b84a58102e70c60b385ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae9d63ad8b07b84a58102e70c60b385ec">&#9670;&nbsp;</a></span>Board() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">SherlocksGambit.Game.Board.Board </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>fenCode</em> = <code>&quot;&quot;</code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Basic constructor for <a class="el" href="../../db/d57/a00112.html">Board</a> </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">fenCode</td><td>[Optional, default=""] Initialize a board to a given FEN representation </td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Initialize all attributes on this class </p>
-<p >The board notation is different than the array notation The expected behavior when <code>fenCode</code> is empty or when it is null os different </p>
-
-<p class="definition">Definition at line <a class="el" href="../../d6/d2d/a00047_source.html#l00034">34</a> of file <a class="el" href="../../d6/d2d/a00047_source.html">Board.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d09/a00077_source.html#l00059">59</a> of file <a class="el" href="../../d1/d09/a00077_source.html">AiBase.cs</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a61fb2c5b6805315a788bbf65e0da88eb" name="a61fb2c5b6805315a788bbf65e0da88eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a61fb2c5b6805315a788bbf65e0da88eb">&#9670;&nbsp;</a></span>ConstructWithHistory()</h2>
+<a id="a2170682cc320de1ef6d8eef4b98eb7cc" name="a2170682cc320de1ef6d8eef4b98eb7cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2170682cc320de1ef6d8eef4b98eb7cc">&#9670;&nbsp;</a></span>GenerateMove()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -456,98 +464,142 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../db/d57/a00112.html">Board</a> SherlocksGambit.Game.Board.ConstructWithHistory </td>
+          <td class="memname">abstract Tuple&lt; double, <a class="el" href="../../d5/deb/a00132.html">PathObject</a> &gt; SherlocksGambit.AI.AiBase.GenerateMove </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>[BONUS] Constructs a new <a class="el" href="../../db/d57/a00112.html">Board</a> with the current <a class="el" href="../../db/d57/a00112.html">Board</a>'s history and index onto it </p>
-<dl class="section return"><dt>Returns</dt><dd>Returns the copied board, initialized but with no pieces on top </dd></dl>
-<p >After implementing this function, do not forget to call it in the <code>Copy</code> function However, this function should only be called if <code>MoveHistory</code> is set to true (value set by <a class="el" href="../../d4/d51/a00017.html">AiProperties.cs</a>) </p>
-
-<p class="definition">Definition at line <a class="el" href="../../de/de1/a00065_source.html#l00048">48</a> of file <a class="el" href="../../de/de1/a00065_source.html">Board(Bonus).cs</a>.</p>
-
-</div>
-</div>
-<a id="ad6da321cc1dfacd2ac3bfbbe3b7af939" name="ad6da321cc1dfacd2ac3bfbbe3b7af939"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6da321cc1dfacd2ac3bfbbe3b7af939">&#9670;&nbsp;</a></span>Copy()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../db/d57/a00112.html">Board</a> SherlocksGambit.Game.Board.Copy </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initializes and returns a copy of the <a class="el" href="../../db/d57/a00112.html">Board</a> </p>
-<dl class="section return"><dt>Returns</dt><dd>The copied <a class="el" href="../../db/d57/a00112.html">Board</a> </dd></dl>
-<p >We do not wish to create a new <a class="el" href="../../db/d57/a00112.html">Board</a> with a starting FEN nor do we want to export the <a class="el" href="../../db/d57/a00112.html">Board</a> in FEN notation as this would be too inefficient. Prefer initializing it empty and placing the pieces one by one. As our tests feature timeouts, we <b>STRONGLY</b> recommend our approach Do not forget alongside placing it on the <a class="el" href="../../db/d57/a00112.html">Board</a> to put in in the PieceManager If you have implemented Board(copy).cs, you should create the copy of the <a class="el" href="../../db/d57/a00112.html">Board</a> using <code>ConstructWithHistory</code> </p>
-
-<p class="definition">Definition at line <a class="el" href="../../d6/d2d/a00047_source.html#l00062">62</a> of file <a class="el" href="../../d6/d2d/a00047_source.html">Board.cs</a>.</p>
-
-</div>
-</div>
-<a id="aad62bb2173dcd16d0d23b432979c7923" name="aad62bb2173dcd16d0d23b432979c7923"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad62bb2173dcd16d0d23b432979c7923">&#9670;&nbsp;</a></span>GenerateStartingFen()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static string SherlocksGambit.Game.Board.GenerateStartingFen </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>[BONUS] Creates a modular Starting fen code </p>
-<p >The FEN string must respect the constants <code>BoardSize</code> and <code>RowLength</code> </p><dl class="section return"><dt>Returns</dt><dd>A starting FEN code suited for the <a class="el" href="../../db/d57/a00112.html">Board</a>'s modular size </dd></dl>
-<p >If this method is not implemented, it returns the starting FEN code for a basic 8 by 8 board Each player should always have 3 starting row. What differs is the number of pieces per row and the number of empty rows in the middle of the <a class="el" href="../../db/d57/a00112.html">Board</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="../../de/de1/a00065_source.html#l00076">76</a> of file <a class="el" href="../../de/de1/a00065_source.html">Board(Bonus).cs</a>.</p>
-
-</div>
-</div>
-<a id="add31a862fcc2c4b7d30a0109010e7d14" name="add31a862fcc2c4b7d30a0109010e7d14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add31a862fcc2c4b7d30a0109010e7d14">&#9670;&nbsp;</a></span>GetCellState()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d4/d3e/a00116.html#a535259f57a1fe0636a4915056c5076d2">Cell.CellState</a> SherlocksGambit.Game.Board.GetCellState </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>targetPosition</em>, </td>
+          <td class="paramtype"><a class="el" href="../../da/d72/a00124.html">Board</a>&#160;</td>
+          <td class="paramname"><em>currBoard</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d1/d1e/a00087.html#ad3875305e47f14266c1e80da9b33304b">PlayerColor</a>&#160;</td>
-          <td class="paramname"><em>color</em>&#160;</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>currDepth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>minimize</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>alpha</em> = <code><a class="el" href="../../db/d57/a00112.html#acffada0b43901499cc35265d946dc118">Min</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>beta</em> = <code><a class="el" href="../../db/d57/a00112.html#a957533127c351fec843376ae9e8478a5">Max</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dd/da2/a00192.html">DotNode</a>&#160;</td>
+          <td class="paramname"><em>root</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>quietMode</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Abstract function that generates a move </p>
+<p >You should implement this function in classes that inherit <a class="el" href="../../db/d57/a00112.html">AiBase</a> (i.e <a class="el" href="../../d0/d89/a00071.html">MiniMax.cs</a>) </p>
+
+<p>Implemented in <a class="el" href="../../d4/d98/a00120.html#aaf3fe6f01c61d9272b46f1ce69359927">SherlocksGambit.AI.MiniMax</a>.</p>
+
+</div>
+</div>
+<a id="a63d55b755735564b8a7f91871f708d79" name="a63d55b755735564b8a7f91871f708d79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63d55b755735564b8a7f91871f708d79">&#9670;&nbsp;</a></span>GeneratePaths()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static List&lt; <a class="el" href="../../d5/deb/a00132.html">PathObject</a> &gt; SherlocksGambit.AI.AiBase.GeneratePaths </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d72/a00124.html">Board</a>&#160;</td>
+          <td class="paramname"><em>currBoard</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d74/a00099.html#ad3875305e47f14266c1e80da9b33304b">PlayerColor</a>&#160;</td>
+          <td class="paramname"><em>currPlayer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enemyFlag</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Generates all the possibles paths for each of <code>currPlayer</code>'s pieces </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">currBoard</td><td>Board on which to generate possible paths </td></tr>
+    <tr><td class="paramname">currPlayer</td><td>PlayerColor used to retrieve pieces from the <code>currBoard</code>'s PieceManager </td></tr>
+    <tr><td class="paramname">enemyFlag</td><td>If set to true, generate only capture paths </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A list of all generated PathObjects </dd></dl>
+<p ><code>CheckPathing</code>'s last argument <code>prevEnemies</code> has a different meaning whether the List given is null or empty <br  />
+ As soon as you find a path that is a "capture move", all possible paths returned should be capture paths <br  />
+ To check if a PathObject is a "capture move", look at the number of elements in the PathObject's enemies list </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d09/a00077_source.html#l00093">93</a> of file <a class="el" href="../../d1/d09/a00077_source.html">AiBase.cs</a>.</p>
+
+</div>
+</div>
+<a id="aeadb31c30f08364f476924b53f4deeda" name="aeadb31c30f08364f476924b53f4deeda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeadb31c30f08364f476924b53f4deeda">&#9670;&nbsp;</a></span>GetThenCreate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string SherlocksGambit.AI.AiBase.GetThenCreate </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>move</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dd/da2/a00192.html">DotNode</a>&#160;</td>
+          <td class="paramname"><em>root</em> = <code>null</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -557,127 +609,59 @@ Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Gets the CellState of a cell from a specific player's POV </p>
+<p>Gets a move, executes it and then creates a move </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">targetPosition</td><td>Position of the <a class="el" href="../../d4/d3e/a00116.html">Cell</a> in board notation </td></tr>
-    <tr><td class="paramname">color</td><td>Color of the player making the search </td></tr>
+    <tr><td class="paramname">move</td><td>Move to decrypt and execute </td></tr>
+    <tr><td class="paramname">root</td><td>[Optional, default = null] DotNode provided by the DotRunner class </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The CellState of the targeted cell </dd></dl>
-<p >Do not mix board notation and array notation </p>
+<dl class="section return"><dt>Returns</dt><dd>A string representing the move encrypted </dd></dl>
+<p ><code>move</code> is assumed not null nor empty and correctly formatted with good cell coordinates <br  />
+ There are 2 special codes that could be returned: "WON!" and "LOST..." <br  />
+ The first one gets returned if the move could not be executed while the latter one when no move could be generated ergo, either the PathObject returned from <code>GenerateMove</code> is null or it's associated path is empty <br  />
+ There is a way to pass a specific argument to a function call while conserving default values for previous parameters. It would look lie this: </p><div class="fragment"><div class="line"><span class="keyword">public</span> <span class="keywordtype">bool</span> func(<span class="keywordtype">int</span> a, <span class="keywordtype">int</span> b = 0, <span class="keywordtype">int</span> c = 1, <span class="keywordtype">int</span> d = 2) { <span class="keywordflow">return</span> a + b + c + d; }</div>
+<div class="line">Console.WriteLine(func(1, c:4)) <span class="comment">// stdout: 7</span></div>
+</div><!-- fragment --><p> You should also update the <a class="el" href="../../d4/d7d/a00093.html">AI</a>'s stats in here: <br  />
+ Setting <code>ExploredPaths</code> to 0 before generating a move <br  />
+ Setting <code>ElapsedTime</code> to its value (see Stopwatch in System.Diagnostics) <br  />
+ Setting <code>WithHeuristic</code> to the correct value <br  />
+ Don't forget to execute the move! </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d2d/a00047_source.html#l00046">46</a> of file <a class="el" href="../../d6/d2d/a00047_source.html">Board.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d09/a00077_source.html#l00121">121</a> of file <a class="el" href="../../d1/d09/a00077_source.html">AiBase.cs</a>.</p>
 
 </div>
 </div>
-<a id="afaa82e943a3292807a9cb478aaab283b" name="afaa82e943a3292807a9cb478aaab283b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afaa82e943a3292807a9cb478aaab283b">&#9670;&nbsp;</a></span>HasLost()</h2>
+<a id="aeaf175c3b17c1c51eb382ee01521e9ea" name="aeaf175c3b17c1c51eb382ee01521e9ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeaf175c3b17c1c51eb382ee01521e9ea">&#9670;&nbsp;</a></span>IsEoG()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool SherlocksGambit.Game.Board.HasLost </td>
+          <td class="memname">bool SherlocksGambit.AI.AiBase.IsEoG </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d1/d1e/a00087.html#ad3875305e47f14266c1e80da9b33304b">PlayerColor</a>&#160;</td>
-          <td class="paramname"><em>playerColor</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../da/d72/a00124.html">Board</a>&#160;</td>
+          <td class="paramname"><em>board</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Checks whether a player has lost </p>
-<ul>
-<li><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">playerColor</td><td>The color of the player we are checking defeat for </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A boolean </dd></dl>
-If you remember the loosing conditions, one could loose having no pieces left on the <a class="el" href="../../db/d57/a00112.html">Board</a> or if none of the player's remaining pieces are able to move </li>
-</ul>
-<p >Whether the opponent could move or not will not ge checked here. </p>
+<p>Checks the current state of the game </p>
+<dl class="section return"><dt>Returns</dt><dd>A boolean to indicate if any of the players have won or lost the game </dd></dl>
+<p >Loosing and winning are not linked, therefore be careful to check these two conditions </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d2d/a00047_source.html#l00087">87</a> of file <a class="el" href="../../d6/d2d/a00047_source.html">Board.cs</a>.</p>
-
-</div>
-</div>
-<a id="a01233c4a571e4974a8f279f0158dc54e" name="a01233c4a571e4974a8f279f0158dc54e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01233c4a571e4974a8f279f0158dc54e">&#9670;&nbsp;</a></span>HasWon()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool SherlocksGambit.Game.Board.HasWon </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d1/d1e/a00087.html#ad3875305e47f14266c1e80da9b33304b">PlayerColor</a>&#160;</td>
-          <td class="paramname"><em>playerColor</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Checks whether a player has won </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">playerColor</td><td>The color of the player we are checking victory for </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A boolean </dd></dl>
-<p>If you remember the victory conditions, one could win by achieving total domination of the <a class="el" href="../../db/d57/a00112.html">Board</a> </p>
-<p >Whether the opponent could move or not will not ge checked here. </p>
-
-<p class="definition">Definition at line <a class="el" href="../../d6/d2d/a00047_source.html#l00074">74</a> of file <a class="el" href="../../d6/d2d/a00047_source.html">Board.cs</a>.</p>
-
-</div>
-</div>
-<a id="a1d31da60557efeb7337004a6714ee1c0" name="a1d31da60557efeb7337004a6714ee1c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d31da60557efeb7337004a6714ee1c0">&#9670;&nbsp;</a></span>Print()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void SherlocksGambit.Game.Board.Print </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Rudimentary printing function </p>
-<p >Because of Rider's color theme, white pieces are in this function displayed as red For the same reasons, Black's pieces are blue If you have yet to have implemented the FEN encryption, it will print an empty string </p>
-
-<p class="definition">Definition at line <a class="el" href="../../d6/d2d/a00047_source.html#l00100">100</a> of file <a class="el" href="../../d6/d2d/a00047_source.html">Board.cs</a>.</p>
-
-</div>
-</div>
-<a id="a50400f633ba8b134fe74e3dd4818dea8" name="a50400f633ba8b134fe74e3dd4818dea8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50400f633ba8b134fe74e3dd4818dea8">&#9670;&nbsp;</a></span>RegisterMove()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool SherlocksGambit.Game.Board.RegisterMove </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>[BONUS] Registers a move into the board's history </p>
-<dl class="section return"><dt>Returns</dt><dd>Returns a boolean indicating if the move was already present in the history </dd></dl>
-<p >The history records Zobrist's hashes of the current <a class="el" href="../../db/d57/a00112.html">Board</a> A move should still be recorded even if it was already present in the history </p>
-
-<p class="definition">Definition at line <a class="el" href="../../de/de1/a00065_source.html#l00061">61</a> of file <a class="el" href="../../de/de1/a00065_source.html">Board(Bonus).cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d09/a00077_source.html#l00069">69</a> of file <a class="el" href="../../d1/d09/a00077_source.html">AiBase.cs</a>.</p>
 
 </div>
 </div>

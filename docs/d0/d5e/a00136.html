@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Sherlock&#39;s Gambit: SherlocksGambit.Game.Pieces.PieceManager Class Reference</title>
+<title>Sherlock&#39;s Gambit: SherlocksGambit.Game.Pieces.BasePiece Class Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -65,128 +65,241 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="../../da/dec/a00080.html">SherlocksGambit</a></li><li class="navelem"><a class="el" href="../../d4/d63/a00082.html">Game</a></li><li class="navelem"><a class="el" href="../../d2/d1f/a00083.html">Pieces</a></li><li class="navelem"><a class="el" href="../../d0/d5e/a00136.html">PieceManager</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../d1/dc1/a00092.html">SherlocksGambit</a></li><li class="navelem"><a class="el" href="../../dc/d54/a00094.html">Game</a></li><li class="navelem"><a class="el" href="../../d9/d77/a00095.html">Pieces</a></li><li class="navelem"><a class="el" href="../../d0/d5e/a00136.html">BasePiece</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="../../d0/de8/a00133.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">SherlocksGambit.Game.Pieces.PieceManager Class Reference</div></div>
+  <div class="headertitle"><div class="title">SherlocksGambit.Game.Pieces.BasePiece Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aa39a2f1b204354233ac5b23fa8553ff9"><td class="memItemLeft" align="right" valign="top">readonly Dictionary&lt; <a class="el" href="../../d1/d1e/a00087.html#ad3875305e47f14266c1e80da9b33304b">PlayerColor</a>, List&lt; <a class="el" href="../../da/d72/a00124.html">BasePiece</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5e/a00136.html#aa39a2f1b204354233ac5b23fa8553ff9">PiecesDictionary</a> = new()</td></tr>
-<tr class="separator:aa39a2f1b204354233ac5b23fa8553ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1d5968fa10b2432f4b0cecc63490277"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="../../da/d74/a00099.html#ad3875305e47f14266c1e80da9b33304b">PlayerColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5e/a00136.html#aa1d5968fa10b2432f4b0cecc63490277">Color</a></td></tr>
+<tr class="separator:aa1d5968fa10b2432f4b0cecc63490277"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4794d925c84d4a584b52c12f90ecc012"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d88/a00128.html">Cell</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5e/a00136.html#a4794d925c84d4a584b52c12f90ecc012">CurrentCell</a></td></tr>
+<tr class="separator:a4794d925c84d4a584b52c12f90ecc012"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a339c4aba32c64e9b1e82cc014f0e5b07"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d72/a00124.html">Board</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5e/a00136.html#a339c4aba32c64e9b1e82cc014f0e5b07">Board</a></td></tr>
+<tr class="separator:a339c4aba32c64e9b1e82cc014f0e5b07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae37d589bfeff81903b380fea2b34118a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5e/a00136.html#ae37d589bfeff81903b380fea2b34118a">Movement</a></td></tr>
+<tr class="separator:ae37d589bfeff81903b380fea2b34118a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6342ea9cb4b79239a2e9656411c0df3c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5e/a00136.html#a6342ea9cb4b79239a2e9656411c0df3c">PieceManager</a> (<a class="el" href="../../db/d57/a00112.html">Board</a> board, string fenCode)</td></tr>
-<tr class="separator:a6342ea9cb4b79239a2e9656411c0df3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a271bdb254a3be14d5a3be1f30c999412"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5e/a00136.html#a271bdb254a3be14d5a3be1f30c999412">AddPiece</a> (<a class="el" href="../../da/d72/a00124.html">BasePiece</a> piece)</td></tr>
-<tr class="separator:a271bdb254a3be14d5a3be1f30c999412"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a594315ec210e8f16b557551daaa421a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5e/a00136.html#a594315ec210e8f16b557551daaa421a5">RemovePiece</a> (<a class="el" href="../../da/d72/a00124.html">BasePiece</a> piece)</td></tr>
-<tr class="separator:a594315ec210e8f16b557551daaa421a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24cab030dbdf7d79dcdd065ab653e644"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5e/a00136.html#a24cab030dbdf7d79dcdd065ab653e644">PromotePiece</a> (<a class="el" href="../../d5/deb/a00132.html">Man</a> man, <a class="el" href="../../d4/d3e/a00116.html">Cell</a> cell, <a class="el" href="../../d1/d1e/a00087.html#ad3875305e47f14266c1e80da9b33304b">PlayerColor</a> teamColor)</td></tr>
-<tr class="separator:a24cab030dbdf7d79dcdd065ab653e644"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84ab249f32b49b19be458262ce9585e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5e/a00136.html#a84ab249f32b49b19be458262ce9585e5">DemotePiece</a> (<a class="el" href="../../d1/d88/a00128.html">King</a> king, <a class="el" href="../../d4/d3e/a00116.html">Cell</a> cell, <a class="el" href="../../d1/d1e/a00087.html#ad3875305e47f14266c1e80da9b33304b">PlayerColor</a> teamColor)</td></tr>
-<tr class="separator:a84ab249f32b49b19be458262ce9585e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e81d92f1a2077104eba27df26492298"><td class="memItemLeft" align="right" valign="top">abstract <a class="el" href="../../d0/d5e/a00136.html">BasePiece</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5e/a00136.html#a0e81d92f1a2077104eba27df26492298">Copy</a> (<a class="el" href="../../d1/d88/a00128.html">Cell</a> targetCell)</td></tr>
+<tr class="separator:a0e81d92f1a2077104eba27df26492298"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbf7265bf3ce554ef602d23d12a21ed4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5e/a00136.html#afbf7265bf3ce554ef602d23d12a21ed4">Place</a> (<a class="el" href="../../d1/d88/a00128.html">Cell</a> newCell)</td></tr>
+<tr class="separator:afbf7265bf3ce554ef602d23d12a21ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb5b222c40806dc86e78c37f62f7c9f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5e/a00136.html#adb5b222c40806dc86e78c37f62f7c9f2">Kill</a> (bool simulation=false)</td></tr>
+<tr class="separator:adb5b222c40806dc86e78c37f62f7c9f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ce2fa2d129b5047beb3bb16be1ee233"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="../../d5/deb/a00132.html">PathObject</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5e/a00136.html#a2ce2fa2d129b5047beb3bb16be1ee233">CheckPathing</a> (int pos, List&lt; <a class="el" href="../../d0/d5e/a00136.html">BasePiece</a> &gt; prevEnemies)</td></tr>
+<tr class="separator:a2ce2fa2d129b5047beb3bb16be1ee233"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeabd278448a15caf6d42150dc6924e63"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5e/a00136.html#aeabd278448a15caf6d42150dc6924e63">HasMove</a> (bool enemyNeeded)</td></tr>
+<tr class="separator:aeabd278448a15caf6d42150dc6924e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a096c88a3676331f9251386afbccc1bd7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5e/a00136.html#a096c88a3676331f9251386afbccc1bd7">Move</a> (<a class="el" href="../../d1/d88/a00128.html">Cell</a> target, char action)</td></tr>
+<tr class="separator:a096c88a3676331f9251386afbccc1bd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b197f4675a87f6af174631c4c0860a9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5e/a00136.html#a4b197f4675a87f6af174631c4c0860a9">Move</a> (<a class="el" href="../../d5/deb/a00132.html">PathObject</a> pathObj, bool simulation=false)</td></tr>
+<tr class="separator:a4b197f4675a87f6af174631c4c0860a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b96e021209cc59434a3d7bbc47ed678"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5e/a00136.html#a2b96e021209cc59434a3d7bbc47ed678">RevertMove</a> (<a class="el" href="../../d5/deb/a00132.html">PathObject</a> pathObj)</td></tr>
+<tr class="separator:a2b96e021209cc59434a3d7bbc47ed678"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ab02b123d0ec73a909ae3a9781ef889bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5e/a00136.html#ab02b123d0ec73a909ae3a9781ef889bb">BasePiece</a> (<a class="el" href="../../da/d74/a00099.html#ad3875305e47f14266c1e80da9b33304b">PlayerColor</a> newTeamColor)</td></tr>
+<tr class="separator:ab02b123d0ec73a909ae3a9781ef889bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a44b75eb2d9896776776f77785b296df2"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="../../d5/deb/a00132.html">PathObject</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5e/a00136.html#a44b75eb2d9896776776f77785b296df2">CreateCellPath</a> (int pos, <a class="el" href="../../da/d74/a00099.html#af9726f396cd4597aa46806a77109cd5d">Direction</a> direction, List&lt; <a class="el" href="../../d0/d5e/a00136.html">BasePiece</a> &gt; enemies)</td></tr>
+<tr class="separator:a44b75eb2d9896776776f77785b296df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a873075872f5c2a478d8ebc9ce72a9cf2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/deb/a00132.html">PathObject</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5e/a00136.html#a873075872f5c2a478d8ebc9ce72a9cf2">RecreatePath</a> (int pos, <a class="el" href="../../d1/d88/a00128.html">Cell</a> target, List&lt; <a class="el" href="../../d0/d5e/a00136.html">BasePiece</a> &gt; previousEnemies)</td></tr>
+<tr class="separator:a873075872f5c2a478d8ebc9ce72a9cf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a094878e4798beb653731208cb61d0d07"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5e/a00136.html#a094878e4798beb653731208cb61d0d07">CheckCouldHaveCaptured</a> (bool ate)</td></tr>
+<tr class="separator:a094878e4798beb653731208cb61d0d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="aa39a2f1b204354233ac5b23fa8553ff9" name="aa39a2f1b204354233ac5b23fa8553ff9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa39a2f1b204354233ac5b23fa8553ff9">&#9670;&nbsp;</a></span>PiecesDictionary</h2>
+<a id="a339c4aba32c64e9b1e82cc014f0e5b07" name="a339c4aba32c64e9b1e82cc014f0e5b07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a339c4aba32c64e9b1e82cc014f0e5b07">&#9670;&nbsp;</a></span>Board</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d72/a00124.html">Board</a> SherlocksGambit.Game.Pieces.BasePiece.Board</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reference to the <a class="el" href="../../da/d72/a00124.html">Board</a> the <a class="el" href="../../d0/d5e/a00136.html">BasePiece</a> is on. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d03/a00062_source.html#l00011">11</a> of file <a class="el" href="../../df/d03/a00062_source.html">BasePiece.cs</a>.</p>
+
+</div>
+</div>
+<a id="aa1d5968fa10b2432f4b0cecc63490277" name="aa1d5968fa10b2432f4b0cecc63490277"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1d5968fa10b2432f4b0cecc63490277">&#9670;&nbsp;</a></span>Color</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">readonly Dictionary&lt;<a class="el" href="../../d1/d1e/a00087.html#ad3875305e47f14266c1e80da9b33304b">PlayerColor</a>, List&lt;<a class="el" href="../../da/d72/a00124.html">BasePiece</a>&gt; &gt; SherlocksGambit.Game.Pieces.PieceManager.PiecesDictionary = new()</td>
+          <td class="memname">readonly <a class="el" href="../../da/d74/a00099.html#ad3875305e47f14266c1e80da9b33304b">PlayerColor</a> SherlocksGambit.Game.Pieces.BasePiece.Color</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/dee/a00053_source.html#l00011">11</a> of file <a class="el" href="../../dc/dee/a00053_source.html">PieceManager.cs</a>.</p>
+<p>PlayerColor the piece belongs to. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d03/a00062_source.html#l00014">14</a> of file <a class="el" href="../../df/d03/a00062_source.html">BasePiece.cs</a>.</p>
+
+</div>
+</div>
+<a id="a4794d925c84d4a584b52c12f90ecc012" name="a4794d925c84d4a584b52c12f90ecc012"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4794d925c84d4a584b52c12f90ecc012">&#9670;&nbsp;</a></span>CurrentCell</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d88/a00128.html">Cell</a> SherlocksGambit.Game.Pieces.BasePiece.CurrentCell</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>currentCell</code> is the cell on which the piece is currently </p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d03/a00062_source.html#l00017">17</a> of file <a class="el" href="../../df/d03/a00062_source.html">BasePiece.cs</a>.</p>
+
+</div>
+</div>
+<a id="ae37d589bfeff81903b380fea2b34118a" name="ae37d589bfeff81903b380fea2b34118a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae37d589bfeff81903b380fea2b34118a">&#9670;&nbsp;</a></span>Movement</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SherlocksGambit.Game.Pieces.BasePiece.Movement</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>movement</code> is how many cells the piece can scan for enemies in a single move </p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d03/a00062_source.html#l00020">20</a> of file <a class="el" href="../../df/d03/a00062_source.html">BasePiece.cs</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a6342ea9cb4b79239a2e9656411c0df3c" name="a6342ea9cb4b79239a2e9656411c0df3c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6342ea9cb4b79239a2e9656411c0df3c">&#9670;&nbsp;</a></span>PieceManager()</h2>
+<a id="ab02b123d0ec73a909ae3a9781ef889bb" name="ab02b123d0ec73a909ae3a9781ef889bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab02b123d0ec73a909ae3a9781ef889bb">&#9670;&nbsp;</a></span>BasePiece()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">SherlocksGambit.Game.Pieces.PieceManager.PieceManager </td>
+          <td class="memname">SherlocksGambit.Game.Pieces.BasePiece.BasePiece </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../db/d57/a00112.html">Board</a>&#160;</td>
-          <td class="paramname"><em>board</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="../../da/d74/a00099.html#ad3875305e47f14266c1e80da9b33304b">PlayerColor</a>&#160;</td>
+          <td class="paramname"><em>newTeamColor</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>fenCode</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/dee/a00053_source.html#l00014">14</a> of file <a class="el" href="../../dc/dee/a00053_source.html">PieceManager.cs</a>.</p>
+<p>Basic constructor for <a class="el" href="../../d0/d5e/a00136.html">BasePiece</a> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newTeamColor</td><td>PlayerColor the <a class="el" href="../../d0/d5e/a00136.html">BasePiece</a> should belong to </td></tr>
+  </table>
+  </dd>
+</dl>
+<p ><code>Movement</code> is set by the subclass (either <a class="el" href="../../d5/db1/a00140.html">King</a> or <a class="el" href="../../d5/da7/a00144.html">Man</a>) And the <a class="el" href="../../da/d72/a00124.html">Board</a> and <a class="el" href="../../d1/d88/a00128.html">Cell</a> the piece is on will be updated by the method <code>Place</code> </p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d03/a00062_source.html#l00030">30</a> of file <a class="el" href="../../df/d03/a00062_source.html">BasePiece.cs</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a271bdb254a3be14d5a3be1f30c999412" name="a271bdb254a3be14d5a3be1f30c999412"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a271bdb254a3be14d5a3be1f30c999412">&#9670;&nbsp;</a></span>AddPiece()</h2>
+<a id="a094878e4798beb653731208cb61d0d07" name="a094878e4798beb653731208cb61d0d07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a094878e4798beb653731208cb61d0d07">&#9670;&nbsp;</a></span>CheckCouldHaveCaptured()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void SherlocksGambit.Game.Pieces.PieceManager.AddPiece </td>
+          <td class="memname">bool SherlocksGambit.Game.Pieces.BasePiece.CheckCouldHaveCaptured </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../da/d72/a00124.html">BasePiece</a>&#160;</td>
-          <td class="paramname"><em>piece</em></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ate</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/dee/a00053_source.html#l00019">19</a> of file <a class="el" href="../../dc/dee/a00053_source.html">PieceManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d03/a00062_source.html#l00101">101</a> of file <a class="el" href="../../df/d03/a00062_source.html">BasePiece.cs</a>.</p>
 
 </div>
 </div>
-<a id="a84ab249f32b49b19be458262ce9585e5" name="a84ab249f32b49b19be458262ce9585e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84ab249f32b49b19be458262ce9585e5">&#9670;&nbsp;</a></span>DemotePiece()</h2>
+<a id="a2ce2fa2d129b5047beb3bb16be1ee233" name="a2ce2fa2d129b5047beb3bb16be1ee233"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ce2fa2d129b5047beb3bb16be1ee233">&#9670;&nbsp;</a></span>CheckPathing()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void SherlocksGambit.Game.Pieces.PieceManager.DemotePiece </td>
+          <td class="memname">List&lt; <a class="el" href="../../d5/deb/a00132.html">PathObject</a> &gt; SherlocksGambit.Game.Pieces.BasePiece.CheckPathing </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d1/d88/a00128.html">King</a>&#160;</td>
-          <td class="paramname"><em>king</em>, </td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d4/d3e/a00116.html">Cell</a>&#160;</td>
-          <td class="paramname"><em>cell</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d1/d1e/a00087.html#ad3875305e47f14266c1e80da9b33304b">PlayerColor</a>&#160;</td>
-          <td class="paramname"><em>teamColor</em>&#160;</td>
+          <td class="paramtype">List&lt; <a class="el" href="../../d0/d5e/a00136.html">BasePiece</a> &gt;&#160;</td>
+          <td class="paramname"><em>prevEnemies</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -196,33 +309,151 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/dee/a00053_source.html#l00036">36</a> of file <a class="el" href="../../dc/dee/a00053_source.html">PieceManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d03/a00062_source.html#l00074">74</a> of file <a class="el" href="../../df/d03/a00062_source.html">BasePiece.cs</a>.</p>
 
 </div>
 </div>
-<a id="a24cab030dbdf7d79dcdd065ab653e644" name="a24cab030dbdf7d79dcdd065ab653e644"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a24cab030dbdf7d79dcdd065ab653e644">&#9670;&nbsp;</a></span>PromotePiece()</h2>
+<a id="a0e81d92f1a2077104eba27df26492298" name="a0e81d92f1a2077104eba27df26492298"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e81d92f1a2077104eba27df26492298">&#9670;&nbsp;</a></span>Copy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract <a class="el" href="../../d0/d5e/a00136.html">BasePiece</a> SherlocksGambit.Game.Pieces.BasePiece.Copy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d88/a00128.html">Cell</a>&#160;</td>
+          <td class="paramname"><em>targetCell</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Abstract method to copy the <a class="el" href="../../d0/d5e/a00136.html">BasePiece</a> </p>
+<p >You should implement this function in classes that inherit <a class="el" href="../../d0/d5e/a00136.html">BasePiece</a> (i.e. <a class="el" href="../../de/de1/a00065.html">King.cs</a> or <a class="el" href="../../d3/d8b/a00059.html">Man.cs</a>) </p>
+
+<p>Implemented in <a class="el" href="../../d5/db1/a00140.html#acd10b810473caba133a201289c77ab5f">SherlocksGambit.Game.Pieces.King</a>, and <a class="el" href="../../d5/da7/a00144.html#a4734843b6a073bd083cb478cbcfae33c">SherlocksGambit.Game.Pieces.Man</a>.</p>
+
+</div>
+</div>
+<a id="a44b75eb2d9896776776f77785b296df2" name="a44b75eb2d9896776776f77785b296df2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44b75eb2d9896776776f77785b296df2">&#9670;&nbsp;</a></span>CreateCellPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; <a class="el" href="../../d5/deb/a00132.html">PathObject</a> &gt; SherlocksGambit.Game.Pieces.BasePiece.CreateCellPath </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d74/a00099.html#af9726f396cd4597aa46806a77109cd5d">Direction</a>&#160;</td>
+          <td class="paramname"><em>direction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; <a class="el" href="../../d0/d5e/a00136.html">BasePiece</a> &gt;&#160;</td>
+          <td class="paramname"><em>enemies</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d03/a00062_source.html#l00081">81</a> of file <a class="el" href="../../df/d03/a00062_source.html">BasePiece.cs</a>.</p>
+
+</div>
+</div>
+<a id="aeabd278448a15caf6d42150dc6924e63" name="aeabd278448a15caf6d42150dc6924e63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeabd278448a15caf6d42150dc6924e63">&#9670;&nbsp;</a></span>HasMove()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void SherlocksGambit.Game.Pieces.PieceManager.PromotePiece </td>
+          <td class="memname">bool SherlocksGambit.Game.Pieces.BasePiece.HasMove </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d5/deb/a00132.html">Man</a>&#160;</td>
-          <td class="paramname"><em>man</em>, </td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enemyNeeded</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d03/a00062_source.html#l00087">87</a> of file <a class="el" href="../../df/d03/a00062_source.html">BasePiece.cs</a>.</p>
+
+</div>
+</div>
+<a id="adb5b222c40806dc86e78c37f62f7c9f2" name="adb5b222c40806dc86e78c37f62f7c9f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb5b222c40806dc86e78c37f62f7c9f2">&#9670;&nbsp;</a></span>Kill()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SherlocksGambit.Game.Pieces.BasePiece.Kill </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>simulation</em> = <code>false</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Kills the <a class="el" href="../../d0/d5e/a00136.html">BasePiece</a> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">simulation</td><td>[BONUS][Optional, default = false] Used to keep a reference to where the piece used to be on to revert a move </td></tr>
+  </table>
+  </dd>
+</dl>
+<p >When killing a piece, make sure to remove any reference to it in the <a class="el" href="../../da/d72/a00124.html">Board</a> and <a class="el" href="../../db/d48/a00148.html">PieceManager</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d03/a00062_source.html#l00066">66</a> of file <a class="el" href="../../df/d03/a00062_source.html">BasePiece.cs</a>.</p>
+
+</div>
+</div>
+<a id="a096c88a3676331f9251386afbccc1bd7" name="a096c88a3676331f9251386afbccc1bd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a096c88a3676331f9251386afbccc1bd7">&#9670;&nbsp;</a></span>Move() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SherlocksGambit.Game.Pieces.BasePiece.Move </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d88/a00128.html">Cell</a>&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d4/d3e/a00116.html">Cell</a>&#160;</td>
-          <td class="paramname"><em>cell</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d1/d1e/a00087.html#ad3875305e47f14266c1e80da9b33304b">PlayerColor</a>&#160;</td>
-          <td class="paramname"><em>teamColor</em>&#160;</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>action</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -232,27 +463,150 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/dee/a00053_source.html#l00030">30</a> of file <a class="el" href="../../dc/dee/a00053_source.html">PieceManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d03/a00062_source.html#l00108">108</a> of file <a class="el" href="../../df/d03/a00062_source.html">BasePiece.cs</a>.</p>
 
 </div>
 </div>
-<a id="a594315ec210e8f16b557551daaa421a5" name="a594315ec210e8f16b557551daaa421a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a594315ec210e8f16b557551daaa421a5">&#9670;&nbsp;</a></span>RemovePiece()</h2>
+<a id="a4b197f4675a87f6af174631c4c0860a9" name="a4b197f4675a87f6af174631c4c0860a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b197f4675a87f6af174631c4c0860a9">&#9670;&nbsp;</a></span>Move() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool SherlocksGambit.Game.Pieces.BasePiece.Move </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/deb/a00132.html">PathObject</a>&#160;</td>
+          <td class="paramname"><em>pathObj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>simulation</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="../../d5/da7/a00144.html#ac670cfa778ab4caafafa838d78baa01b">SherlocksGambit.Game.Pieces.Man</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d03/a00062_source.html#l00114">114</a> of file <a class="el" href="../../df/d03/a00062_source.html">BasePiece.cs</a>.</p>
+
+</div>
+</div>
+<a id="afbf7265bf3ce554ef602d23d12a21ed4" name="afbf7265bf3ce554ef602d23d12a21ed4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbf7265bf3ce554ef602d23d12a21ed4">&#9670;&nbsp;</a></span>Place()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void SherlocksGambit.Game.Pieces.PieceManager.RemovePiece </td>
+          <td class="memname">void SherlocksGambit.Game.Pieces.BasePiece.Place </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../da/d72/a00124.html">BasePiece</a>&#160;</td>
-          <td class="paramname"><em>piece</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d1/d88/a00128.html">Cell</a>&#160;</td>
+          <td class="paramname"><em>newCell</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/dee/a00053_source.html#l00024">24</a> of file <a class="el" href="../../dc/dee/a00053_source.html">PieceManager.cs</a>.</p>
+<p>Places the <a class="el" href="../../d0/d5e/a00136.html">BasePiece</a> on the provided cell </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newCell</td><td><a class="el" href="../../d1/d88/a00128.html">Cell</a> on which to place the piece on </td></tr>
+  </table>
+  </dd>
+</dl>
+<p >This is where you update the <a class="el" href="../../d0/d5e/a00136.html">BasePiece</a>'s <code>CurrentCell</code> and <code><a class="el" href="../../da/d72/a00124.html">Board</a></code>! The <a class="el" href="../../da/d72/a00124.html">Board</a> the <a class="el" href="../../d0/d5e/a00136.html">BasePiece</a> will be on is an attribute of the <a class="el" href="../../d1/d88/a00128.html">Cell</a> class Do not forget to update the <a class="el" href="../../d1/d88/a00128.html">Cell</a>'s attributes too! </p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d03/a00062_source.html#l00052">52</a> of file <a class="el" href="../../df/d03/a00062_source.html">BasePiece.cs</a>.</p>
+
+</div>
+</div>
+<a id="a873075872f5c2a478d8ebc9ce72a9cf2" name="a873075872f5c2a478d8ebc9ce72a9cf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a873075872f5c2a478d8ebc9ce72a9cf2">&#9670;&nbsp;</a></span>RecreatePath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/deb/a00132.html">PathObject</a> SherlocksGambit.Game.Pieces.BasePiece.RecreatePath </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d88/a00128.html">Cell</a>&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; <a class="el" href="../../d0/d5e/a00136.html">BasePiece</a> &gt;&#160;</td>
+          <td class="paramname"><em>previousEnemies</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d03/a00062_source.html#l00095">95</a> of file <a class="el" href="../../df/d03/a00062_source.html">BasePiece.cs</a>.</p>
+
+</div>
+</div>
+<a id="a2b96e021209cc59434a3d7bbc47ed678" name="a2b96e021209cc59434a3d7bbc47ed678"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b96e021209cc59434a3d7bbc47ed678">&#9670;&nbsp;</a></span>RevertMove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SherlocksGambit.Game.Pieces.BasePiece.RevertMove </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/deb/a00132.html">PathObject</a>&#160;</td>
+          <td class="paramname"><em>pathObj</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="../../d5/db1/a00140.html#a253887fa0d50c80cc782b445378095ef">SherlocksGambit.Game.Pieces.King</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d03/a00062_source.html#l00120">120</a> of file <a class="el" href="../../df/d03/a00062_source.html">BasePiece.cs</a>.</p>
 
 </div>
 </div>

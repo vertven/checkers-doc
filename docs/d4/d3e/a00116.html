@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Sherlock&#39;s Gambit: SherlocksGambit.Game.Cell Class Reference</title>
+<title>Sherlock&#39;s Gambit: SherlocksGambit.AI.Heuristic Class Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -65,140 +65,93 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="../../da/dec/a00080.html">SherlocksGambit</a></li><li class="navelem"><a class="el" href="../../d4/d63/a00082.html">Game</a></li><li class="navelem"><a class="el" href="../../d4/d3e/a00116.html">Cell</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../d1/dc1/a00092.html">SherlocksGambit</a></li><li class="navelem"><a class="el" href="../../d4/d7d/a00093.html">AI</a></li><li class="navelem"><a class="el" href="../../d4/d3e/a00116.html">Heuristic</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="../../d3/d00/a00113.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">SherlocksGambit.Game.Cell Class Reference</div></div>
+  <div class="headertitle"><div class="title">SherlocksGambit.AI.Heuristic Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a535259f57a1fe0636a4915056c5076d2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3e/a00116.html#a535259f57a1fe0636a4915056c5076d2">CellState</a> { <a class="el" href="../../d4/d3e/a00116.html#a535259f57a1fe0636a4915056c5076d2a03fdbf12e03a4cd1409b84abe2b631df">Friendly</a>
-, <a class="el" href="../../d4/d3e/a00116.html#a535259f57a1fe0636a4915056c5076d2a8c6d21187fb58b7a079d70030686b33e">Enemy</a>
-, <a class="el" href="../../d4/d3e/a00116.html#a535259f57a1fe0636a4915056c5076d2ab24ce0cd392a5b0b8dedc66c25213594">Free</a>
-, <a class="el" href="../../d4/d3e/a00116.html#a535259f57a1fe0636a4915056c5076d2a46dc1018ac1d8fca7c2752a61ce2fd0f">OutOfBounds</a>
- }</td></tr>
-<tr class="separator:a535259f57a1fe0636a4915056c5076d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:af99c096aa075d8fe42601043a26323a8"><td class="memItemLeft" align="right" valign="top">static readonly double[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3e/a00116.html#af99c096aa075d8fe42601043a26323a8">PositionsWeights</a></td></tr>
+<tr class="separator:af99c096aa075d8fe42601043a26323a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a994d8bf12a32ffe4b0bcc605c3f21b1f"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="../../db/d57/a00112.html">Board</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3e/a00116.html#a994d8bf12a32ffe4b0bcc605c3f21b1f">Board</a></td></tr>
-<tr class="separator:a994d8bf12a32ffe4b0bcc605c3f21b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad53e986eec0fa7d30e47aae72ce30bff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d72/a00124.html">BasePiece</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3e/a00116.html#ad53e986eec0fa7d30e47aae72ce30bff">CurrentPiece</a></td></tr>
-<tr class="separator:ad53e986eec0fa7d30e47aae72ce30bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a066708f955a4a84593db2359b8357851"><td class="memItemLeft" align="right" valign="top">readonly int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3e/a00116.html#a066708f955a4a84593db2359b8357851">BoardPosition</a></td></tr>
-<tr class="separator:a066708f955a4a84593db2359b8357851"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:afe96d3bf7070bc4f2afd04ce7efcbfeb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3e/a00116.html#afe96d3bf7070bc4f2afd04ce7efcbfeb">Cell</a> (int boardPosition, <a class="el" href="../../db/d57/a00112.html">Board</a> board)</td></tr>
-<tr class="separator:afe96d3bf7070bc4f2afd04ce7efcbfeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a7ceeaf2977f032aa5f7db91834e7378c"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3e/a00116.html#a7ceeaf2977f032aa5f7db91834e7378c">SimpleHeuristic</a> (<a class="el" href="../../da/d72/a00124.html">Board</a> board, <a class="el" href="../../da/d74/a00099.html#ad3875305e47f14266c1e80da9b33304b">PlayerColor</a> currPlayer)</td></tr>
+<tr class="separator:a7ceeaf2977f032aa5f7db91834e7378c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66b9213ff906dca02f68333de9ce6200"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3e/a00116.html#a66b9213ff906dca02f68333de9ce6200">ComputeHeuristic</a> (<a class="el" href="../../da/d72/a00124.html">Board</a> board, <a class="el" href="../../da/d74/a00099.html#ad3875305e47f14266c1e80da9b33304b">PlayerColor</a> currPlayer)</td></tr>
+<tr class="separator:a66b9213ff906dca02f68333de9ce6200"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8166930efc8f8a9fb3b0c1c3401fa894"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3e/a00116.html#a8166930efc8f8a9fb3b0c1c3401fa894">RandomHeuristic</a> (<a class="el" href="../../da/d72/a00124.html">Board</a> board, <a class="el" href="../../da/d74/a00099.html#ad3875305e47f14266c1e80da9b33304b">PlayerColor</a> currPlayer)</td></tr>
+<tr class="separator:a8166930efc8f8a9fb3b0c1c3401fa894"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b8baa81195c2466129817d8a50d8348"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3e/a00116.html#a7b8baa81195c2466129817d8a50d8348">PositionWeightedHeuristics</a> (<a class="el" href="../../da/d72/a00124.html">Board</a> board, <a class="el" href="../../da/d74/a00099.html#ad3875305e47f14266c1e80da9b33304b">PlayerColor</a> currPlayer)</td></tr>
+<tr class="separator:a7b8baa81195c2466129817d8a50d8348"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="a535259f57a1fe0636a4915056c5076d2" name="a535259f57a1fe0636a4915056c5076d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a535259f57a1fe0636a4915056c5076d2">&#9670;&nbsp;</a></span>CellState</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="../../d4/d3e/a00116.html#a535259f57a1fe0636a4915056c5076d2">SherlocksGambit.Game.Cell.CellState</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Characterize the state of a cell. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a535259f57a1fe0636a4915056c5076d2a03fdbf12e03a4cd1409b84abe2b631df" name="a535259f57a1fe0636a4915056c5076d2a03fdbf12e03a4cd1409b84abe2b631df"></a>Friendly&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a535259f57a1fe0636a4915056c5076d2a8c6d21187fb58b7a079d70030686b33e" name="a535259f57a1fe0636a4915056c5076d2a8c6d21187fb58b7a079d70030686b33e"></a>Enemy&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a535259f57a1fe0636a4915056c5076d2ab24ce0cd392a5b0b8dedc66c25213594" name="a535259f57a1fe0636a4915056c5076d2ab24ce0cd392a5b0b8dedc66c25213594"></a>Free&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a535259f57a1fe0636a4915056c5076d2a46dc1018ac1d8fca7c2752a61ce2fd0f" name="a535259f57a1fe0636a4915056c5076d2a46dc1018ac1d8fca7c2752a61ce2fd0f"></a>OutOfBounds&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-<p class="definition">Definition at line <a class="el" href="../../d5/df9/a00044_source.html#l00009">9</a> of file <a class="el" href="../../d5/df9/a00044_source.html">Cell.cs</a>.</p>
-
-</div>
-</div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a994d8bf12a32ffe4b0bcc605c3f21b1f" name="a994d8bf12a32ffe4b0bcc605c3f21b1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a994d8bf12a32ffe4b0bcc605c3f21b1f">&#9670;&nbsp;</a></span>Board</h2>
+<a id="af99c096aa075d8fe42601043a26323a8" name="af99c096aa075d8fe42601043a26323a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af99c096aa075d8fe42601043a26323a8">&#9670;&nbsp;</a></span>PositionsWeights</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">readonly <a class="el" href="../../db/d57/a00112.html">Board</a> SherlocksGambit.Game.Cell.Board</td>
+          <td class="memname">readonly double [] SherlocksGambit.AI.Heuristic.PositionsWeights</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">            2, 2, 2, 2,</div>
+<div class="line">            1, 1, 1, 1.5,</div>
+<div class="line">            1.5, 1, 1, 1,</div>
+<div class="line">            1, 1.25, 1.25, 1.5,</div>
+<div class="line">            1.5, 1.25, 1.25, 1,</div>
+<div class="line">            1, 1, 1, 1.5,</div>
+<div class="line">            1.5, 1, 1, 1,</div>
+<div class="line">            2, 2, 2, 2,</div>
+<div class="line">        }</div>
+</div><!-- fragment -->
+<p>This defines how advantageous a position is over the others </p>
+<p >You are allowed to tweak it its values as you deem fit </p>
 
-<p>Reference to the <a class="el" href="../../db/d57/a00112.html">Board</a> the cell is on. </p>
-
-<p class="definition">Definition at line <a class="el" href="../../d5/df9/a00044_source.html#l00018">18</a> of file <a class="el" href="../../d5/df9/a00044_source.html">Cell.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/db6/a00074_source.html#l00015">15</a> of file <a class="el" href="../../db/db6/a00074_source.html">Heuristic.cs</a>.</p>
 
 </div>
 </div>
-<a id="a066708f955a4a84593db2359b8357851" name="a066708f955a4a84593db2359b8357851"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a066708f955a4a84593db2359b8357851">&#9670;&nbsp;</a></span>BoardPosition</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a66b9213ff906dca02f68333de9ce6200" name="a66b9213ff906dca02f68333de9ce6200"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66b9213ff906dca02f68333de9ce6200">&#9670;&nbsp;</a></span>ComputeHeuristic()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">readonly int SherlocksGambit.Game.Cell.BoardPosition</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The position of the cell in board notation. </p>
-
-<p class="definition">Definition at line <a class="el" href="../../d5/df9/a00044_source.html#l00024">24</a> of file <a class="el" href="../../d5/df9/a00044_source.html">Cell.cs</a>.</p>
-
-</div>
-</div>
-<a id="ad53e986eec0fa7d30e47aae72ce30bff" name="ad53e986eec0fa7d30e47aae72ce30bff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad53e986eec0fa7d30e47aae72ce30bff">&#9670;&nbsp;</a></span>CurrentPiece</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../da/d72/a00124.html">BasePiece</a> SherlocksGambit.Game.Cell.CurrentPiece</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Reference to the current piece on the cell. </p>
-
-<p class="definition">Definition at line <a class="el" href="../../d5/df9/a00044_source.html#l00021">21</a> of file <a class="el" href="../../d5/df9/a00044_source.html">Cell.cs</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="afe96d3bf7070bc4f2afd04ce7efcbfeb" name="afe96d3bf7070bc4f2afd04ce7efcbfeb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe96d3bf7070bc4f2afd04ce7efcbfeb">&#9670;&nbsp;</a></span>Cell()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">SherlocksGambit.Game.Cell.Cell </td>
+          <td class="memname">static double SherlocksGambit.AI.Heuristic.ComputeHeuristic </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>boardPosition</em>, </td>
+          <td class="paramtype"><a class="el" href="../../da/d72/a00124.html">Board</a>&#160;</td>
+          <td class="paramname"><em>board</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../db/d57/a00112.html">Board</a>&#160;</td>
-          <td class="paramname"><em>board</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/d74/a00099.html#ad3875305e47f14266c1e80da9b33304b">PlayerColor</a>&#160;</td>
+          <td class="paramname"><em>currPlayer</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -206,19 +159,175 @@ Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Basic constructor for <a class="el" href="../../d4/d3e/a00116.html">Cell</a> </p>
+<p><a class="el" href="../../d4/d3e/a00116.html">Heuristic</a> where Kings are valued twice as much as Men </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">boardPosition</td><td>Position of the cell in board notation </td></tr>
-    <tr><td class="paramname">board</td><td>The <a class="el" href="../../db/d57/a00112.html">Board</a> the cell is on </td></tr>
+    <tr><td class="paramname">board</td><td>Board on which to calculate the heuristic </td></tr>
+    <tr><td class="paramname">currPlayer</td><td>Player for which the heuristic is calculated </td></tr>
   </table>
   </dd>
 </dl>
-<p>Initialize all attributes on this class </p>
+<dl class="section return"><dt>Returns</dt><dd>The sum of all the pieces on the board </dd></dl>
+<p >In order to calculate the heuristic in regards to one player, such player should have its pieces' value be positive while the opponent should have theirs be negative <br  />
+ The rule "Kings are valued twice as Men" stands for both parties, whether the final value is negative or positive </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/df9/a00044_source.html#l00032">32</a> of file <a class="el" href="../../d5/df9/a00044_source.html">Cell.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/db6/a00074_source.html#l00053">53</a> of file <a class="el" href="../../db/db6/a00074_source.html">Heuristic.cs</a>.</p>
+
+</div>
+</div>
+<a id="a7b8baa81195c2466129817d8a50d8348" name="a7b8baa81195c2466129817d8a50d8348"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b8baa81195c2466129817d8a50d8348">&#9670;&nbsp;</a></span>PositionWeightedHeuristics()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static double SherlocksGambit.AI.Heuristic.PositionWeightedHeuristics </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d72/a00124.html">Board</a>&#160;</td>
+          <td class="paramname"><em>board</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d74/a00099.html#ad3875305e47f14266c1e80da9b33304b">PlayerColor</a>&#160;</td>
+          <td class="paramname"><em>currPlayer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../d4/d3e/a00116.html">Heuristic</a> where kings are valued twice as much as men and where their positions on the board matter </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">board</td><td>Board on which to calculate the heuristic </td></tr>
+    <tr><td class="paramname">currPlayer</td><td>Player for which the heuristic is calculated </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The sum of all the pieces on the board </dd></dl>
+<p >In order to calculate the heuristic in regards to one player, such player should have its pieces' value be positive while the opponent should have theirs be negative <br  />
+ The rule "Kings are valued twice as Men" stands for both parties, whether the final value is negative or positive <br  />
+ When using the provided double array, do not forget to convert positions in board notation to positions in array notation! Indeed, the position of the piece is directly linked to the weight of that position's index </p>
+
+<p class="definition">Definition at line <a class="el" href="../../db/db6/a00074_source.html#l00088">88</a> of file <a class="el" href="../../db/db6/a00074_source.html">Heuristic.cs</a>.</p>
+
+</div>
+</div>
+<a id="a8166930efc8f8a9fb3b0c1c3401fa894" name="a8166930efc8f8a9fb3b0c1c3401fa894"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8166930efc8f8a9fb3b0c1c3401fa894">&#9670;&nbsp;</a></span>RandomHeuristic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static double SherlocksGambit.AI.Heuristic.RandomHeuristic </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d72/a00124.html">Board</a>&#160;</td>
+          <td class="paramname"><em>board</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d74/a00099.html#ad3875305e47f14266c1e80da9b33304b">PlayerColor</a>&#160;</td>
+          <td class="paramname"><em>currPlayer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../d4/d3e/a00116.html">Heuristic</a> which returns a random evaluation of the board </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">board</td><td>Board on which to calculate the heuristic </td></tr>
+    <tr><td class="paramname">currPlayer</td><td>Player for which the heuristic is calculated </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A random double between -1 and 1 </dd></dl>
+<p >You are allowed to widen the range of the randomness HOWEVER it must be centered on 0. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../db/db6/a00074_source.html#l00067">67</a> of file <a class="el" href="../../db/db6/a00074_source.html">Heuristic.cs</a>.</p>
+
+</div>
+</div>
+<a id="a7ceeaf2977f032aa5f7db91834e7378c" name="a7ceeaf2977f032aa5f7db91834e7378c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ceeaf2977f032aa5f7db91834e7378c">&#9670;&nbsp;</a></span>SimpleHeuristic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static double SherlocksGambit.AI.Heuristic.SimpleHeuristic </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d72/a00124.html">Board</a>&#160;</td>
+          <td class="paramname"><em>board</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d74/a00099.html#ad3875305e47f14266c1e80da9b33304b">PlayerColor</a>&#160;</td>
+          <td class="paramname"><em>currPlayer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../d4/d3e/a00116.html">Heuristic</a> where Kings are as valuable as Men </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">board</td><td>Board on which to calculate the heuristic </td></tr>
+    <tr><td class="paramname">currPlayer</td><td>Player for which the heuristic is calculated </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The sum of all the pieces on the board </dd></dl>
+<p >In order to calculate the heuristic in regards to one player, such player should have its pieces' value be positive while the opponent should have theirs be negative </p>
+
+<p class="definition">Definition at line <a class="el" href="../../db/db6/a00074_source.html#l00036">36</a> of file <a class="el" href="../../db/db6/a00074_source.html">Heuristic.cs</a>.</p>
 
 </div>
 </div>

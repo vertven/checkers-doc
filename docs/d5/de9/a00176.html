@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Sherlock&#39;s Gambit: SherlocksGambit.Utils.Helpers.DirectionHelper Class Reference</title>
+<title>Sherlock&#39;s Gambit: SherlocksGambit.Utils.Encryption.FenEncryption Class Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -65,29 +65,27 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="../../da/dec/a00080.html">SherlocksGambit</a></li><li class="navelem"><a class="el" href="../../df/d5d/a00084.html">Utils</a></li><li class="navelem"><a class="el" href="../../d1/d1e/a00087.html">Helpers</a></li><li class="navelem"><a class="el" href="../../d5/de9/a00176.html">DirectionHelper</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../d1/dc1/a00092.html">SherlocksGambit</a></li><li class="navelem"><a class="el" href="../../d9/df8/a00096.html">Utils</a></li><li class="navelem"><a class="el" href="../../d1/d44/a00098.html">Encryption</a></li><li class="navelem"><a class="el" href="../../d5/de9/a00176.html">FenEncryption</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="../../d7/d3f/a00173.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">SherlocksGambit.Utils.Helpers.DirectionHelper Class Reference</div></div>
+  <div class="headertitle"><div class="title">SherlocksGambit.Utils.Encryption.FenEncryption Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a9114b390eaa4b9d16077fc986c9d463a"><td class="memItemLeft" align="right" valign="top">static List&lt; <a class="el" href="../../d1/d1e/a00087.html#af9726f396cd4597aa46806a77109cd5d">Direction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de9/a00176.html#a9114b390eaa4b9d16077fc986c9d463a">GetDirections</a> (<a class="el" href="../../da/d72/a00124.html">BasePiece</a> piece)</td></tr>
-<tr class="separator:a9114b390eaa4b9d16077fc986c9d463a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6de5759ebaa8acb0562bbfa7730c4ef9"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de9/a00176.html#a6de5759ebaa8acb0562bbfa7730c4ef9">GetCellPosInDirection</a> (int pos, <a class="el" href="../../d1/d1e/a00087.html#af9726f396cd4597aa46806a77109cd5d">Direction</a> direction)</td></tr>
-<tr class="separator:a6de5759ebaa8acb0562bbfa7730c4ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9517b26ac0a0a34784b3afef17b25431"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de9/a00176.html#a9517b26ac0a0a34784b3afef17b25431">IsOnKingsRow</a> (<a class="el" href="../../da/d72/a00124.html">BasePiece</a> piece)</td></tr>
-<tr class="separator:a9517b26ac0a0a34784b3afef17b25431"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4332c194e4f43bd266a62412895cbf3e"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de9/a00176.html#a4332c194e4f43bd266a62412895cbf3e">Encrypt</a> (<a class="el" href="../../da/d72/a00124.html">Board</a> board)</td></tr>
+<tr class="separator:a4332c194e4f43bd266a62412895cbf3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8e5f76394eb3f5f81cea15eb87ec3cf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de9/a00176.html#ae8e5f76394eb3f5f81cea15eb87ec3cf">Decrypt</a> (<a class="el" href="../../db/d48/a00148.html">PieceManager</a> pieceManager, <a class="el" href="../../da/d72/a00124.html">Board</a> board, string fenCode)</td></tr>
+<tr class="separator:ae8e5f76394eb3f5f81cea15eb87ec3cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6de5759ebaa8acb0562bbfa7730c4ef9" name="a6de5759ebaa8acb0562bbfa7730c4ef9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6de5759ebaa8acb0562bbfa7730c4ef9">&#9670;&nbsp;</a></span>GetCellPosInDirection()</h2>
+<a id="ae8e5f76394eb3f5f81cea15eb87ec3cf" name="ae8e5f76394eb3f5f81cea15eb87ec3cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8e5f76394eb3f5f81cea15eb87ec3cf">&#9670;&nbsp;</a></span>Decrypt()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -96,16 +94,22 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static int SherlocksGambit.Utils.Helpers.DirectionHelper.GetCellPosInDirection </td>
+          <td class="memname">static void SherlocksGambit.Utils.Encryption.FenEncryption.Decrypt </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>pos</em>, </td>
+          <td class="paramtype"><a class="el" href="../../db/d48/a00148.html">PieceManager</a>&#160;</td>
+          <td class="paramname"><em>pieceManager</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d1/d1e/a00087.html#af9726f396cd4597aa46806a77109cd5d">Direction</a>&#160;</td>
-          <td class="paramname"><em>direction</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/d72/a00124.html">Board</a>&#160;</td>
+          <td class="paramname"><em>board</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>fenCode</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -120,23 +124,35 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets the board position of the next cell from a board position in a direction </p>
+<p>Decodes a FEN-encoded board and places the pieces on the board and in <code>PiecesDictionary</code> </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pos</td><td>Position in board notation of the current cell </td></tr>
-    <tr><td class="paramname">direction</td><td>Direction in which to look for </td></tr>
+    <tr><td class="paramname">pieceManager</td><td>PieceManager in which to put the newly created pieces </td></tr>
+    <tr><td class="paramname">board</td><td>Board on which to place the newly created pieces </td></tr>
+    <tr><td class="paramname">fenCode</td><td>FEN to decode. It is assumed to be not null </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A position in board notation of the found cell or -1 if the cell was OutOfBounds </dd></dl>
-<p >The board notation is different than the array notation! We chose to return -1 instead of raising and exception for performance issues </p>
+<p >This is a valid FEN code: mmmm/mmmm/4/4/4/4/MMMM/MMMM </p>
+<p >Your code should throw exceptions if the code cannot be decrypted </p><dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentException</td><td>"Invalid board size" </td></tr>
+    <tr><td class="paramname">ArgumentException</td><td>"Wrong number of pieces in a single row" </td></tr>
+    <tr><td class="paramname">ArgumentException</td><td>"Invalid empty space amount" </td></tr>
+    <tr><td class="paramname">ArgumentException</td><td>"Invalid character" </td></tr>
+  </table>
+  </dd>
+</dl>
+<p >The FEN notation and our array notation are inversed. It's up to you to find a way to coincide both notations <br  />
+ Indeed FEN starts at the lower left, left to right, bottom up <br  />
+ While <code>Cells</code> starts at the upper left, left to right, top down </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d32/a00041_source.html#l00044">44</a> of file <a class="el" href="../../dd/d32/a00041_source.html">DirectionHelper.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/de7/a00014_source.html#l00043">43</a> of file <a class="el" href="../../d2/de7/a00014_source.html">FenEncryption.cs</a>.</p>
 
 </div>
 </div>
-<a id="a9114b390eaa4b9d16077fc986c9d463a" name="a9114b390eaa4b9d16077fc986c9d463a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9114b390eaa4b9d16077fc986c9d463a">&#9670;&nbsp;</a></span>GetDirections()</h2>
+<a id="a4332c194e4f43bd266a62412895cbf3e" name="a4332c194e4f43bd266a62412895cbf3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4332c194e4f43bd266a62412895cbf3e">&#9670;&nbsp;</a></span>Encrypt()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -145,10 +161,10 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static List&lt; <a class="el" href="../../d1/d1e/a00087.html#af9726f396cd4597aa46806a77109cd5d">Direction</a> &gt; SherlocksGambit.Utils.Helpers.DirectionHelper.GetDirections </td>
+          <td class="memname">static string SherlocksGambit.Utils.Encryption.FenEncryption.Encrypt </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../da/d72/a00124.html">BasePiece</a>&#160;</td>
-          <td class="paramname"><em>piece</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../da/d72/a00124.html">Board</a>&#160;</td>
+          <td class="paramname"><em>board</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -159,55 +175,18 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets the list of all directions the given piece can move in </p>
+<p>Encodes a board in its FEN notation </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">piece</td><td>BasePiece asking for direction </td></tr>
+    <tr><td class="paramname">board</td><td>Board on which to place the newly created pieces </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A list of all the possible direction the piece can move in </dd></dl>
-<p >The list is ordered in a clockwise way from upper right to upper left </p>
+<p >The FEN notation and our array notation are inversed. It's up to you to find a way to coincide both notations <br  />
+ Indeed FEN starts at the lower left, left to right, bottom up <br  />
+ While <code>Cells</code> starts at the upper left, left to right, top down </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d32/a00041_source.html#l00025">25</a> of file <a class="el" href="../../dd/d32/a00041_source.html">DirectionHelper.cs</a>.</p>
-
-</div>
-</div>
-<a id="a9517b26ac0a0a34784b3afef17b25431" name="a9517b26ac0a0a34784b3afef17b25431"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9517b26ac0a0a34784b3afef17b25431">&#9670;&nbsp;</a></span>IsOnKingsRow()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool SherlocksGambit.Utils.Helpers.DirectionHelper.IsOnKingsRow </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../da/d72/a00124.html">BasePiece</a>&#160;</td>
-          <td class="paramname"><em>piece</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Checks if the piece is all the way at the end of the board </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">piece</td><td>The BasePiece to check for </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A boolean. If true, the piece can be promoted </dd></dl>
-<p >A King could call this function but this is an expected behaviour used in a BONUS </p>
-
-<p class="definition">Definition at line <a class="el" href="../../dd/d32/a00041_source.html#l00074">74</a> of file <a class="el" href="../../dd/d32/a00041_source.html">DirectionHelper.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/de7/a00014_source.html#l00021">21</a> of file <a class="el" href="../../d2/de7/a00014_source.html">FenEncryption.cs</a>.</p>
 
 </div>
 </div>
