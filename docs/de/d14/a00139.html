@@ -280,7 +280,7 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Checks if the <a class="el" href="../../de/d14/a00139.html">BasePiece</a> could have captured an enemy piece but the action done was not a capture action </p>
+<p>Checks if any of the player's pieces could have captured an enemy piece but the move chosen was a simple one </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ate</td><td>Boolean indicating if the action done was a capture or not </td></tr>
@@ -288,10 +288,11 @@ Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A boolean indicating if the piece could have captured a piece </dd></dl>
-<p >A very easy way to check this is to look for all possible paths that requires an enemy. If there are some but the action done was not a capture, return true <br  />
- You might not want to run the search if there are no need for. Consider looking into lazy evaluation </p>
+<p >A very easy way to check this is to look for all possible paths that requires an enemy for all of the player's pieces. If there are any but the action done was not a capture, return true <br  />
+ The color of the player for which we want to check is the color of the current <a class="el" href="../../de/d14/a00139.html">BasePiece</a> <br  />
+ We are making use of the lazy evaluation here! Read some documentation about it since it is critical for performance reasons </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/de1/a00065_source.html#l00297">297</a> of file <a class="el" href="../../de/de1/a00065_source.html">BasePiece.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/de1/a00065_source.html#l00298">298</a> of file <a class="el" href="../../de/de1/a00065_source.html">BasePiece.cs</a>.</p>
 
 </div>
 </div>
@@ -524,7 +525,7 @@ Private Member Functions</h2></td></tr>
  You also should not recreate path that are useless. If the action is a capture one, only capture paths must be recreated <br  />
  To execute the move, this function should then call its overloaded version </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/de1/a00065_source.html#l00315">315</a> of file <a class="el" href="../../de/de1/a00065_source.html">BasePiece.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/de1/a00065_source.html#l00316">316</a> of file <a class="el" href="../../de/de1/a00065_source.html">BasePiece.cs</a>.</p>
 
 </div>
 </div>
@@ -582,7 +583,7 @@ Private Member Functions</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="../../d0/d4a/a00147.html#ac670cfa778ab4caafafa838d78baa01b">SherlocksGambit.Game.Pieces.Man</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/de1/a00065_source.html#l00345">345</a> of file <a class="el" href="../../de/de1/a00065_source.html">BasePiece.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/de1/a00065_source.html#l00346">346</a> of file <a class="el" href="../../de/de1/a00065_source.html">BasePiece.cs</a>.</p>
 
 </div>
 </div>
@@ -715,7 +716,7 @@ Private Member Functions</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="../../d7/dce/a00143.html#a253887fa0d50c80cc782b445378095ef">SherlocksGambit.Game.Pieces.King</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/de1/a00065_source.html#l00374">374</a> of file <a class="el" href="../../de/de1/a00065_source.html">BasePiece.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/de1/a00065_source.html#l00375">375</a> of file <a class="el" href="../../de/de1/a00065_source.html">BasePiece.cs</a>.</p>
 
 </div>
 </div>

@@ -116,6 +116,8 @@ Protected Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:aeaf175c3b17c1c51eb382ee01521e9ea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/a00115.html#aeaf175c3b17c1c51eb382ee01521e9ea">IsEoG</a> (<a class="el" href="../../df/dcd/a00127.html">Board</a> board)</td></tr>
+<tr class="separator:aeaf175c3b17c1c51eb382ee01521e9ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeadb31c30f08364f476924b53f4deeda"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/a00115.html#aeadb31c30f08364f476924b53f4deeda">GetThenCreate</a> (string move, <a class="el" href="../../d8/d72/a00199.html">DotNode</a> root=null)</td></tr>
 <tr class="separator:aeadb31c30f08364f476924b53f4deeda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -128,8 +130,6 @@ Static Protected Member Functions</h2></td></tr>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a918b394c2a0e6a53dfe92c6f75607560"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/a00115.html#a918b394c2a0e6a53dfe92c6f75607560">AiBase</a> (<a class="el" href="../../de/db9/a00159.html">AiProperties</a> properties)</td></tr>
 <tr class="separator:a918b394c2a0e6a53dfe92c6f75607560"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeaf175c3b17c1c51eb382ee01521e9ea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/a00115.html#aeaf175c3b17c1c51eb382ee01521e9ea">IsEoG</a> (<a class="el" href="../../df/dcd/a00127.html">Board</a> board)</td></tr>
-<tr class="separator:aeaf175c3b17c1c51eb382ee01521e9ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2170682cc320de1ef6d8eef4b98eb7cc"><td class="memItemLeft" align="right" valign="top">abstract Tuple&lt; double, <a class="el" href="../../d5/d5b/a00135.html">PathObject</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/a00115.html#a2170682cc320de1ef6d8eef4b98eb7cc">GenerateMove</a> (<a class="el" href="../../df/dcd/a00127.html">Board</a> currBoard, int currDepth, bool minimize=false, double alpha=<a class="el" href="../../d2/da3/a00115.html#acffada0b43901499cc35265d946dc118">Min</a>, double beta=<a class="el" href="../../d2/da3/a00115.html#a957533127c351fec843376ae9e8478a5">Max</a>, <a class="el" href="../../d8/d72/a00199.html">DotNode</a> root=null, bool quietMode=false)</td></tr>
 <tr class="separator:a2170682cc320de1ef6d8eef4b98eb7cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -637,9 +637,6 @@ Protected Member Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool SherlocksGambit.AI.AiBase.IsEoG </td>
@@ -649,11 +646,6 @@ Protected Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Checks the current state of the game </p>
