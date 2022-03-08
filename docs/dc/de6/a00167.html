@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Sherlock&#39;s Gambit: SherlocksGambit.Utils.Bonuses.TranspositionTable Class Reference</title>
+<title>Sherlock&#39;s Gambit: SherlocksGambit.Utils.Bonuses.MoveOrdering Class Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -65,125 +65,57 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="../../d9/d77/a00095.html">SherlocksGambit</a></li><li class="navelem"><a class="el" href="../../da/d74/a00099.html">Utils</a></li><li class="navelem"><a class="el" href="../../d0/d61/a00100.html">Bonuses</a></li><li class="navelem"><a class="el" href="../../dc/de6/a00167.html">TranspositionTable</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../d9/d77/a00095.html">SherlocksGambit</a></li><li class="navelem"><a class="el" href="../../da/d74/a00099.html">Utils</a></li><li class="navelem"><a class="el" href="../../d0/d61/a00100.html">Bonuses</a></li><li class="navelem"><a class="el" href="../../dc/de6/a00167.html">MoveOrdering</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-types">Public Types</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="../../db/ddf/a00164.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">SherlocksGambit.Utils.Bonuses.TranspositionTable Class Reference</div></div>
+  <div class="headertitle"><div class="title">SherlocksGambit.Utils.Bonuses.MoveOrdering Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d0d/a00171.html">Entry</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a587ebdf6f6e412b1ef648335254c3ab5"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de6/a00167.html#a587ebdf6f6e412b1ef648335254c3ab5">MaxMoveCount</a> = 218</td></tr>
+<tr class="separator:a587ebdf6f6e412b1ef648335254c3ab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66e143e502fea77addb39a180db7e869"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de6/a00167.html#a66e143e502fea77addb39a180db7e869">AttackDivisor</a> = 50</td></tr>
+<tr class="separator:a66e143e502fea77addb39a180db7e869"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01e456b5aeee6f54634cb6432dd481b2"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de6/a00167.html#a01e456b5aeee6f54634cb6432dd481b2">CaptureMultiplier</a> = 10</td></tr>
+<tr class="separator:a01e456b5aeee6f54634cb6432dd481b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a0e43cc6b6bc3985baf6af46e86c01eda"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de6/a00167.html#a0e43cc6b6bc3985baf6af46e86c01eda">Status</a> { <a class="el" href="../../dc/de6/a00167.html#a0e43cc6b6bc3985baf6af46e86c01edaae04edbfa47839dff9718704042ed3194">LookupFailed</a> = int.MinValue
-, <a class="el" href="../../dc/de6/a00167.html#a0e43cc6b6bc3985baf6af46e86c01edaa03d512636adb178d5de93bc1f63642f5">ExactValue</a> = 0
-, <a class="el" href="../../dc/de6/a00167.html#a0e43cc6b6bc3985baf6af46e86c01edaa93673fa92b8c57d1e6739d14f422304d">LowerBound</a> = 1
-, <a class="el" href="../../dc/de6/a00167.html#a0e43cc6b6bc3985baf6af46e86c01edaaa4e5074903e0dfd2f527af80e2c64294">UpperBound</a> = 2
- }</td></tr>
-<tr class="separator:a0e43cc6b6bc3985baf6af46e86c01eda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a6030515638ce305b244af50bfea90d67"><td class="memItemLeft" align="right" valign="top">readonly int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de6/a00167.html#a6030515638ce305b244af50bfea90d67">_moveScores</a></td></tr>
+<tr class="separator:a6030515638ce305b244af50bfea90d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a426249e7c992d43ae375034937b826a6"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="../../d1/d0d/a00171.html">TranspositionTable</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de6/a00167.html#a426249e7c992d43ae375034937b826a6">_transpositionTable</a></td></tr>
+<tr class="separator:a426249e7c992d43ae375034937b826a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af48c67774adcdb53c98a5a200f147bcf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de6/a00167.html#af48c67774adcdb53c98a5a200f147bcf">TranspositionTable</a> ()</td></tr>
-<tr class="separator:af48c67774adcdb53c98a5a200f147bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91c1c442ce7fade7a2328c1096686292"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d5b/a00135.html">PathObject</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de6/a00167.html#a91c1c442ce7fade7a2328c1096686292">GetStoredMove</a> (<a class="el" href="../../df/dcd/a00127.html">Board</a> board)</td></tr>
-<tr class="separator:a91c1c442ce7fade7a2328c1096686292"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a970849799e8346f551bb7c35e1173e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de6/a00167.html#a7a970849799e8346f551bb7c35e1173e">LookupEvaluation</a> (<a class="el" href="../../df/dcd/a00127.html">Board</a> board, int depth, double alpha, double beta)</td></tr>
-<tr class="separator:a7a970849799e8346f551bb7c35e1173e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c2d81d1b8d011aa4f406fb3383a9039"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de6/a00167.html#a9c2d81d1b8d011aa4f406fb3383a9039">StoreEvaluation</a> (int id, <a class="el" href="../../df/dcd/a00127.html">Board</a> board, double eval, int depth, <a class="el" href="../../dc/de6/a00167.html#a0e43cc6b6bc3985baf6af46e86c01eda">Status</a> evalType, <a class="el" href="../../d5/d5b/a00135.html">PathObject</a> move)</td></tr>
-<tr class="separator:a9c2d81d1b8d011aa4f406fb3383a9039"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae979424dd081d7b88a906b3237a4bc22"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de6/a00167.html#ae979424dd081d7b88a906b3237a4bc22">MoveOrdering</a> (<a class="el" href="../../d1/d0d/a00171.html">TranspositionTable</a> transpositionTable)</td></tr>
+<tr class="separator:ae979424dd081d7b88a906b3237a4bc22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5671d32f079af534110a5c07d0a795c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de6/a00167.html#ac5671d32f079af534110a5c07d0a795c">OrderMoves</a> (<a class="el" href="../../df/dcd/a00127.html">Board</a> board, List&lt; <a class="el" href="../../d5/d5b/a00135.html">PathObject</a> &gt; moves, bool useTransposition)</td></tr>
+<tr class="separator:ac5671d32f079af534110a5c07d0a795c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:affd6bbb3aeb228f15b63b9f2fc151222"><td class="memItemLeft" align="right" valign="top">static uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de6/a00167.html#affd6bbb3aeb228f15b63b9f2fc151222">Index</a> (<a class="el" href="../../df/dcd/a00127.html">Board</a> board)</td></tr>
-<tr class="separator:affd6bbb3aeb228f15b63b9f2fc151222"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:aab30a98e6bd72e729b8bfbcf06efb93b"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de6/a00167.html#aab30a98e6bd72e729b8bfbcf06efb93b">GetPieceValue</a> (<a class="el" href="../../de/d14/a00139.html">BasePiece</a> piece)</td></tr>
+<tr class="separator:aab30a98e6bd72e729b8bfbcf06efb93b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:ae81e9972f24285280ae2138dc0bf0050"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="../../d1/d0d/a00171.html">Entry</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de6/a00167.html#ae81e9972f24285280ae2138dc0bf0050">Entries</a></td></tr>
-<tr class="separator:ae81e9972f24285280ae2138dc0bf0050"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:aec56718c96e6f242afe4a1c4d0a4b036"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de6/a00167.html#aec56718c96e6f242afe4a1c4d0a4b036">Sort</a> (List&lt; <a class="el" href="../../d5/d5b/a00135.html">PathObject</a> &gt; moves)</td></tr>
+<tr class="separator:aec56718c96e6f242afe4a1c4d0a4b036"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../dd/d32/a00041_source.html#l00006">6</a> of file <a class="el" href="../../dd/d32/a00041_source.html">TranspositionTable.cs</a>.</p>
-</div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="a0e43cc6b6bc3985baf6af46e86c01eda" name="a0e43cc6b6bc3985baf6af46e86c01eda"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e43cc6b6bc3985baf6af46e86c01eda">&#9670;&nbsp;</a></span>Status</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="../../dc/de6/a00167.html#a0e43cc6b6bc3985baf6af46e86c01eda">SherlocksGambit.Utils.Bonuses.TranspositionTable.Status</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0e43cc6b6bc3985baf6af46e86c01edaae04edbfa47839dff9718704042ed3194" name="a0e43cc6b6bc3985baf6af46e86c01edaae04edbfa47839dff9718704042ed3194"></a>LookupFailed&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a0e43cc6b6bc3985baf6af46e86c01edaa03d512636adb178d5de93bc1f63642f5" name="a0e43cc6b6bc3985baf6af46e86c01edaa03d512636adb178d5de93bc1f63642f5"></a>ExactValue&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a0e43cc6b6bc3985baf6af46e86c01edaa93673fa92b8c57d1e6739d14f422304d" name="a0e43cc6b6bc3985baf6af46e86c01edaa93673fa92b8c57d1e6739d14f422304d"></a>LowerBound&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a0e43cc6b6bc3985baf6af46e86c01edaaa4e5074903e0dfd2f527af80e2c64294" name="a0e43cc6b6bc3985baf6af46e86c01edaaa4e5074903e0dfd2f527af80e2c64294"></a>UpperBound&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-<p class="definition">Definition at line <a class="el" href="../../dd/d32/a00041_source.html#l00009">9</a> of file <a class="el" href="../../dd/d32/a00041_source.html">TranspositionTable.cs</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="af48c67774adcdb53c98a5a200f147bcf" name="af48c67774adcdb53c98a5a200f147bcf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af48c67774adcdb53c98a5a200f147bcf">&#9670;&nbsp;</a></span>TranspositionTable()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">SherlocksGambit.Utils.Bonuses.TranspositionTable.TranspositionTable </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../dd/d32/a00041_source.html#l00029">29</a> of file <a class="el" href="../../dd/d32/a00041_source.html">TranspositionTable.cs</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a91c1c442ce7fade7a2328c1096686292" name="a91c1c442ce7fade7a2328c1096686292"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91c1c442ce7fade7a2328c1096686292">&#9670;&nbsp;</a></span>GetStoredMove()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d5/d5b/a00135.html">PathObject</a> SherlocksGambit.Utils.Bonuses.TranspositionTable.GetStoredMove </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../df/dcd/a00127.html">Board</a>&#160;</td>
-          <td class="paramname"><em>board</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../dd/d32/a00041_source.html#l00043">43</a> of file <a class="el" href="../../dd/d32/a00041_source.html">TranspositionTable.cs</a>.</p>
-
-</div>
-</div>
-<a id="affd6bbb3aeb228f15b63b9f2fc151222" name="affd6bbb3aeb228f15b63b9f2fc151222"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affd6bbb3aeb228f15b63b9f2fc151222">&#9670;&nbsp;</a></span>Index()</h2>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a6030515638ce305b244af50bfea90d67" name="a6030515638ce305b244af50bfea90d67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6030515638ce305b244af50bfea90d67">&#9670;&nbsp;</a></span>_moveScores</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -192,32 +124,174 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static uint SherlocksGambit.Utils.Bonuses.TranspositionTable.Index </td>
+          <td class="memname">readonly int [] SherlocksGambit.Utils.Bonuses.MoveOrdering._moveScores</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d87/a00032_source.html#l00015">15</a> of file <a class="el" href="../../dc/d87/a00032_source.html">MoveOrdering.cs</a>.</p>
+
+</div>
+</div>
+<a id="a426249e7c992d43ae375034937b826a6" name="a426249e7c992d43ae375034937b826a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a426249e7c992d43ae375034937b826a6">&#9670;&nbsp;</a></span>_transpositionTable</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly <a class="el" href="../../d1/d0d/a00171.html">TranspositionTable</a> SherlocksGambit.Utils.Bonuses.MoveOrdering._transpositionTable</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d87/a00032_source.html#l00021">21</a> of file <a class="el" href="../../dc/d87/a00032_source.html">MoveOrdering.cs</a>.</p>
+
+</div>
+</div>
+<a id="a66e143e502fea77addb39a180db7e869" name="a66e143e502fea77addb39a180db7e869"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66e143e502fea77addb39a180db7e869">&#9670;&nbsp;</a></span>AttackDivisor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int SherlocksGambit.Utils.Bonuses.MoveOrdering.AttackDivisor = 50</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d87/a00032_source.html#l00018">18</a> of file <a class="el" href="../../dc/d87/a00032_source.html">MoveOrdering.cs</a>.</p>
+
+</div>
+</div>
+<a id="a01e456b5aeee6f54634cb6432dd481b2" name="a01e456b5aeee6f54634cb6432dd481b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01e456b5aeee6f54634cb6432dd481b2">&#9670;&nbsp;</a></span>CaptureMultiplier</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int SherlocksGambit.Utils.Bonuses.MoveOrdering.CaptureMultiplier = 10</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d87/a00032_source.html#l00019">19</a> of file <a class="el" href="../../dc/d87/a00032_source.html">MoveOrdering.cs</a>.</p>
+
+</div>
+</div>
+<a id="a587ebdf6f6e412b1ef648335254c3ab5" name="a587ebdf6f6e412b1ef648335254c3ab5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a587ebdf6f6e412b1ef648335254c3ab5">&#9670;&nbsp;</a></span>MaxMoveCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int SherlocksGambit.Utils.Bonuses.MoveOrdering.MaxMoveCount = 218</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d87/a00032_source.html#l00016">16</a> of file <a class="el" href="../../dc/d87/a00032_source.html">MoveOrdering.cs</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ae979424dd081d7b88a906b3237a4bc22" name="ae979424dd081d7b88a906b3237a4bc22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae979424dd081d7b88a906b3237a4bc22">&#9670;&nbsp;</a></span>MoveOrdering()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SherlocksGambit.Utils.Bonuses.MoveOrdering.MoveOrdering </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../df/dcd/a00127.html">Board</a>&#160;</td>
-          <td class="paramname"><em>board</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d1/d0d/a00171.html">TranspositionTable</a>&#160;</td>
+          <td class="paramname"><em>transpositionTable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d87/a00032_source.html#l00023">23</a> of file <a class="el" href="../../dc/d87/a00032_source.html">MoveOrdering.cs</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aab30a98e6bd72e729b8bfbcf06efb93b" name="aab30a98e6bd72e729b8bfbcf06efb93b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab30a98e6bd72e729b8bfbcf06efb93b">&#9670;&nbsp;</a></span>GetPieceValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int SherlocksGambit.Utils.Bonuses.MoveOrdering.GetPieceValue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/d14/a00139.html">BasePiece</a>&#160;</td>
+          <td class="paramname"><em>piece</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d32/a00041_source.html#l00036">36</a> of file <a class="el" href="../../dd/d32/a00041_source.html">TranspositionTable.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d87/a00032_source.html#l00033">33</a> of file <a class="el" href="../../dc/d87/a00032_source.html">MoveOrdering.cs</a>.</p>
 
 </div>
 </div>
-<a id="a7a970849799e8346f551bb7c35e1173e" name="a7a970849799e8346f551bb7c35e1173e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a970849799e8346f551bb7c35e1173e">&#9670;&nbsp;</a></span>LookupEvaluation()</h2>
+<a id="ac5671d32f079af534110a5c07d0a795c" name="ac5671d32f079af534110a5c07d0a795c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5671d32f079af534110a5c07d0a795c">&#9670;&nbsp;</a></span>OrderMoves()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double SherlocksGambit.Utils.Bonuses.TranspositionTable.LookupEvaluation </td>
+          <td class="memname">void SherlocksGambit.Utils.Bonuses.MoveOrdering.OrderMoves </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../df/dcd/a00127.html">Board</a>&#160;</td>
           <td class="paramname"><em>board</em>, </td>
@@ -225,20 +299,14 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>depth</em>, </td>
+          <td class="paramtype">List&lt; <a class="el" href="../../d5/d5b/a00135.html">PathObject</a> &gt;&#160;</td>
+          <td class="paramname"><em>moves</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>alpha</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>beta</em>&#160;</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>useTransposition</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -248,78 +316,35 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d32/a00041_source.html#l00049">49</a> of file <a class="el" href="../../dd/d32/a00041_source.html">TranspositionTable.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d87/a00032_source.html#l00028">28</a> of file <a class="el" href="../../dc/d87/a00032_source.html">MoveOrdering.cs</a>.</p>
 
 </div>
 </div>
-<a id="a9c2d81d1b8d011aa4f406fb3383a9039" name="a9c2d81d1b8d011aa4f406fb3383a9039"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c2d81d1b8d011aa4f406fb3383a9039">&#9670;&nbsp;</a></span>StoreEvaluation()</h2>
+<a id="aec56718c96e6f242afe4a1c4d0a4b036" name="aec56718c96e6f242afe4a1c4d0a4b036"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec56718c96e6f242afe4a1c4d0a4b036">&#9670;&nbsp;</a></span>Sort()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void SherlocksGambit.Utils.Bonuses.TranspositionTable.StoreEvaluation </td>
+          <td class="memname">void SherlocksGambit.Utils.Bonuses.MoveOrdering.Sort </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">List&lt; <a class="el" href="../../d5/d5b/a00135.html">PathObject</a> &gt;&#160;</td>
+          <td class="paramname"><em>moves</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../df/dcd/a00127.html">Board</a>&#160;</td>
-          <td class="paramname"><em>board</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>eval</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>depth</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/de6/a00167.html#a0e43cc6b6bc3985baf6af46e86c01eda">Status</a>&#160;</td>
-          <td class="paramname"><em>evalType</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/d5b/a00135.html">PathObject</a>&#160;</td>
-          <td class="paramname"><em>move</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d32/a00041_source.html#l00055">55</a> of file <a class="el" href="../../dd/d32/a00041_source.html">TranspositionTable.cs</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="ae81e9972f24285280ae2138dc0bf0050" name="ae81e9972f24285280ae2138dc0bf0050"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae81e9972f24285280ae2138dc0bf0050">&#9670;&nbsp;</a></span>Entries</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">readonly <a class="el" href="../../d1/d0d/a00171.html">Entry</a> [] SherlocksGambit.Utils.Bonuses.TranspositionTable.Entries</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../dd/d32/a00041_source.html#l00025">25</a> of file <a class="el" href="../../dd/d32/a00041_source.html">TranspositionTable.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d87/a00032_source.html#l00038">38</a> of file <a class="el" href="../../dc/d87/a00032_source.html">MoveOrdering.cs</a>.</p>
 
 </div>
 </div>
