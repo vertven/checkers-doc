@@ -126,7 +126,9 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d41/a00038_source.html#l00021">21</a> of file <a class="el" href="../../d8/d41/a00038_source.html">ZobristHashing.cs</a>.</p>
+<p>3 dimensional array storing all possible boards (2 pieces, 2 player, <code>Board.NbPositions</code> cells) </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d41/a00038_source.html#l00023">23</a> of file <a class="el" href="../../d8/d41/a00038_source.html">ZobristHashing.cs</a>.</p>
 
 </div>
 </div>
@@ -150,7 +152,9 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d41/a00038_source.html#l00014">14</a> of file <a class="el" href="../../d8/d41/a00038_source.html">ZobristHashing.cs</a>.</p>
+<p>Pseudo random number generator seeded with <code>Seed</code> </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d41/a00038_source.html#l00016">16</a> of file <a class="el" href="../../d8/d41/a00038_source.html">ZobristHashing.cs</a>.</p>
 
 </div>
 </div>
@@ -173,6 +177,8 @@ Static Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Completely random number without any signification for the random number generator. </p>
 
 <p class="definition">Definition at line <a class="el" href="../../d8/d41/a00038_source.html#l00013">13</a> of file <a class="el" href="../../d8/d41/a00038_source.html">ZobristHashing.cs</a>.</p>
 
@@ -197,8 +203,9 @@ Static Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Path to the source file where random numbers are stored (from the directory's root: bin/Debug/net5.0/randNum.txt) </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d41/a00038_source.html#l00018">18</a> of file <a class="el" href="../../d8/d41/a00038_source.html">ZobristHashing.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d41/a00038_source.html#l00020">20</a> of file <a class="el" href="../../d8/d41/a00038_source.html">ZobristHashing.cs</a>.</p>
 
 </div>
 </div>
@@ -226,7 +233,9 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d41/a00038_source.html#l00024">24</a> of file <a class="el" href="../../d8/d41/a00038_source.html">ZobristHashing.cs</a>.</p>
+<p>Static constructor (will be called once at the first call to this class) </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d41/a00038_source.html#l00028">28</a> of file <a class="el" href="../../d8/d41/a00038_source.html">ZobristHashing.cs</a>.</p>
 
 </div>
 </div>
@@ -255,7 +264,17 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d41/a00038_source.html#l00030">30</a> of file <a class="el" href="../../d8/d41/a00038_source.html">ZobristHashing.cs</a>.</p>
+<p>Returns the Zobrist key for a given Board </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">board</td><td>Board for which you generate the Zobrist notation </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>XOR together all the board pieces' value stored in <code>PiecesArray</code>. <br  />
+ <a href="https://en.wikipedia.org/wiki/Zobrist_hashing">Refer to Wikipedia </a> </p><dl class="section return"><dt>Returns</dt><dd>The calculated key </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d41/a00038_source.html#l00040">40</a> of file <a class="el" href="../../d8/d41/a00038_source.html">ZobristHashing.cs</a>.</p>
 
 </div>
 </div>
@@ -282,7 +301,11 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d41/a00038_source.html#l00044">44</a> of file <a class="el" href="../../d8/d41/a00038_source.html">ZobristHashing.cs</a>.</p>
+<p>Generates a random unsigned 32 bit integer </p>
+<dl class="section return"><dt>Returns</dt><dd>The generated number </dd></dl>
+<p >This function was engineered for a board size of 8. If board size is bigger then 8, consider using a bigger bit count to avoid collisions (ulong) </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d41/a00038_source.html#l00065">65</a> of file <a class="el" href="../../d8/d41/a00038_source.html">ZobristHashing.cs</a>.</p>
 
 </div>
 </div>
@@ -309,7 +332,11 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d41/a00038_source.html#l00051">51</a> of file <a class="el" href="../../d8/d41/a00038_source.html">ZobristHashing.cs</a>.</p>
+<p>Reads the random numbers stored in <code>SourceFile</code> </p>
+<dl class="section return"><dt>Returns</dt><dd>A queue containing all the numbers read </dd></dl>
+<p >You can read more about queues <a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.queue-1?view=net-5.0">here </a> This functions should be changed too if ulong are used instead of uint [BONUS] If you want to do the modular board, makes sure to regenerate <code>SourceFile</code> of the wrong amount of values are read </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d41/a00038_source.html#l00080">80</a> of file <a class="el" href="../../d8/d41/a00038_source.html">ZobristHashing.cs</a>.</p>
 
 </div>
 </div>
@@ -336,7 +363,11 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d41/a00038_source.html#l00036">36</a> of file <a class="el" href="../../d8/d41/a00038_source.html">ZobristHashing.cs</a>.</p>
+<p>Writes random numbers in <code>SourceFile</code> </p>
+<p >There should be as many random numbers as they are values in <code>PiecesArray</code> <br  />
+ Values should be separated with a comma (with none at the end) </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d41/a00038_source.html#l00052">52</a> of file <a class="el" href="../../d8/d41/a00038_source.html">ZobristHashing.cs</a>.</p>
 
 </div>
 </div>

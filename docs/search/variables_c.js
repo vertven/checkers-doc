@@ -8,5 +8,6 @@ var searchData=
   ['players_5',['Players',['../dd/ded/a00211.html#a37aedadcf9b616eb0ac80999d1d2dddd',1,'SherlocksGambit::Utils::Runners::Runner']]],
   ['positionsweights_6',['PositionsWeights',['../df/d6a/a00119.html#af99c096aa075d8fe42601043a26323a8',1,'SherlocksGambit::AI::Heuristic']]],
   ['print_7',['Print',['../dd/ded/a00211.html#a745491752819c3d5e3dca939f36b8580',1,'SherlocksGambit::Utils::Runners::Runner']]],
-  ['prng_8',['Prng',['../db/dd9/a00179.html#a6f59199e869ed4e404b7c323a81ce14c',1,'SherlocksGambit::Utils::Bonuses::ZobristHashing']]]
+  ['prng_8',['Prng',['../db/dd9/a00179.html#a6f59199e869ed4e404b7c323a81ce14c',1,'SherlocksGambit::Utils::Bonuses::ZobristHashing']]],
+  ['promotionvalue_9',['PromotionValue',['../dc/de6/a00167.html#ace5b54fd84446ef7b2186303e6e5f35d',1,'SherlocksGambit::Utils::Bonuses::MoveOrdering']]]
 ];

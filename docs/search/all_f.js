@@ -18,5 +18,6 @@ var searchData=
   ['prng_15',['Prng',['../db/dd9/a00179.html#a6f59199e869ed4e404b7c323a81ce14c',1,'SherlocksGambit::Utils::Bonuses::ZobristHashing']]],
   ['program_16',['Program',['../d3/df8/a00155.html',1,'SherlocksGambit']]],
   ['program_2ecs_17',['Program.cs',['../d2/d1f/a00083.html',1,'']]],
-  ['promotepiece_18',['PromotePiece',['../dd/db2/a00151.html#a24cab030dbdf7d79dcdd065ab653e644',1,'SherlocksGambit::Game::Pieces::PieceManager']]]
+  ['promotepiece_18',['PromotePiece',['../dd/db2/a00151.html#a24cab030dbdf7d79dcdd065ab653e644',1,'SherlocksGambit::Game::Pieces::PieceManager']]],
+  ['promotionvalue_19',['PromotionValue',['../dc/de6/a00167.html#ace5b54fd84446ef7b2186303e6e5f35d',1,'SherlocksGambit::Utils::Bonuses::MoveOrdering']]]
 ];
