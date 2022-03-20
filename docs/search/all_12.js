@@ -8,13 +8,12 @@ var searchData=
   ['helpers_5',['Helpers',['../d9/dcc/a00102.html',1,'SherlocksGambit::Utils']]],
   ['pieces_6',['Pieces',['../d1/d44/a00098.html',1,'SherlocksGambit::Game']]],
   ['runners_7',['Runners',['../d5/d1e/a00103.html',1,'SherlocksGambit::Utils']]],
-  ['scandistance_8',['ScanDistance',['../de/d14/a00139.html#a8a3127e778942f666726aaff10ba87e6',1,'SherlocksGambit::Game::Pieces::BasePiece']]],
-  ['seed_9',['Seed',['../db/dd9/a00179.html#a99cbac46f7e12b8c79b47e5bc0ac6564',1,'SherlocksGambit::Utils::Bonuses::ZobristHashing']]],
-  ['sherlocksgambit_10',['SherlocksGambit',['../d9/d77/a00095.html',1,'']]],
-  ['simpleheuristic_11',['SimpleHeuristic',['../df/d6a/a00119.html#a7ceeaf2977f032aa5f7db91834e7378c',1,'SherlocksGambit::AI::Heuristic']]],
-  ['sort_12',['Sort',['../dc/de6/a00167.html#aec56718c96e6f242afe4a1c4d0a4b036',1,'SherlocksGambit::Utils::Bonuses::MoveOrdering']]],
-  ['sourcefile_13',['SourceFile',['../db/dd9/a00179.html#a7158f0ad876463f50f8ed2f001229f38',1,'SherlocksGambit::Utils::Bonuses::ZobristHashing']]],
-  ['status_14',['Status',['../d1/d0d/a00171.html#a0e43cc6b6bc3985baf6af46e86c01eda',1,'SherlocksGambit::Utils::Bonuses::TranspositionTable']]],
-  ['storeevaluation_15',['StoreEvaluation',['../d1/d0d/a00171.html#a9c2d81d1b8d011aa4f406fb3383a9039',1,'SherlocksGambit::Utils::Bonuses::TranspositionTable']]],
-  ['utils_16',['Utils',['../da/d74/a00099.html',1,'SherlocksGambit']]]
+  ['scandistance_8',['ScanDistance',['../d4/ddd/a00138.html#a8a3127e778942f666726aaff10ba87e6',1,'SherlocksGambit::Game::Pieces::BasePiece']]],
+  ['sherlocksgambit_9',['SherlocksGambit',['../d9/d77/a00095.html',1,'']]],
+  ['simpleheuristic_10',['SimpleHeuristic',['../d8/d87/a00118.html#a7ceeaf2977f032aa5f7db91834e7378c',1,'SherlocksGambit::AI::Heuristic']]],
+  ['sort_11',['Sort',['../d9/d38/a00166.html#aec56718c96e6f242afe4a1c4d0a4b036',1,'SherlocksGambit::Utils::Bonuses::MoveOrdering']]],
+  ['sourcefile_12',['SourceFile',['../d9/d90/a00178.html#a7158f0ad876463f50f8ed2f001229f38',1,'SherlocksGambit::Utils::Bonuses::ZobristHashing']]],
+  ['status_13',['Status',['../d5/dcb/a00170.html#a0e43cc6b6bc3985baf6af46e86c01eda',1,'SherlocksGambit::Utils::Bonuses::TranspositionTable']]],
+  ['storeevaluation_14',['StoreEvaluation',['../d5/dcb/a00170.html#a9c2d81d1b8d011aa4f406fb3383a9039',1,'SherlocksGambit::Utils::Bonuses::TranspositionTable']]],
+  ['utils_15',['Utils',['../da/d74/a00099.html',1,'SherlocksGambit']]]
 ];

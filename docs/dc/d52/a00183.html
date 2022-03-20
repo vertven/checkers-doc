@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Sherlock&#39;s Gambit: SherlocksGambit.Utils.Encryption.FenEncryption Class Reference</title>
+<title>Sherlock&#39;s Gambit: Member List</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -65,132 +65,19 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="../../d9/d77/a00095.html">SherlocksGambit</a></li><li class="navelem"><a class="el" href="../../da/d74/a00099.html">Utils</a></li><li class="navelem"><a class="el" href="../../d4/d3a/a00101.html">Encryption</a></li><li class="navelem"><a class="el" href="../../dc/d52/a00183.html">FenEncryption</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../d9/d77/a00095.html">SherlocksGambit</a></li><li class="navelem"><a class="el" href="../../da/d74/a00099.html">Utils</a></li><li class="navelem"><a class="el" href="../../d4/d3a/a00101.html">Encryption</a></li><li class="navelem"><a class="el" href="../../d8/d00/a00186.html">MoveEncryption</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
-  <div class="summary">
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="../../d0/d81/a00180.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">SherlocksGambit.Utils.Encryption.FenEncryption Class Reference</div></div>
+  <div class="headertitle"><div class="title">SherlocksGambit.Utils.Encryption.MoveEncryption Member List</div></div>
 </div><!--header-->
 <div class="contents">
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a4332c194e4f43bd266a62412895cbf3e"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d52/a00183.html#a4332c194e4f43bd266a62412895cbf3e">Encrypt</a> (<a class="el" href="../../df/dcd/a00127.html">Board</a> board)</td></tr>
-<tr class="separator:a4332c194e4f43bd266a62412895cbf3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8e5f76394eb3f5f81cea15eb87ec3cf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d52/a00183.html#ae8e5f76394eb3f5f81cea15eb87ec3cf">Decrypt</a> (<a class="el" href="../../dd/db2/a00151.html">PieceManager</a> pieceManager, <a class="el" href="../../df/dcd/a00127.html">Board</a> board, string fenCode)</td></tr>
-<tr class="separator:ae8e5f76394eb3f5f81cea15eb87ec3cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae8e5f76394eb3f5f81cea15eb87ec3cf" name="ae8e5f76394eb3f5f81cea15eb87ec3cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8e5f76394eb3f5f81cea15eb87ec3cf">&#9670;&nbsp;</a></span>Decrypt()</h2>
 
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void SherlocksGambit.Utils.Encryption.FenEncryption.Decrypt </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dd/db2/a00151.html">PieceManager</a>&#160;</td>
-          <td class="paramname"><em>pieceManager</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../df/dcd/a00127.html">Board</a>&#160;</td>
-          <td class="paramname"><em>board</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>fenCode</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Decodes a FEN-encoded board and places the pieces on the given board and in <code>PiecesDictionary</code> </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pieceManager</td><td>PieceManager in which to put the newly created pieces </td></tr>
-    <tr><td class="paramname">board</td><td>Board on which to place the newly created pieces </td></tr>
-    <tr><td class="paramname">fenCode</td><td>FEN to decode. It is assumed to be not null </td></tr>
-  </table>
-  </dd>
-</dl>
-<p >This is a valid FEN code: mmmm/mmmm/4/4/4/4/MMMM/MMMM </p>
-<p >Your code should throw exceptions if the code cannot be decrypted </p><dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">ArgumentException</td><td>"Invalid board size" </td></tr>
-    <tr><td class="paramname">ArgumentException</td><td>"Wrong number of pieces in a single row" </td></tr>
-    <tr><td class="paramname">ArgumentException</td><td>"Invalid empty space amount" </td></tr>
-    <tr><td class="paramname">ArgumentException</td><td>"Invalid character" </td></tr>
-  </table>
-  </dd>
-</dl>
-<p >The FEN notation and our array notation are inverted. It's up to you to find a way to coincide both notations <br  />
- Indeed FEN starts at the lower left, left to right, bottom up <br  />
- While <code>Cells</code> starts at the upper left, left to right, top down </p>
-
-<p class="definition">Definition at line <a class="el" href="../../d2/de7/a00014_source.html#l00045">45</a> of file <a class="el" href="../../d2/de7/a00014_source.html">FenEncryption.cs</a>.</p>
-
-</div>
-</div>
-<a id="a4332c194e4f43bd266a62412895cbf3e" name="a4332c194e4f43bd266a62412895cbf3e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4332c194e4f43bd266a62412895cbf3e">&#9670;&nbsp;</a></span>Encrypt()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static string SherlocksGambit.Utils.Encryption.FenEncryption.Encrypt </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../df/dcd/a00127.html">Board</a>&#160;</td>
-          <td class="paramname"><em>board</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Encodes a board in its FEN notation </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">board</td><td>Board on which to place the newly created pieces </td></tr>
-  </table>
-  </dd>
-</dl>
-<p >The FEN notation and our array notation are inverted. It's up to you to find a way to coincide both notations <br  />
- Indeed FEN starts at the lower left, left to right, bottom up <br  />
- While <code>Cells</code> starts at the upper left, left to right, top down </p>
-
-<p class="definition">Definition at line <a class="el" href="../../d2/de7/a00014_source.html#l00021">21</a> of file <a class="el" href="../../d2/de7/a00014_source.html">FenEncryption.cs</a>.</p>
-
-</div>
-</div>
-</div><!-- contents -->
+<p>This is the complete list of members for <a class="el" href="../../d8/d00/a00186.html">SherlocksGambit.Utils.Encryption.MoveEncryption</a>, including all inherited members.</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="../../d8/d00/a00186.html#aa08cfd5505bdb3b79f85bd578f8f0472">Decrypt</a>(Board board, string input)</td><td class="entry"><a class="el" href="../../d8/d00/a00186.html">SherlocksGambit.Utils.Encryption.MoveEncryption</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="../../d8/d00/a00186.html#a5556d77385490a245f3d97feee2178de">Encrypt</a>(PlayerColor playerColor, PathObject path)</td><td class="entry"><a class="el" href="../../d8/d00/a00186.html">SherlocksGambit.Utils.Encryption.MoveEncryption</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+</table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
