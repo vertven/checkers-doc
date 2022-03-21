@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['fenencryption_0',['FenEncryption',['../d7/d25/a00182.html',1,'SherlocksGambit::Utils::Encryption']]]
+  ['fenencryption_0',['FenEncryption',['../d3/de5/a00209.html',1,'SherlocksGambit::Utils::Encryption']]]
 ];

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['welcome_20to_20the_20_3cins_3eofficial_3c_2fins_3e_20sherlock_27s_20gambit_20doc_20❤️_0',['Welcome to the &lt;ins&gt;official&lt;/ins&gt; Sherlock&apos;s Gambit Doc ❤️',['../index.html',1,'']]],
-  ['white_1',['White',['../d9/dcc/a00102.html#ad3875305e47f14266c1e80da9b33304ba25a81701fbfa4a1efdf660a950c1d006',1,'SherlocksGambit::Utils::Helpers']]],
-  ['withheuristic_2',['WithHeuristic',['../d8/d17/a00114.html#ac748b7185f026c6e1f67233e63d0990c',1,'SherlocksGambit::AI::AiBase']]],
-  ['writerandnum_3',['WriteRandNum',['../d9/d90/a00178.html#a8abe1db98a58601796adf59b217e3bd5',1,'SherlocksGambit::Utils::Bonuses::ZobristHashing']]]
+  ['white_1',['White',['../d9/d47/a00129.html#ad3875305e47f14266c1e80da9b33304ba25a81701fbfa4a1efdf660a950c1d006',1,'SherlocksGambit::Utils::Helpers']]],
+  ['withheuristic_2',['WithHeuristic',['../d5/d4e/a00141.html#ac748b7185f026c6e1f67233e63d0990c',1,'SherlocksGambit::AI::AiBase']]],
+  ['writerandnum_3',['WriteRandNum',['../d5/d13/a00205.html#a8abe1db98a58601796adf59b217e3bd5',1,'SherlocksGambit::Utils::Bonuses::ZobristHashing']]]
 ];

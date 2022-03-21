@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Sherlock&#39;s Gambit: Member List</title>
+<title>Sherlock&#39;s Gambit: SherlocksGambit.Game.Cell Class Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -65,26 +65,164 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="../../d1/dc1/a00092.html">SherlocksGambit</a></li><li class="navelem"><a class="el" href="../../d9/df8/a00096.html">Utils</a></li><li class="navelem"><a class="el" href="../../d1/d84/a00097.html">Bonuses</a></li><li class="navelem"><a class="el" href="../../de/d38/a00160.html">MoveOrdering</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../df/dc8/a00122.html">SherlocksGambit</a></li><li class="navelem"><a class="el" href="../../da/d72/a00124.html">Game</a></li><li class="navelem"><a class="el" href="../../d1/db7/a00157.html">Cell</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
-  <div class="headertitle"><div class="title">SherlocksGambit.Utils.Bonuses.MoveOrdering Member List</div></div>
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="../../d3/d65/a00154.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">SherlocksGambit.Game.Cell Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a535259f57a1fe0636a4915056c5076d2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/db7/a00157.html#a535259f57a1fe0636a4915056c5076d2">CellState</a> { <a class="el" href="../../d1/db7/a00157.html#a535259f57a1fe0636a4915056c5076d2a03fdbf12e03a4cd1409b84abe2b631df">Friendly</a>
+, <a class="el" href="../../d1/db7/a00157.html#a535259f57a1fe0636a4915056c5076d2a8c6d21187fb58b7a079d70030686b33e">Enemy</a>
+, <a class="el" href="../../d1/db7/a00157.html#a535259f57a1fe0636a4915056c5076d2ab24ce0cd392a5b0b8dedc66c25213594">Free</a>
+, <a class="el" href="../../d1/db7/a00157.html#a535259f57a1fe0636a4915056c5076d2a46dc1018ac1d8fca7c2752a61ce2fd0f">OutOfBounds</a>
+ }</td></tr>
+<tr class="separator:a535259f57a1fe0636a4915056c5076d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a994d8bf12a32ffe4b0bcc605c3f21b1f"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="../../da/d01/a00153.html">Board</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/db7/a00157.html#a994d8bf12a32ffe4b0bcc605c3f21b1f">Board</a></td></tr>
+<tr class="separator:a994d8bf12a32ffe4b0bcc605c3f21b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad53e986eec0fa7d30e47aae72ce30bff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d48/a00165.html">BasePiece</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/db7/a00157.html#ad53e986eec0fa7d30e47aae72ce30bff">CurrentPiece</a></td></tr>
+<tr class="separator:ad53e986eec0fa7d30e47aae72ce30bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a066708f955a4a84593db2359b8357851"><td class="memItemLeft" align="right" valign="top">readonly int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/db7/a00157.html#a066708f955a4a84593db2359b8357851">BoardPosition</a></td></tr>
+<tr class="separator:a066708f955a4a84593db2359b8357851"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:afe96d3bf7070bc4f2afd04ce7efcbfeb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/db7/a00157.html#afe96d3bf7070bc4f2afd04ce7efcbfeb">Cell</a> (int boardPosition, <a class="el" href="../../da/d01/a00153.html">Board</a> board)</td></tr>
+<tr class="separator:afe96d3bf7070bc4f2afd04ce7efcbfeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a535259f57a1fe0636a4915056c5076d2" name="a535259f57a1fe0636a4915056c5076d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a535259f57a1fe0636a4915056c5076d2">&#9670;&nbsp;</a></span>CellState</h2>
 
-<p>This is the complete list of members for <a class="el" href="../../de/d38/a00160.html">SherlocksGambit.Utils.Bonuses.MoveOrdering</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="../../de/d38/a00160.html#a6030515638ce305b244af50bfea90d67">_moveScores</a></td><td class="entry"><a class="el" href="../../de/d38/a00160.html">SherlocksGambit.Utils.Bonuses.MoveOrdering</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="../../de/d38/a00160.html#a426249e7c992d43ae375034937b826a6">_transpositionTable</a></td><td class="entry"><a class="el" href="../../de/d38/a00160.html">SherlocksGambit.Utils.Bonuses.MoveOrdering</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../de/d38/a00160.html#a66e143e502fea77addb39a180db7e869">AttackDivisor</a></td><td class="entry"><a class="el" href="../../de/d38/a00160.html">SherlocksGambit.Utils.Bonuses.MoveOrdering</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="../../de/d38/a00160.html#a01e456b5aeee6f54634cb6432dd481b2">CaptureMultiplier</a></td><td class="entry"><a class="el" href="../../de/d38/a00160.html">SherlocksGambit.Utils.Bonuses.MoveOrdering</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../de/d38/a00160.html#aab30a98e6bd72e729b8bfbcf06efb93b">GetPieceValue</a>(BasePiece piece)</td><td class="entry"><a class="el" href="../../de/d38/a00160.html">SherlocksGambit.Utils.Bonuses.MoveOrdering</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="../../de/d38/a00160.html#a587ebdf6f6e412b1ef648335254c3ab5">MaxMoveCount</a></td><td class="entry"><a class="el" href="../../de/d38/a00160.html">SherlocksGambit.Utils.Bonuses.MoveOrdering</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../de/d38/a00160.html#ae979424dd081d7b88a906b3237a4bc22">MoveOrdering</a>(TranspositionTable transpositionTable)</td><td class="entry"><a class="el" href="../../de/d38/a00160.html">SherlocksGambit.Utils.Bonuses.MoveOrdering</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="../../de/d38/a00160.html#ac5671d32f079af534110a5c07d0a795c">OrderMoves</a>(Board board, List&lt; PathObject &gt; moves, bool useTransposition)</td><td class="entry"><a class="el" href="../../de/d38/a00160.html">SherlocksGambit.Utils.Bonuses.MoveOrdering</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../de/d38/a00160.html#aec56718c96e6f242afe4a1c4d0a4b036">Sort</a>(List&lt; PathObject &gt; moves)</td><td class="entry"><a class="el" href="../../de/d38/a00160.html">SherlocksGambit.Utils.Bonuses.MoveOrdering</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-</table></div><!-- contents -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d1/db7/a00157.html#a535259f57a1fe0636a4915056c5076d2">SherlocksGambit.Game.Cell.CellState</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Characterize the state of a cell. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a535259f57a1fe0636a4915056c5076d2a03fdbf12e03a4cd1409b84abe2b631df" name="a535259f57a1fe0636a4915056c5076d2a03fdbf12e03a4cd1409b84abe2b631df"></a>Friendly&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a535259f57a1fe0636a4915056c5076d2a8c6d21187fb58b7a079d70030686b33e" name="a535259f57a1fe0636a4915056c5076d2a8c6d21187fb58b7a079d70030686b33e"></a>Enemy&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a535259f57a1fe0636a4915056c5076d2ab24ce0cd392a5b0b8dedc66c25213594" name="a535259f57a1fe0636a4915056c5076d2ab24ce0cd392a5b0b8dedc66c25213594"></a>Free&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a535259f57a1fe0636a4915056c5076d2a46dc1018ac1d8fca7c2752a61ce2fd0f" name="a535259f57a1fe0636a4915056c5076d2a46dc1018ac1d8fca7c2752a61ce2fd0f"></a>OutOfBounds&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="../../db/db6/a00074_source.html#l00008">8</a> of file <a class="el" href="../../db/db6/a00074_source.html">Cell.cs</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a994d8bf12a32ffe4b0bcc605c3f21b1f" name="a994d8bf12a32ffe4b0bcc605c3f21b1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a994d8bf12a32ffe4b0bcc605c3f21b1f">&#9670;&nbsp;</a></span>Board</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly <a class="el" href="../../da/d01/a00153.html">Board</a> SherlocksGambit.Game.Cell.Board</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reference to the <a class="el" href="../../da/d01/a00153.html">Board</a> the cell is on. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../db/db6/a00074_source.html#l00017">17</a> of file <a class="el" href="../../db/db6/a00074_source.html">Cell.cs</a>.</p>
+
+</div>
+</div>
+<a id="a066708f955a4a84593db2359b8357851" name="a066708f955a4a84593db2359b8357851"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a066708f955a4a84593db2359b8357851">&#9670;&nbsp;</a></span>BoardPosition</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly int SherlocksGambit.Game.Cell.BoardPosition</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The position of the cell in board notation. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../db/db6/a00074_source.html#l00023">23</a> of file <a class="el" href="../../db/db6/a00074_source.html">Cell.cs</a>.</p>
+
+</div>
+</div>
+<a id="ad53e986eec0fa7d30e47aae72ce30bff" name="ad53e986eec0fa7d30e47aae72ce30bff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad53e986eec0fa7d30e47aae72ce30bff">&#9670;&nbsp;</a></span>CurrentPiece</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d48/a00165.html">BasePiece</a> SherlocksGambit.Game.Cell.CurrentPiece</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reference to the current piece on the cell. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../db/db6/a00074_source.html#l00020">20</a> of file <a class="el" href="../../db/db6/a00074_source.html">Cell.cs</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="afe96d3bf7070bc4f2afd04ce7efcbfeb" name="afe96d3bf7070bc4f2afd04ce7efcbfeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe96d3bf7070bc4f2afd04ce7efcbfeb">&#9670;&nbsp;</a></span>Cell()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SherlocksGambit.Game.Cell.Cell </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>boardPosition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d01/a00153.html">Board</a>&#160;</td>
+          <td class="paramname"><em>board</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Basic constructor for <a class="el" href="../../d1/db7/a00157.html">Cell</a> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">boardPosition</td><td>Position of the cell in board notation </td></tr>
+    <tr><td class="paramname">board</td><td>The <a class="el" href="../../da/d01/a00153.html">Board</a> the cell is on </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Initialize all attributes on this class </p>
+
+<p class="definition">Definition at line <a class="el" href="../../db/db6/a00074_source.html#l00031">31</a> of file <a class="el" href="../../db/db6/a00074_source.html">Cell.cs</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
