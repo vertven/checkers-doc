@@ -3,7 +3,7 @@
 ---
 
 <h1> `Related Pages` </h1>
-This link features the `Q&A` and the `UMLs` that were provided to you<br>
+This link features the `CIA Documentation`, `Q&A` and the `UMLs` that were provided to you<br>
 The `Q&A` will be updated regularly.
 Consider it as a newsgroup meaning, before asking a question, have a look here to see if the question has already been asked and answered!
 
