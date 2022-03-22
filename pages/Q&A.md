@@ -12,9 +12,8 @@ For now use the following link: http://checkmycheckers.engineer
 
 ---
 
-## Prorotype error for Copy methods
-The subject has been updated and will be deployed soon.<br>
-In the meantime, consider that the skeleton and the documentation is correct
+## Prototype error for Copy methods
+The subject has been updated with the new prototype.<br>
 
 ---
 
